@@ -49,7 +49,7 @@
         /* Navigazione */
         nav {
             background: var(--primary-navy-dark);
-            padding: 15px 0;
+            padding: 12px 0;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -62,23 +62,10 @@
             align-items: center;
         }
 
-        .logo-text {
-            color: #FFFFFF;
-            font-weight: 800;
-            font-size: 1.2rem;
-            letter-spacing: 0.5px;
-            text-decoration: none;
+        .logo-brand {
             display: flex;
             align-items: center;
-            gap: 10px;
-        }
-
-        .logo-text span {
-            color: var(--accent-orange);
-            font-size: 0.75rem;
-            border: 1px solid var(--accent-orange);
-            padding: 2px 6px;
-            border-radius: 4px;
+            text-decoration: none;
         }
 
         .nav-right {
@@ -134,13 +121,17 @@
         header.hero {
             background: linear-gradient(135deg, var(--primary-navy-dark) 0%, var(--primary-navy) 100%);
             color: #FFFFFF;
-            padding: 90px 0 70px 0;
+            padding: 80px 0 70px 0;
             text-align: center;
             border-bottom: 4px solid var(--accent-orange);
         }
 
+        .hero-logo-container {
+            margin-bottom: 25px;
+        }
+
         .hero h1 {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             font-weight: 800;
             letter-spacing: -0.5px;
             margin-bottom: 15px;
@@ -410,7 +401,6 @@
             color: var(--accent-orange);
         }
 
-        /* Styling Form */
         .contact-form {
             background: var(--bg-light);
             border: 1px solid var(--border-color);
@@ -461,7 +451,7 @@
             background-color: var(--primary-navy-dark);
         }
 
-        /* Footer A Norma UE */
+        /* Footer */
         footer {
             background: var(--primary-navy-dark);
             color: #94A3B8;
@@ -543,7 +533,7 @@
         }
 
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2rem; }
+            .hero h1 { font-size: 1.8rem; }
             .hero .subtitle { font-size: 1.1rem; }
             .nav-links { display: none; }
             section { padding: 40px 0; }
@@ -553,11 +543,21 @@
 
 <body>
 
-    <!-- Navigazione con Selettore Lingua -->
+    <!-- Navigazione con Logo Ufficiale Integrato -->
     <nav>
         <div class="container nav-content">
-            <a href="#" class="logo-text">
-                STRUCTURED ENGINEERING <span>S.R.L.</span>
+            <a href="#" class="logo-brand">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" style="height: 42px; width: auto;">
+                    <!-- Esagono S Logo Bianco -->
+                    <g fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="round">
+                        <path d="M55 12 L100 37.5 L100 87.5 L55 113 L10 87.5 L10 37.5 Z" />
+                        <path d="M35 42 L80 42 L35 83 L80 83" stroke-linecap="round"/>
+                    </g>
+                    <!-- Testo Logo -->
+                    <text x="125" y="48" font-family="'Inter', sans-serif" font-weight="800" font-size="34" fill="#FFFFFF" letter-spacing="1">STRUCTURED</text>
+                    <text x="125" y="86" font-family="'Inter', sans-serif" font-weight="800" font-size="34" fill="#FFFFFF" letter-spacing="1">ENGINEERING</text>
+                    <text x="440" y="65" font-family="'Inter', sans-serif" font-weight="700" font-size="14" fill="#E67E21">SRL</text>
+                </svg>
             </a>
             <div class="nav-right">
                 <div class="nav-links">
@@ -576,10 +576,25 @@
         </div>
     </nav>
 
-    <!-- Header Hero -->
+    <!-- Header Hero con Logo Vettoriale -->
     <header class="hero">
         <div class="container">
-            <h1>Structured Engineering</h1>
+            <div class="hero-logo-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 150" style="max-width: 480px; width: 90%; height: auto;">
+                    <!-- Esagono S Logo Bianco -->
+                    <g fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="round">
+                        <path d="M55 12 L100 37.5 L100 87.5 L55 113 L10 87.5 L10 37.5 Z" />
+                        <path d="M35 42 L80 42 L35 83 L80 83" stroke-linecap="round"/>
+                    </g>
+                    <!-- Testo Logo -->
+                    <text x="125" y="48" font-family="'Inter', sans-serif" font-weight="800" font-size="34" fill="#FFFFFF" letter-spacing="1">STRUCTURED</text>
+                    <text x="125" y="86" font-family="'Inter', sans-serif" font-weight="800" font-size="34" fill="#FFFFFF" letter-spacing="1">ENGINEERING</text>
+                    <text x="440" y="65" font-family="'Inter', sans-serif" font-weight="700" font-size="14" fill="#E67E21">SRL</text>
+                    <!-- Tagline Sotto -->
+                    <text x="125" y="118" font-family="'Inter', sans-serif" font-weight="400" font-size="16" fill="#E2E8F0" letter-spacing="0.5">Engineering Structure. Operational Continuity.</text>
+                </svg>
+            </div>
+            
             <div class="subtitle" data-i18n="hero_subtitle">COSTRUIAMO CONTINUITÀ. PROTEGGIAMO IL TUO VALORE.</div>
             <p class="description" data-i18n="hero_desc">
                 Operational Continuity • Temporary Stewardship • Supply Chain Resilience<br>
@@ -630,7 +645,7 @@
         </div>
     </section>
 
-    <!-- Nuova Sezione: Roadmap Primi 90 Giorni -->
+    <!-- Roadmap Primi 90 Giorni -->
     <section id="roadmap">
         <div class="container">
             <div class="section-title">
@@ -763,7 +778,6 @@
                     </div>
                 </div>
 
-                <!-- Form di Contatto Trilingue (Collegabile a Formspree) -->
                 <div class="contact-form">
                     <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
                         <div class="form-group">
@@ -783,7 +797,7 @@
                             <input type="tel" name="phone">
                         </div>
                         <div class="form-group">
-                            <label data-i18n="form_message">Messaggio / Messaggio di presentazione *</label>
+                            <label data-i18n="form_message">Messaggio / Richiesta *</label>
                             <textarea name="message" rows="4" required></textarea>
                         </div>
                         <button type="submit" class="submit-btn" data-i18n="form_btn">Invia Richiesta</button>
