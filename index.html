@@ -136,11 +136,17 @@
             color: #D1D5DB;
             font-weight: 300;
         }
+        .hero-btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
         .cta-btn {
             display: inline-block;
             background-color: var(--accent-orange);
             color: #FFFFFF;
-            padding: 14px 32px;
+            padding: 14px 28px;
             border-radius: 6px;
             font-weight: 700;
             text-decoration: none;
@@ -149,6 +155,21 @@
         }
         .cta-btn:hover {
             background-color: #d36e19;
+            transform: translateY(-2px);
+        }
+        .cta-btn-secondary {
+            display: inline-block;
+            background-color: transparent;
+            color: #FFFFFF;
+            border: 2px solid #FFFFFF;
+            padding: 12px 28px;
+            border-radius: 6px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .cta-btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.1);
             transform: translateY(-2px);
         }
         /* Sezioni */
@@ -293,7 +314,7 @@
             left: 0;
             top: -2px;
         }
-        /* Sezione Internazionale con Colore Dedicato */
+        /* Sezione Internazionale */
         .international-section {
             background-color: var(--international-bg);
             border-top: 1px solid #CBD5E1;
@@ -559,6 +580,7 @@
             .hero .subtitle { font-size: 1.1rem; }
             .nav-links { display: none; }
             section { padding: 40px 0; }
+            .hero-btn-container { flex-direction: column; align-items: center; }
         }
     </style>
 </head>
@@ -617,10 +639,15 @@
                 Operational Continuity • Temporary Stewardship • Supply Chain Resilience<br>
                 Soluzioni integrate di affiancamento operativo e strategico per PMI meccaniche e manifatturiere.
             </p>
-            <a href="#contatti" class="cta-btn" data-i18n="hero_cta">Verifica quanto la tua azienda è realmente autonoma</a>
+            <div class="hero-btn-container">
+                <!-- Pulsante 1: Questionario Formspree -->
+                <a href="https://formspree.io/f/myezjpnk" class="cta-btn" data-i18n="hero_cta">Verifica quanto la tua azienda è realmente autonoma</a>
+                <!-- Pulsante 2: Solo Informazioni -->
+                <a href="#contatti" class="cta-btn-secondary" data-i18n="hero_cta_info">Richiedi Solo Informazioni</a>
+            </div>
         </div>
     </header>
-    <!-- Missione & Frase Forte sulla Vulnerabilità -->
+    <!-- Missione & Frase Forte -->
     <section id="mission">
         <div class="container">
             <div class="hero-box">
@@ -735,7 +762,7 @@
             </div>
         </div>
     </section>
-    <!-- 5. Asse Internazionale (Italia, Romania, Ungheria) con Colore Dedicato -->
+    <!-- 5. Asse Internazionale -->
     <section id="internazionale" class="international-section">
         <div class="container">
             <div class="section-title" style="margin-bottom: 25px;">
@@ -880,7 +907,8 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+                    <!-- Form con il tuo Formspree ID: myezjpnk -->
+                    <form action="https://formspree.io/f/myezjpnk" method="POST">
                         <div class="form-group">
                             <label data-i18n="form_name">Nome e Cognome *</label>
                             <input type="text" name="name" required>
@@ -959,6 +987,7 @@
                 hero_subtitle: "COSTRUIAMO CONTINUITÀ. PROTEGGIAMO IL TUO VALORE.",
                 hero_desc: "Operational Continuity • Temporary Stewardship • Supply Chain Resilience<br>Soluzioni integrate di affiancamento operativo e strategico per PMI meccaniche e manifatturiere.",
                 hero_cta: "Verifica quanto la tua azienda è realmente autonoma",
+                hero_cta_info: "Richiedi Solo Informazioni",
                 mission_title: "La Nostra Missione",
                 mission_p1: "Una PMI meccanica non deve dipendere ogni giorno dal proprio titolare per continuare a produrre, decidere e creare valore.",
                 mission_p2: "Structured Engineering costruisce, insieme alla proprietà, un sistema operativo, organizzativo e di controllo capace di rendere l'impresa più autonoma, proteggere il know-how e preparare con metodo la continuità o la successione.",
@@ -1077,6 +1106,7 @@
                 hero_subtitle: "BUILDING CONTINUITY. PROTECTING YOUR VALUE.",
                 hero_desc: "Operational Continuity • Temporary Stewardship • Supply Chain Resilience<br>Integrated operational and strategic support for mechanical and manufacturing SMEs.",
                 hero_cta: "Verify how autonomous your company really is",
+                hero_cta_info: "Request Information Only",
                 mission_title: "Our Mission",
                 mission_p1: "A mechanical SME should not depend daily on its owner to keep producing, deciding, and creating value.",
                 mission_p2: "Structured Engineering builds, together with ownership, an operational and control framework to make the enterprise autonomous, protect know-how, and methodically prepare for continuity or succession.",
@@ -1195,6 +1225,7 @@
                 hero_subtitle: "CONSTRUIM CONTINUITATE. PROTEJĂM VALOAREA TA.",
                 hero_desc: "Operational Continuity • Temporary Stewardship • Supply Chain Resilience<br>Soluții integrate de asistență operativă și strategică pentru IMM-uri mecanice și de producție.",
                 hero_cta: "Verifică cât de autonomă este cu adevărat compania ta",
+                hero_cta_info: "Solicită Doar Informații",
                 mission_title: "Misiunea Noastră",
                 mission_p1: "O companie mecanică nu trebuie să depindă zilnic de prezența proprietarului pentru a produce, decide și crea valoare.",
                 mission_p2: "Structured Engineering construiește, împreună cu conducerea, un sistem operativ, organizațional și de control capabil să facă firma autonomă, să protejeze know-how-ul și să pregătească continuitatea sau succesiunea.",
