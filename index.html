@@ -478,7 +478,7 @@
             color: var(--primary-navy);
             margin-bottom: 5px;
         }
-        .form-group input, .form-group textarea {
+        .form-group input, .form-group textarea, .form-group select {
             width: 100%;
             padding: 10px 12px;
             border: 1px solid var(--border-color);
@@ -487,7 +487,7 @@
             font-size: 0.95rem;
             background: #FFFFFF;
         }
-        .form-group input:focus, .form-group textarea:focus {
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
             outline: none;
             border-color: var(--accent-orange);
         }
@@ -504,6 +504,19 @@
         }
         .submit-btn:hover {
             background-color: var(--primary-navy-dark);
+        }
+        /* Stili Sezione Questionario Autonomia */
+        .questionnaire-section {
+            background: #FFFFFF;
+            border-top: 1px solid var(--border-color);
+        }
+        .questionnaire-card {
+            background: var(--bg-light);
+            border: 1px solid var(--border-color);
+            padding: 35px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 0 auto;
         }
         /* Footer */
         footer {
@@ -608,6 +621,7 @@
                     <a href="#internazionale" data-i18n="nav_inter">Internazionale</a>
                     <a href="#roadmap" data-i18n="nav_roadmap">Roadmap</a>
                     <a href="#aree" data-i18n="nav_areas">Aree</a>
+                    <a href="#questionario" data-i18n="nav_questionnaire">Questionario</a>
                     <a href="#contatti" data-i18n="nav_contacts">Contatti</a>
                 </div>
                 <div class="lang-switch">
@@ -640,8 +654,8 @@
                 Soluzioni integrate di affiancamento operativo e strategico per PMI meccaniche e manifatturiere.
             </p>
             <div class="hero-btn-container">
-                <!-- Pulsante 1: Questionario Formspree -->
-                <a href="https://formspree.io/f/myezjpnk" class="cta-btn" data-i18n="hero_cta">Verifica quanto la tua azienda è realmente autonoma</a>
+                <!-- Pulsante 1: Scorre direttamente alla sezione Questionario -->
+                <a href="#questionario" class="cta-btn" data-i18n="hero_cta">Verifica quanto la tua azienda è realmente autonoma</a>
                 <!-- Pulsante 2: Solo Informazioni -->
                 <a href="#contatti" class="cta-btn-secondary" data-i18n="hero_cta_info">Richiedi Solo Informazioni</a>
             </div>
@@ -890,6 +904,72 @@
             </div>
         </div>
     </section>
+
+    <!-- Nuova Sezione: Questionario Autonomia Aziendale -->
+    <section id="questionario" class="questionnaire-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="quest_title">Questionario di Autonomia Aziendale</h2>
+                <p data-i18n="quest_desc">Compila questo breve test per ricevere una valutazione preliminare sullo stato della tua continuità operativa.</p>
+            </div>
+            <div class="questionnaire-card">
+                <form action="https://formspree.io/f/myezjpnk" method="POST">
+                    <input type="hidden" name="_subject" value="Nuova risposta: Questionario Autonomia Aziendale">
+                    
+                    <div class="form-group">
+                        <label data-i18n="form_name">Nome e Cognome *</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="form_company">Azienda / Società *</label>
+                        <input type="text" name="company" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="form_email">E-mail *</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label data-i18n="q1_label">1. Se dovessi assentarti per un mese senza contatti, l'azienda proseguirebbe senza intoppi?</label>
+                        <select name="assenza_titolare" required>
+                            <option value="" disabled selected data-i18n="select_option">Seleziona un'opzione</option>
+                            <option value="Sì, completamente autonoma" data-i18n="q1_o1">Sì, le attività continuerebbero regolarmente</option>
+                            <option value="Parzialmente, con diversi rallentamenti" data-i18n="q1_o2">Parzialmente, sorgerebbero blocchi decisionali</option>
+                            <option value="No, blocchi critici immediati" data-i18n="q1_o3">No, la produzione o i clienti si fermerebbero</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-i18n="q2_label">2. I processi produttivi e il know-how aziendale sono formalizzati e documentati?</label>
+                        <select name="know_how_documentato" required>
+                            <option value="" disabled selected data-i18n="select_option">Seleziona un'opzione</option>
+                            <option value="Sì, procedure e standard chiari" data-i18n="q2_o1">Sì, abbiamo manuali e procedure aggiornate</option>
+                            <option value="Solo in parte o informali" data-i18n="q2_o2">Solo in parte, molto risiede nella testa delle persone</option>
+                            <option value="No, quasi tutto informale" data-i18n="q2_o3">No, ci basiamo interamente sull'esperienza individuale</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-i18n="q3_label">3. La catena di fornitura (Supply Chain) dispone di alternative per i componenti critici?</label>
+                        <select name="supply_chain_resilienza" required>
+                            <option value="" disabled selected data-i18n="select_option">Seleziona un'opzione</option>
+                            <option value="Sì, abbiamo fornitori secondari qualificati" data-i18n="q3_o1">Sì, abbiamo alternative già testate</option>
+                            <option value="In fase di sviluppo" data-i18n="q3_o2">In parte, ma per alcuni componenti abbiamo un solo fornitore</option>
+                            <option value="No, dipendiamo da singoli fornitori" data-i18n="q3_o3">No, siamo vulnerabili su diversi fornitori chiave</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-i18n="q_notes_label">Note o dettagli aggiuntivi (Opzionale)</label>
+                        <textarea name="note_aggiuntive" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn" data-i18n="quest_btn">Invia le risposte per la valutazione</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- Contatti & Form Diretto Trilingue -->
     <section id="contatti" class="contact-section">
         <div class="container">
@@ -907,8 +987,9 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <!-- Form configurato con l'endpoint Formspree -->
+                    <!-- Form con il tuo Formspree ID: myezjpnk -->
                     <form action="https://formspree.io/f/myezjpnk" method="POST">
+                        <input type="hidden" name="_subject" value="Nuova richiesta di contatto dal sito web">
                         <div class="form-group">
                             <label data-i18n="form_name">Nome e Cognome *</label>
                             <input type="text" name="name" required>
@@ -983,10 +1064,11 @@
                 nav_inter: "Internazionale",
                 nav_roadmap: "Roadmap",
                 nav_areas: "Aree",
+                nav_questionnaire: "Questionario",
                 nav_contacts: "Contatti",
                 hero_subtitle: "COSTRUIAMO CONTINUITÀ. PROTEGGIAMO IL TUO VALORE.",
                 hero_desc: "Operational Continuity • Temporary Stewardship • Supply Chain Resilience<br>Soluzioni integrate di affiancamento operativo e strategico per PMI meccaniche e manifatturiere.",
-                hero_cta: "Verifica quanto la tua azienda è realmente autonoma",
+                hero_cta: "Verifica quanto la tua azienda è réellement autonoma",
                 hero_cta_info: "Richiedi Solo Informazioni",
                 mission_title: "La Nostra Missione",
                 mission_p1: "Una PMI meccanica non deve dipendere ogni giorno dal proprio titolare per continuare a produrre, decidere e creare valore.",
@@ -1074,6 +1156,23 @@
                 stat2: "Aumento Produttività",
                 stat3: "Riduzione Costi Operativi",
                 stat4: "Incremento Margini",
+                quest_title: "Questionario di Autonomia Aziendale",
+                quest_desc: "Compila questo breve test per ricevere una valutazione preliminare sullo stato della tua continuità operativa.",
+                select_option: "Seleziona un'opzione",
+                q1_label: "1. Se dovessi assentarti per un mese senza contatti, l'azienda proseguirebbe senza intoppi?",
+                q1_o1: "Sì, le attività continuerebbero regolarmente",
+                q1_o2: "Parzialmente, sorgerebbero blocchi decisionali",
+                q1_o3: "No, la produzione o i clienti si fermerebbero",
+                q2_label: "2. I processi produttivi e il know-how aziendale sono formalizzati e documentati?",
+                q2_o1: "Sì, abbiamo manuali e procedure aggiornate",
+                q2_o2: "Solo in parte, molto risiede nella testa delle persone",
+                q2_o3: "No, ci basiamo interamente sull'esperienza individuale",
+                q3_label: "3. La catena di fornitura (Supply Chain) dispone di alternative per i componenti critici?",
+                q3_o1: "Sì, abbiamo alternative già testate",
+                q3_o2: "In parte, ma per alcuni componenti abbiamo un solo fornitore",
+                q3_o3: "No, siamo vulnerabili su diversi fornitori chiave",
+                q_notes_label: "Note o dettagli aggiuntivi (Opzionale)",
+                quest_btn: "Invia le risposte per la valutazione",
                 contact_title: "Primo Passo: Incontro Preliminare",
                 contact_desc: "Pianifichiamo una conversazione riservata per analizzare la situazione della tua impresa senza impegno.",
                 phone: "Telefono",
@@ -1102,6 +1201,7 @@
                 nav_inter: "International",
                 nav_roadmap: "Roadmap",
                 nav_areas: "Areas",
+                nav_questionnaire: "Questionnaire",
                 nav_contacts: "Contacts",
                 hero_subtitle: "BUILDING CONTINUITY. PROTECTING YOUR VALUE.",
                 hero_desc: "Operational Continuity • Temporary Stewardship • Supply Chain Resilience<br>Integrated operational and strategic support for mechanical and manufacturing SMEs.",
@@ -1193,6 +1293,23 @@
                 stat2: "Productivity Increase",
                 stat3: "Operational Cost Reduction",
                 stat4: "Margin Improvement",
+                quest_title: "Business Autonomy Questionnaire",
+                quest_desc: "Complete this short test to receive a preliminary assessment of your operational continuity.",
+                select_option: "Select an option",
+                q1_label: "1. If you were absent for a month with no contact, would the business run smoothly?",
+                q1_o1: "Yes, operations would continue regularly",
+                q1_o2: "Partially, decision-making bottlenecks would arise",
+                q1_o3: "No, production or clients would come to a halt",
+                q2_label: "2. Are production processes and corporate know-how formalised and documented?",
+                q2_o1: "Yes, we have updated manuals and procedures",
+                q2_o2: "Only in part, much resides in people's minds",
+                q2_o3: "No, we rely entirely on individual experience",
+                q3_label: "3. Does the supply chain have alternatives for critical components?",
+                q3_o1: "Yes, we have pre-tested alternatives",
+                q3_o2: "Partially, but we have single sources for some components",
+                q3_o3: "No, we are vulnerable on several key suppliers",
+                q_notes_label: "Additional notes or details (Optional)",
+                quest_btn: "Submit answers for evaluation",
                 contact_title: "First Step: Preliminary Meeting",
                 contact_desc: "Let's schedule a confidential discussion to evaluate your business scenario without obligation.",
                 phone: "Phone",
@@ -1221,6 +1338,7 @@
                 nav_inter: "Internațional",
                 nav_roadmap: "Roadmap",
                 nav_areas: "Domenii",
+                nav_questionnaire: "Chestionar",
                 nav_contacts: "Contact",
                 hero_subtitle: "CONSTRUIM CONTINUITATE. PROTEJĂM VALOAREA TA.",
                 hero_desc: "Operational Continuity • Temporary Stewardship • Supply Chain Resilience<br>Soluții integrate de asistență operativă și strategică pentru IMM-uri mecanice și de producție.",
@@ -1312,6 +1430,23 @@
                 stat2: "Creștere Productivitate",
                 stat3: "Reducere Costuri Operative",
                 stat4: "Creștere Margini Profit",
+                quest_title: "Chestionar privind Autonomia Companiei",
+                quest_desc: "Completați acest scurt test pentru a primi o evaluare preliminară a continuității dumneavoastră operative.",
+                select_option: "Selectați o opțiune",
+                q1_label: "1. Dacă ați lipsi o lună fără contact, compania ar funcționa fără probleme?",
+                q1_o1: "Da, activitățile ar continua în mod regulat",
+                q1_o2: "Parțial, ar apărea blocaje decizionale",
+                q1_o3: "Nu, producția sau relația cu clienții s-ar opri",
+                q2_label: "2. Procesele de producție și know-how-ul sunt formalizate și documentate?",
+                q2_o1: "Da, avem manuale și proceduri actualizate",
+                q2_o2: "Doar parțial, multe informații depind de persoane",
+                q2_o3: "Nu, ne bazăm integral pe experiența individuală",
+                q3_label: "3. Lanțul de aprovizionare are alternative pentru componentele critice?",
+                q3_o1: "Da, avem alternative deja testate",
+                q3_o2: "Parțial, dar depindem de un singur furnizor pentru anumite piese",
+                q3_o3: "Nu, suntem vulnerabili în privința furnizorilor cheie",
+                q_notes_label: "Note sau detalii suplimentare (Opțional)",
+                quest_btn: "Trimiteți răspunsurile pentru evaluare",
                 contact_title: "Primul Pas: Întâlnire Preliminară",
                 contact_desc: "Programăm o discuție confidențială pentru a analiza situația companiei dumneavoastră, fără niciun angajament.",
                 phone: "Telefon",
