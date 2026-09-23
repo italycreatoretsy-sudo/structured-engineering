@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Structured Engineering S.r.l. | Operational Continuity & Temporary Stewardship</title>
     
+    <!-- Favicon Vettoriale Logo S -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50 5 L90 27.5 L90 72.5 L50 95 L10 72.5 L10 27.5 Z' fill='none' stroke='%2317365D' stroke-width='10'/><path d='M30 35 L70 35 L30 65 L70 65' fill='none' stroke='%23E67E21' stroke-width='10' stroke-linecap='round'/></svg>">
+
     <!-- Font Google Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -250,7 +253,43 @@
             font-size: 0.95rem;
         }
 
-        /* Promessa Banner */
+        /* Roadmap 90 Giorni */
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .roadmap-step {
+            background: #FFFFFF;
+            padding: 20px;
+            border-radius: 8px;
+            border-top: 4px solid var(--primary-navy);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            position: relative;
+        }
+
+        .roadmap-step .step-num {
+            color: var(--accent-orange);
+            font-weight: 800;
+            font-size: 0.85rem;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .roadmap-step h4 {
+            color: var(--primary-navy);
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+        }
+
+        .roadmap-step p {
+            color: var(--text-muted);
+            font-size: 0.88rem;
+        }
+
+        /* Banner Promessa */
         .promise-banner {
             background-color: var(--primary-navy);
             color: white;
@@ -322,10 +361,17 @@
             font-weight: 600;
         }
 
-        /* Contatti */
+        /* Contatti & Form */
         .contact-section {
             background: #FFFFFF;
             border-top: 1px solid var(--border-color);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
         }
 
         .contact-card {
@@ -333,9 +379,7 @@
             border: 1px solid var(--border-color);
             padding: 35px;
             border-radius: 10px;
-            max-width: 550px;
-            margin: 0 auto;
-            text-align: center;
+            height: 100%;
         }
 
         .contact-card h3 {
@@ -352,7 +396,7 @@
 
         .contact-info p {
             font-size: 1rem;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             color: var(--text-dark);
         }
 
@@ -364,6 +408,57 @@
 
         .contact-info a:hover {
             color: var(--accent-orange);
+        }
+
+        /* Styling Form */
+        .contact-form {
+            background: var(--bg-light);
+            border: 1px solid var(--border-color);
+            padding: 35px;
+            border-radius: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--primary-navy);
+            margin-bottom: 5px;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            background: #FFFFFF;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-orange);
+        }
+
+        .submit-btn {
+            width: 100%;
+            background-color: var(--primary-navy);
+            color: #FFFFFF;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .submit-btn:hover {
+            background-color: var(--primary-navy-dark);
         }
 
         /* Footer A Norma UE */
@@ -468,6 +563,7 @@
                 <div class="nav-links">
                     <a href="#mission" data-i18n="nav_mission">Missione</a>
                     <a href="#stewardship" data-i18n="nav_stewardship">Progetto Futuro</a>
+                    <a href="#roadmap" data-i18n="nav_roadmap">Roadmap</a>
                     <a href="#aree" data-i18n="nav_areas">Aree d'Intervento</a>
                     <a href="#contatti" data-i18n="nav_contacts">Contatti</a>
                 </div>
@@ -534,8 +630,46 @@
         </div>
     </section>
 
+    <!-- Nuova Sezione: Roadmap Primi 90 Giorni -->
+    <section id="roadmap">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="roadmap_title">Roadmap dei Primi 90 Giorni</h2>
+                <p data-i18n="roadmap_desc">Un approccio metodologico e graduale per garantire il successo dell'intervento.</p>
+            </div>
+
+            <div class="roadmap-grid">
+                <div class="roadmap-step">
+                    <div class="step-num" data-i18n="step1_tag">Fase 1 • Sett. 1–2</div>
+                    <h4 data-i18n="step1_title">Fotografia Iniziale</h4>
+                    <p data-i18n="step1_desc">NDA, analisi documentale, interviste aziendali e mappa dei rischi operativi immediati.</p>
+                </div>
+                <div class="roadmap-step">
+                    <div class="step-num" data-i18n="step2_tag">Fase 2 • Sett. 3–6</div>
+                    <h4 data-i18n="step2_title">Due Diligence Operativa</h4>
+                    <p data-i18n="step2_desc">Analisi approfondita di produzione, qualità, fornitori, persone e controllo economico.</p>
+                </div>
+                <div class="roadmap-step">
+                    <div class="step-num" data-i18n="step3_tag">Fase 3 • Mese 2</div>
+                    <h4 data-i18n="step3_title">Piano Operativo</h4>
+                    <p data-i18n="step3_desc">Definizione matrice delle deleghe, budget, indicatori KPI e piano di stabilizzazione.</p>
+                </div>
+                <div class="roadmap-step">
+                    <div class="step-num" data-i18n="step4_tag">Fase 4 • Mesi 2–3</div>
+                    <h4 data-i18n="step4_title">Attivazione & Presidio</h4>
+                    <p data-i18n="step4_desc">Presidio sul campo, attivazione dashboard di monitoraggio e avvio azioni prioritarie.</p>
+                </div>
+                <div class="roadmap-step">
+                    <div class="step-num" data-i18n="step5_tag">Fase 5 • Fine Mese 3</div>
+                    <h4 data-i18n="step5_title">Verifica Avanzamento</h4>
+                    <p data-i18n="step5_desc">Confronto baseline/risultati e pianificazione condivisa della fase successiva.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Aree Operative -->
-    <section id="aree">
+    <section id="aree" style="background-color: #FFFFFF;">
         <div class="container">
             <div class="section-title">
                 <h2 data-i18n="areas_title">Aree Operative Presidiate</h2>
@@ -583,7 +717,7 @@
     </section>
 
     <!-- Risultati / ROI -->
-    <section style="background-color: #FFFFFF;">
+    <section>
         <div class="container">
             <div class="section-title">
                 <h2 data-i18n="roi_title">Ritorno sull'Investimento e Risultati</h2>
@@ -611,7 +745,7 @@
         </div>
     </section>
 
-    <!-- Contatti -->
+    <!-- Contatti & Form Diretto Trilingue -->
     <section id="contatti" class="contact-section">
         <div class="container">
             <div class="section-title">
@@ -619,12 +753,41 @@
                 <p data-i18n="contact_desc">Pianifichiamo una conversazione riservata per analizzare la situazione della tua impresa senza impegno.</p>
             </div>
 
-            <div class="contact-card">
-                <h3>Francesco Malmusi</h3>
-                <div class="role">Founder & Executive Consultant</div>
-                <div class="contact-info">
-                    <p>📧 Email: <a href="mailto:strueng2026@proton.me">strueng2026@proton.me</a></p>
-                    <p>📱 <span data-i18n="phone">Telefono</span>: <a href="tel:+393897870017">+39 389 78 70 017</a></p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Francesco Malmusi</h3>
+                    <div class="role">Founder & Executive Consultant</div>
+                    <div class="contact-info">
+                        <p>📧 Email: <a href="mailto:strueng2026@proton.me">strueng2026@proton.me</a></p>
+                        <p>📱 <span data-i18n="phone">Telefono</span>: <a href="tel:+393897870017">+39 389 78 70 017</a></p>
+                    </div>
+                </div>
+
+                <!-- Form di Contatto Trilingue (Collegabile a Formspree) -->
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+                        <div class="form-group">
+                            <label data-i18n="form_name">Nome e Cognome *</label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="form_company">Azienda / Società *</label>
+                            <input type="text" name="company" required>
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="form_email">E-mail *</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="form_phone">Telefono</label>
+                            <input type="tel" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="form_message">Messaggio / Messaggio di presentazione *</label>
+                            <textarea name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" data-i18n="form_btn">Invia Richiesta</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -666,7 +829,7 @@
             <span class="modal-close" onclick="closeModal()">&times;</span>
             <h2 style="color: var(--primary-navy); margin-bottom: 15px;" data-i18n="modal_title">Informativa sulla Privacy (GDPR UE 2016/679)</h2>
             <p style="margin-bottom: 12px;" data-i18n="modal_p1"><strong>Titolare del Trattamento:</strong> STRUCTURED ENGINEERING S.R.L., Bd. Theodor Pallady nr. 66A, Bucarest (Romania), CUI: RO53442496.</p>
-            <p style="margin-bottom: 12px;" data-i18n="modal_p2"><strong>Trattamento Dati:</strong> I dati personali forniti volontariamente dall'utente via e-mail o telefono (es. nome, indirizzo e-mail, recapito telefonico) vengono utilizzati esclusivamente per rispondere alle richieste di contatto e consulenza.</p>
+            <p style="margin-bottom: 12px;" data-i18n="modal_p2"><strong>Trattamento Dati:</strong> I dati personali forniti volontariamente dall'utente via e-mail o telefono vengono utilizzati esclusivamente per rispondere alle richieste di contatto e consulenza.</p>
             <p style="margin-bottom: 12px;" data-i18n="modal_p3"><strong>Cookie:</strong> Questo sito web ha carattere meramente informativo e NON utilizza cookie di profilazione, tracciamento o terze parti a fini pubblicitari.</p>
             <p data-i18n="modal_p4"><strong>Diritti dell'Interessato:</strong> Ai sensi degli artt. 15-22 del Regolamento UE 2016/679, l'utente ha il diritto di accedere, rettificare o richiedere la cancellazione dei propri dati scrivendo a: <strong>strueng2026@proton.me</strong>.</p>
         </div>
@@ -678,6 +841,7 @@
             it: {
                 nav_mission: "Missione",
                 nav_stewardship: "Progetto Futuro",
+                nav_roadmap: "Roadmap",
                 nav_areas: "Aree d'Intervento",
                 nav_contacts: "Contatti",
                 hero_subtitle: "COSTRUIAMO CONTINUITÀ. PROTEGGIAMO IL TUO VALORE.",
@@ -696,6 +860,23 @@
                 card3_desc: "Affiancamento e coordinamento in produzione, qualità, supply chain e gestione clienti con interventi continui o fractional.",
                 promise_title: "La Promessa Corretta",
                 promise_desc: "Nessun stravolgimento aziendale: trasferiamo il know-how, organizziamo responsabilità e controlli, rendendo l'impresa gradualmente meno dipendente dalla presenza quotidiana del proprietario.",
+                roadmap_title: "Roadmap dei Primi 90 Giorni",
+                roadmap_desc: "Un approccio metodologico e graduale per garantire il successo dell'intervento.",
+                step1_tag: "Fase 1 • Sett. 1–2",
+                step1_title: "Fotografia Iniziale",
+                step1_desc: "NDA, analisi documentale, interviste aziendali e mappa dei rischi operativi immediati.",
+                step2_tag: "Fase 2 • Sett. 3–6",
+                step2_title: "Due Diligence Operativa",
+                step2_desc: "Analisi approfondita di produzione, qualità, fornitori, persone e controllo economico.",
+                step3_tag: "Fase 3 • Mese 2",
+                step3_title: "Piano Operativo",
+                step3_desc: "Definizione matrice delle deleghe, budget, indicatori KPI e piano di stabilizzazione.",
+                step4_tag: "Fase 4 • Mesi 2–3",
+                step4_title: "Attivazione & Presidio",
+                step4_desc: "Presidio sul campo, attivazione dashboard di monitoraggio e avvio azioni prioritarie.",
+                step5_tag: "Fase 5 • Fine Mese 3",
+                step5_title: "Verifica Avanzamento",
+                step5_desc: "Confronto baseline/risultati e pianificazione condivisa della fase successiva.",
                 areas_title: "Aree Operative Presidiate",
                 areas_desc: "Competenza ed esecuzione diretta nei settori chiavi del manifatturiero e delle lavorazioni CNC.",
                 area1_title: "Operations & Produzione",
@@ -723,6 +904,12 @@
                 contact_title: "Primo Passo: Incontro Preliminare",
                 contact_desc: "Pianifichiamo una conversazione riservata per analizzare la situazione della tua impresa senza impegno.",
                 phone: "Telefono",
+                form_name: "Nome e Cognome *",
+                form_company: "Azienda / Società *",
+                form_email: "E-mail *",
+                form_phone: "Telefono",
+                form_message: "Messaggio / Richiesta *",
+                form_btn: "Invia Richiesta",
                 footer_legal_title: "Dati Societari",
                 footer_privacy_title: "Informativa & Compliance UE",
                 footer_privacy_link: "Privacy & Cookie Policy (GDPR)",
@@ -737,6 +924,7 @@
             en: {
                 nav_mission: "Mission",
                 nav_stewardship: "Future Project",
+                nav_roadmap: "Roadmap",
                 nav_areas: "Key Areas",
                 nav_contacts: "Contacts",
                 hero_subtitle: "BUILDING CONTINUITY. PROTECTING YOUR VALUE.",
@@ -755,6 +943,23 @@
                 card3_desc: "Hands-on support in production, quality, supply chain, and client management via full-time or fractional engagement.",
                 promise_title: "The Core Promise",
                 promise_desc: "No disruption: we transfer know-how, assign clear responsibilities, and establish controls, making the business steadily less dependent on the owner's daily presence.",
+                roadmap_title: "First 90 Days Roadmap",
+                roadmap_desc: "A methodological and step-by-step approach to ensure intervention success.",
+                step1_tag: "Phase 1 • Wk 1–2",
+                step1_title: "Initial Assessment",
+                step1_desc: "NDA, document review, team interviews, and immediate risk mapping.",
+                step2_tag: "Phase 2 • Wk 3–6",
+                step2_title: "Operational Due Diligence",
+                step2_desc: "In-depth audit of operations, quality, supply chain, staff, and financial management.",
+                step3_tag: "Phase 3 • Month 2",
+                step3_title: "Operational Plan",
+                step3_desc: "Delegation matrix definition, budget allocation, KPI metrics, and stabilization plan.",
+                step4_tag: "Phase 4 • Mth 2–3",
+                step4_title: "Activation & Execution",
+                step4_desc: "On-site management, tracking dashboard deployment, and immediate action items.",
+                step5_tag: "Phase 5 • End Mth 3",
+                step5_title: "Progress Audit",
+                step5_desc: "Baseline vs. results review and strategic alignment for the next phase.",
                 areas_title: "Operational Areas Managed",
                 areas_desc: "Direct execution expertise across manufacturing and CNC machining sectors.",
                 area1_title: "Operations & Production",
@@ -782,6 +987,12 @@
                 contact_title: "First Step: Preliminary Meeting",
                 contact_desc: "Let's schedule a confidential discussion to evaluate your business scenario without obligation.",
                 phone: "Phone",
+                form_name: "Full Name *",
+                form_company: "Company Name *",
+                form_email: "Email Address *",
+                form_phone: "Phone Number",
+                form_message: "Message / Request *",
+                form_btn: "Submit Request",
                 footer_legal_title: "Company Details",
                 footer_privacy_title: "Compliance & Legal UE",
                 footer_privacy_link: "Privacy & Cookie Policy (GDPR)",
@@ -796,6 +1007,7 @@
             ro: {
                 nav_mission: "Misiune",
                 nav_stewardship: "Proiect Viitor",
+                nav_roadmap: "Roadmap",
                 nav_areas: "Domenii de Intervenție",
                 nav_contacts: "Contact",
                 hero_subtitle: "CONSTRUIM CONTINUITATE. PROTEJĂM VALOAREA TA.",
@@ -814,6 +1026,23 @@
                 card3_desc: "Coordonare în producție, calitate, lanț de aprovizionare și relații cu clienții prin prezență continuă sau fractional.",
                 promise_title: "Promisiunea Noastră",
                 promise_desc: "Fără perturbări: transferăm know-how-ul, organizăm responsabilitățile și controalele, făcând compania mai puțin dependentă de prezența zilnică a proprietarului.",
+                roadmap_title: "Roadmap Primele 90 de Zile",
+                roadmap_desc: "O abordare metodologică și treptată pentru a asigura succesul intervenției.",
+                step1_tag: "Faza 1 • Săpt. 1–2",
+                step1_title: "Analiză Ințială",
+                step1_desc: "NDA, analiza documentelor, interviuri interne și harta riscurilor operative imediate.",
+                step2_tag: "Faza 2 • Săpt. 3–6",
+                step2_title: "Due Diligence Operativ",
+                step2_desc: "Audit detaliat de producție, calitate, furnizori, resurse umane și control economic.",
+                step3_tag: "Faza 3 • Luna 2",
+                step3_title: "Plan Operativ",
+                step3_desc: "Definirea matricei de delegare, buget, indicatori KPI și plan de stabilizare.",
+                step4_tag: "Faza 4 • Luni 2–3",
+                step4_title: "Execuție & Monitorizare",
+                step4_desc: "Coordonare directă pe teren, activarea dashboard-ului și inițierea acțiunilor prioritare.",
+                step5_tag: "Faza 5 • Sfârșit Luna 3",
+                step5_title: "Audit de Progres",
+                step5_desc: "Evaluare rezultate față de linia de bază și planificarea strategiei pentru faza următoare.",
                 areas_title: "Domenii Operative Presidate",
                 areas_desc: "Competență și execuție directă în sectoarele cheie ale industriei prelucrătoare și prelucrărilor CNC.",
                 area1_title: "Operations & Producție",
@@ -841,6 +1070,12 @@
                 contact_title: "Primul Pas: Întâlnire Preliminară",
                 contact_desc: "Programăm o discuție confidențială pentru a analiza situația companiei dumneavoastră, fără niciun angajament.",
                 phone: "Telefon",
+                form_name: "Nume și Prenume *",
+                form_company: "Companie / Societate *",
+                form_email: "E-mail *",
+                form_phone: "Telefon",
+                form_message: "Mesaj / Solicitare *",
+                form_btn: "Trimite Solicitarea",
                 footer_legal_title: "Date Societate",
                 footer_privacy_title: "Conformitate UE",
                 footer_privacy_link: "Confidențialitate și Cookie (GDPR)",
