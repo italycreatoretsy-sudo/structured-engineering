@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francesco Malmusi | Contatto Digitale - Structured Engineering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #17365D;
+            --navy-dark: #0f243f;
+            --orange: #E67E21;
+            --bg: #F4F7FA;
+            --card-bg: #FFFFFF;
+            --text: #2C3E50;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card-container {
+            background: var(--card-bg);
+            width: 100%;
+            max-width: 420px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            border: 1px solid #E2E8F0;
+        }
+
+        .card-header {
+            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
+            color: white;
+            padding: 35px 25px;
+            text-align: center;
+            position: relative;
+            border-bottom: 4px solid var(--orange);
+        }
+
+        .hexagon-logo {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 15px auto;
+            background: var(--orange);
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1.4rem;
+            color: white;
+            box-shadow: 0 4px 10px rgba(230, 126, 33, 0.4);
+        }
+
+        .card-header h1 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 4px;
+        }
+
+        .card-header .company {
+            color: var(--orange);
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .card-header .role {
+            font-size: 0.95rem;
+            color: #CBD5E1;
+            margin-top: 6px;
+            font-weight: 400;
+        }
+
+        .card-body {
+            padding: 25px;
+        }
+
+        .save-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            background-color: var(--orange);
+            color: white;
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            box-shadow: 0 4px 15px rgba(230, 126, 33, 0.3);
+            margin-bottom: 25px;
+            transition: transform 0.2s;
+        }
+
+        .save-btn:hover {
+            transform: translateY(-2px);
+            background-color: #d36e19;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #F1F5F9;
+            text-decoration: none;
+            color: var(--text);
+        }
+
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: #EBF3FA;
+            color: var(--navy);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .details label {
+            display: block;
+            font-size: 0.75rem;
+            color: #64748B;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .details span {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--navy);
+        }
+
+        .badge-container {
+            display: flex;
+            gap: 8px;
+            margin-top: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            font-size: 0.75rem;
+            background: #F1F5F9;
+            color: var(--navy);
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-weight: 600;
+            border: 1px solid #CBD5E1;
+        }
+
+        .footer-text {
+            text-align: center;
+            padding: 15px;
+            font-size: 0.8rem;
+            color: #94A3B8;
+            background: #FAFAFA;
+            border-top: 1px solid #F1F5F9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <div class="card-header">
+            <!-- Icona Esagonale con S di Structured Engineering -->
+            <div class="hexagon-logo">SE</div>
+            <h1>Francesco Malmusi</h1>
+            <div class="company">Structured Engineering S.r.l.</div>
+            <div class="role">Founder & Executive Consultant</div>
+        </div>
+
+        <div class="card-body">
+            <!-- Pulsante che fa scaricare direttamente il contatto per la rubrica -->
+            <a href="contatto.vcf" class="save-btn">
+                💾 Salva nei Contatti dello Smartphone
+            </a>
+
+            <a href="tel:+393897870017" class="contact-item">
+                <div class="icon">📞</div>
+                <div class="details">
+                    <label>Telefono / WhatsApp</label>
+                    <span>+39 389 78 70 017</span>
+                </div>
+            </a>
+
+            <a href="mailto:strueng2026@proton.me" class="contact-item">
+                <div class="icon">✉️</div>
+                <div class="details">
+                    <label>Email Ufficiale</label>
+                    <span>strueng2026@proton.me</span>
+                </div>
+            </a>
+
+            <a href="https://www.structuredengineeringsrl.com" class="contact-item">
+                <div class="icon">🌐</div>
+                <div class="details">
+                    <label>Sito Web</label>
+                    <span>structuredengineeringsrl.com</span>
+                </div>
+            </a>
+
+            <!-- Mappe / Coordinate Bucarest -->
+            <a href="https://www.google.com/maps/search/?api=1&query=44.4323,26.1063" target="_blank" class="contact-item">
+                <div class="icon">📍</div>
+                <div class="details">
+                    <label>Ufficio Bucarest (Coordinate GPS)</label>
+                    <span>44.4323, 26.1063 (Apri in Mappe)</span>
+                </div>
+            </a>
+
+            <div class="badge-container">
+                <span class="badge">IATF 16949</span>
+                <span class="badge">ISO 9001</span>
+                <span class="badge">Temporary Stewardship</span>
+            </div>
+        </div>
+
+        <div class="footer-text">
+            © Structured Engineering S.r.l. • Continuous Operations
+        </div>
+    </div>
+
+</body>
+</html>
