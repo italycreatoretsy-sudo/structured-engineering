@@ -598,55 +598,59 @@
     </style>
 </head>
 <body>
-       <!-- Navigazione Glassmorphic -->
-    <nav>
-        <div class="container nav-content">
-            <!-- LOGO NAVBAR: Aggiunto il tag <a> per mantenere l'allineamento e il link -->
-            <a href="#" class="logo-brand">
-                <img src="logo.svg" alt="Structured Engineering Logo" style="height: 44px; width: auto;">
-            </a>
-            <div class="nav-right">
-                <div class="nav-links">
-                    <a href="#mission" data-i18n="nav_mission">Missione</a>
-                    <a href="#criticita" data-i18n="nav_criticita">Criticità</a>
-                    <a href="#stewardship" data-i18n="nav_stewardship">Progetto Futuro</a>
-                    <a href="#casi" data-i18n="nav_casi">Esempi</a>
-                    <a href="#internazionale" data-i18n="nav_inter">Internazionale</a>
-                    <a href="#roadmap" data-i18n="nav_roadmap">Roadmap</a>
-                    <a href="#aree" data-i18n="nav_areas">Aree</a>
-                    <a href="#questionario" data-i18n="nav_questionnaire">Questionario</a>
-                    <a href="#contatti" data-i18n="nav_contacts">Contatti</a>
-                </div>
-                <div class="lang-switch">
-                    <button class="lang-btn active" onclick="setLanguage('it')">IT</button>
-                    <button class="lang-btn" onclick="setLanguage('en')">EN</button>
-                    <button class="lang-btn" onclick="setLanguage('ro')">RO</button>
-                </div>
+     <!-- Navigazione Glassmorphic -->
+<nav>
+    <div class="container nav-content">
+        <a href="#" class="logo-brand">
+            <!-- LOGO NAVBAR - BIANCO e PICCOLO -->
+            <img src="logo.svg" alt="Structured Engineering Logo" 
+                 style="height: 32px; width: auto; filter: brightness(0) invert(1);">
+        </a>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="#mission" data-i18n="nav_mission">Missione</a>
+                <a href="#criticita" data-i18n="nav_criticita">Criticità</a>
+                <a href="#stewardship" data-i18n="nav_stewardship">Progetto Futuro</a>
+                <a href="#casi" data-i18n="nav_casi">Esempi</a>
+                <a href="#internazionale" data-i18n="nav_inter">Internazionale</a>
+                <a href="#roadmap" data-i18n="nav_roadmap">Roadmap</a>
+                <a href="#aree" data-i18n="nav_areas">Aree</a>
+                <a href="#questionario" data-i18n="nav_questionnaire">Questionario</a>
+                <a href="#contatti" data-i18n="nav_contacts">Contatti</a>
+            </div>
+            <div class="lang-switch">
+                <button class="lang-btn active" onclick="setLanguage('it')">IT</button>
+                <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+                <button class="lang-btn" onclick="setLanguage('ro')">RO</button>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <!-- Header Hero Sfumato Hi-Tech -->
-    <header class="hero">
-        <div class="container">
-            <div style="margin-bottom: 25px;">
-                <!-- LOGO HERO: Dimensioni ingrandite per la sezione principale -->
-                <img src="logo.svg" alt="Structured Engineering Logo con Tagline" style="max-width: 500px; width: 92%; height: auto;">
-            </div>
-            
-            <div class="subtitle" data-i18n="hero_subtitle">COSTRUIAMO CONTINUITÀ. PROTEGGIAMO IL TUO VALORE.</div>
-            <p class="description" data-i18n="hero_desc">
-                Operational Continuity • Temporary Stewardship • Supply Chain Resilience<br>
-                Soluzioni integrate di affiancamento operativo e strategico per PMI meccaniche e manifatturiere.
-            </p>
-            <div class="hero-btn-container">
-                <!-- Pulsante 1: Scorre direttamente alla sezione Questionario -->
-                <a href="#questionario" class="cta-btn" data-i18n="hero_cta">Verifica quanto la tua azienda è realmente autonoma</a>
-                <!-- Pulsante 2: Solo Informazioni -->
-                <a href="#contatti" class="cta-btn-secondary" data-i18n="hero_cta_info">Richiedi Solo Informazioni</a>
-            </div>
+<header class="hero">
+    <div class="container">
+        <!-- LOGO HERO - BIANCO e PROPORZIONI RIDOTTE -->
+        <div style="margin-bottom: 35px;">
+            <img src="logo.svg" alt="Structured Engineering Logo con Tagline" 
+                 style="max-width: 420px; width: 85%; height: auto; 
+                        filter: brightness(0) invert(1); 
+                        display: block; 
+                        margin: 0 auto;">
         </div>
-    </header>
+        
+        <div class="subtitle" data-i18n="hero_subtitle">COSTRUIAMO CONTINUITÀ. PROTEGGIAMO IL TUO VALORE.</div>
+        <p class="description" data-i18n="hero_desc">
+            Operational Continuity • Temporary Stewardship • Supply Chain Resilience<br>
+            Soluzioni integrate di affiancamento operativo e strategico per PMI meccaniche e manifatturiere.
+        </p>
+        <div class="hero-btn-container">
+            <a href="#questionario" class="cta-btn" data-i18n="hero_cta">Verifica quanto la tua azienda è realmente autonoma</a>
+            <a href="#contatti" class="cta-btn-secondary" data-i18n="hero_cta_info">Richiedi Solo Informazioni</a>
+        </div>
+    </div>
+</header>
+    
     <!-- Missione & Frase Forte -->
     <section id="mission">
         <div class="container">
