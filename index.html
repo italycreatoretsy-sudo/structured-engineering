@@ -16,7 +16,7 @@
     <style>
         :root {
             --primary-navy: #17365D;
-            --primary-navy-dark: #0f243f;
+            --primary-navy-dark: #0b1a2e;
             --accent-orange: #E67E21;
             --accent-blue: #0076CE;
             --bg-light: #F4F7FA;
@@ -48,12 +48,13 @@
 
         /* Navigazione */
         nav {
-            background: var(--primary-navy-dark);
+            background: rgba(11, 26, 46, 0.95);
+            backdrop-filter: blur(10px);
             padding: 12px 0;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .nav-content {
@@ -117,13 +118,27 @@
             color: #FFFFFF;
         }
 
-        /* Hero Header */
+        /* Header Hero Hi-Tech sfumato continuo */
         header.hero {
-            background: linear-gradient(135deg, var(--primary-navy-dark) 0%, var(--primary-navy) 100%);
+            background: radial-gradient(circle at 80% 20%, #1e4575 0%, var(--primary-navy-dark) 70%);
             color: #FFFFFF;
-            padding: 70px 0;
+            padding: 80px 0 70px 0;
             text-align: center;
             border-bottom: 4px solid var(--accent-orange);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Sfondo liquido tech sottile */
+        header.hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 30% 50%, rgba(230, 126, 33, 0.08) 0%, transparent 50%);
+            pointer-events: none;
         }
 
         .hero .subtitle {
@@ -180,7 +195,7 @@
             margin-top: 8px;
         }
 
-        /* Hero Box */
+        /* Hero Box con effetto Vetro opaco Hi-Tech */
         .hero-box {
             background: #FFFFFF;
             border-left: 6px solid var(--accent-orange);
@@ -530,21 +545,17 @@
 
 <body>
 
-    <!-- Navigazione con Logo Ufficiale e SRL Avvicinato e Ingrandito -->
+    <!-- Navigazione Glassmorphic -->
     <nav>
         <div class="container nav-content">
             <a href="#" class="logo-brand">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 120" style="height: 44px; width: auto;">
-                    <!-- Esagono S Nastro Corretto -->
                     <g fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linejoin="round" stroke-linecap="square">
                         <path d="M55 12 L100 37.5 L100 87.5 L55 113 L10 87.5 L10 37.5 Z" />
-                        <!-- Nastro S -->
                         <path d="M78 38 L30 38 L30 62 L80 62 L80 86 L32 86" />
                     </g>
-                    <!-- Testo Structured Engineering -->
                     <text x="120" y="48" font-family="'Inter', sans-serif" font-weight="800" font-size="34" fill="#FFFFFF" letter-spacing="1">STRUCTURED</text>
                     <text x="120" y="86" font-family="'Inter', sans-serif" font-weight="800" font-size="34" fill="#FFFFFF" letter-spacing="1">ENGINEERING</text>
-                    <!-- SRL Avvicinato alla parola ENGINEERING e Ingrandito -->
                     <text x="365" y="86" font-family="'Inter', sans-serif" font-weight="800" font-size="22" fill="#E67E21">SRL</text>
                 </svg>
             </a>
@@ -565,23 +576,18 @@
         </div>
     </nav>
 
-    <!-- Header Hero con Logo Vettoriale -->
+    <!-- Header Hero Sfumato Hi-Tech -->
     <header class="hero">
         <div class="container">
             <div style="margin-bottom: 25px;">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 150" style="max-width: 500px; width: 92%; height: auto;">
-                    <!-- Esagono S Nastro Corretto -->
                     <g fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linejoin="round" stroke-linecap="square">
                         <path d="M55 12 L100 37.5 L100 87.5 L55 113 L10 87.5 L10 37.5 Z" />
-                        <!-- Nastro S -->
                         <path d="M78 38 L30 38 L30 62 L80 62 L80 86 L32 86" />
                     </g>
-                    <!-- Testo Logo -->
                     <text x="120" y="48" font-family="'Inter', sans-serif" font-weight="800" font-size="34" fill="#FFFFFF" letter-spacing="1">STRUCTURED</text>
                     <text x="120" y="86" font-family="'Inter', sans-serif" font-weight="800" font-size="34" fill="#FFFFFF" letter-spacing="1">ENGINEERING</text>
-                    <!-- SRL Ingrandito e Allineato -->
                     <text x="365" y="86" font-family="'Inter', sans-serif" font-weight="800" font-size="22" fill="#E67E21">SRL</text>
-                    <!-- Tagline Sotto -->
                     <text x="120" y="120" font-family="'Inter', sans-serif" font-weight="500" font-size="16" fill="#E2E8F0" letter-spacing="0.5">Engineering Structure. Operational Continuity.</text>
                 </svg>
             </div>
