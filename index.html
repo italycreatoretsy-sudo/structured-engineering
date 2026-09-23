@@ -121,21 +121,25 @@
         header.hero {
             background: linear-gradient(135deg, var(--primary-navy-dark) 0%, var(--primary-navy) 100%);
             color: #FFFFFF;
-            padding: 80px 0 70px 0;
+            padding: 70px 0;
             text-align: center;
             border-bottom: 4px solid var(--accent-orange);
         }
 
-        .hero-logo-container {
-            margin-bottom: 25px;
+        .hero-logo-box {
+            background: #FFFFFF;
+            padding: 20px 30px;
+            border-radius: 12px;
+            display: inline-block;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
         }
 
-        .hero h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-            margin-bottom: 15px;
-            text-transform: uppercase;
+        .hero-logo-box img {
+            max-width: 420px;
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
         .hero .subtitle {
@@ -533,7 +537,7 @@
         }
 
         @media (max-width: 768px) {
-            .hero h1 { font-size: 1.8rem; }
+            .hero-logo-box img { max-width: 280px; }
             .hero .subtitle { font-size: 1.1rem; }
             .nav-links { display: none; }
             section { padding: 40px 0; }
@@ -547,16 +551,18 @@
     <nav>
         <div class="container nav-content">
             <a href="#" class="logo-brand">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" style="height: 42px; width: auto;">
-                    <!-- Esagono S Logo Bianco -->
-                    <g fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" style="height: 44px; width: auto;">
+                    <!-- Esagono S Nastro Corretto -->
+                    <g fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linejoin="round" stroke-linecap="square">
                         <path d="M55 12 L100 37.5 L100 87.5 L55 113 L10 87.5 L10 37.5 Z" />
-                        <path d="M35 42 L80 42 L35 83 L80 83" stroke-linecap="round"/>
+                        <!-- Nastro S -->
+                        <path d="M78 38 L30 38 L30 62 L80 62 L80 86 L32 86" />
                     </g>
-                    <!-- Testo Logo -->
-                    <text x="125" y="48" font-family="'Inter', sans-serif" font-weight="800" font-size="34" fill="#FFFFFF" letter-spacing="1">STRUCTURED</text>
-                    <text x="125" y="86" font-family="'Inter', sans-serif" font-weight="800" font-size="34" fill="#FFFFFF" letter-spacing="1">ENGINEERING</text>
-                    <text x="440" y="65" font-family="'Inter', sans-serif" font-weight="700" font-size="14" fill="#E67E21">SRL</text>
+                    <!-- Testo Structured Engineering -->
+                    <text x="120" y="48" font-family="'Inter', sans-serif" font-weight="800" font-size="34" fill="#FFFFFF" letter-spacing="1">STRUCTURED</text>
+                    <text x="120" y="86" font-family="'Inter', sans-serif" font-weight="800" font-size="34" fill="#FFFFFF" letter-spacing="1">ENGINEERING</text>
+                    <!-- Pedice SRL ingrandito e allineato -->
+                    <text x="445" y="65" font-family="'Inter', sans-serif" font-weight="800" font-size="20" fill="#E67E21">SRL</text>
                 </svg>
             </a>
             <div class="nav-right">
@@ -576,22 +582,24 @@
         </div>
     </nav>
 
-    <!-- Header Hero con Logo Vettoriale -->
+    <!-- Header Hero con Logo Vettoriale Perfetto -->
     <header class="hero">
         <div class="container">
-            <div class="hero-logo-container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 150" style="max-width: 480px; width: 90%; height: auto;">
-                    <!-- Esagono S Logo Bianco -->
-                    <g fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="round">
+            <div style="margin-bottom: 25px;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 150" style="max-width: 500px; width: 92%; height: auto;">
+                    <!-- Esagono S Nastro Corretto -->
+                    <g fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linejoin="round" stroke-linecap="square">
                         <path d="M55 12 L100 37.5 L100 87.5 L55 113 L10 87.5 L10 37.5 Z" />
-                        <path d="M35 42 L80 42 L35 83 L80 83" stroke-linecap="round"/>
+                        <!-- Nastro S -->
+                        <path d="M78 38 L30 38 L30 62 L80 62 L80 86 L32 86" />
                     </g>
                     <!-- Testo Logo -->
-                    <text x="125" y="48" font-family="'Inter', sans-serif" font-weight="800" font-size="34" fill="#FFFFFF" letter-spacing="1">STRUCTURED</text>
-                    <text x="125" y="86" font-family="'Inter', sans-serif" font-weight="800" font-size="34" fill="#FFFFFF" letter-spacing="1">ENGINEERING</text>
-                    <text x="440" y="65" font-family="'Inter', sans-serif" font-weight="700" font-size="14" fill="#E67E21">SRL</text>
+                    <text x="120" y="48" font-family="'Inter', sans-serif" font-weight="800" font-size="34" fill="#FFFFFF" letter-spacing="1">STRUCTURED</text>
+                    <text x="120" y="86" font-family="'Inter', sans-serif" font-weight="800" font-size="34" fill="#FFFFFF" letter-spacing="1">ENGINEERING</text>
+                    <!-- SRL Ingrandito e BEN Visibile -->
+                    <text x="445" y="65" font-family="'Inter', sans-serif" font-weight="800" font-size="20" fill="#E67E21">SRL</text>
                     <!-- Tagline Sotto -->
-                    <text x="125" y="118" font-family="'Inter', sans-serif" font-weight="400" font-size="16" fill="#E2E8F0" letter-spacing="0.5">Engineering Structure. Operational Continuity.</text>
+                    <text x="120" y="120" font-family="'Inter', sans-serif" font-weight="500" font-size="16" fill="#E2E8F0" letter-spacing="0.5">Engineering Structure. Operational Continuity.</text>
                 </svg>
             </div>
             
@@ -1066,7 +1074,7 @@
                 area3_title: "Supply Chain & Logistică",
                 area3_desc: "Securizarea furnizorilor critici, optimizarea stocurilor, timpi de livrare și reziliența lanțului de aprovizionare.",
                 area4_title: "Control Economic & Costuri",
-                area4_desc: "Analiza profitabilității pe comenzi, gestionarea costurilor de neconformitate și monitorizarea fluxului de numerar.",
+                area4_desc: "Analiza profitabilității pe comenzi, gestionarea costurilor di neconformitate și monitorizarea fluxului de numerar.",
                 area5_title: "Transfer de Know-How",
                 area5_desc: "Codificarea cunoștințelor critice și instruirea personalului intern pentru asigurarea stabilității în tranziție.",
                 area6_title: "Dezvoltare Comercială",
