@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Malmusi;Francesco;;;
+FN:Francesco Malmusi
+ORG:Structured Engineering S.r.l.
+TITLE:Founder & Executive Consultant
+TEL;TYPE=CELL,VOICE:+393897870017
+EMAIL;TYPE=INTERNET,WORK:strueng2026@proton.me
+URL;TYPE=WORK:https://www.structuredengineeringsrl.com
+GEO:44.4323;26.1063
+ADR;TYPE=WORK:;;Ufficio Bucarest;Bucarest;;;Romania
+NOTE:Operational Continuity & Temporary Stewardship | Automotive & Industrial Engineering
+END:VCARD
