@@ -102,7 +102,7 @@
             font-size: 1.05rem;
             box-shadow: 0 4px 15px rgba(230, 126, 33, 0.3);
             margin-bottom: 25px;
-            transition: transform 0.2s;
+            transition: transform 0.2s, background-color 0.2s;
         }
 
         .save-btn:hover {
@@ -117,6 +117,11 @@
             border-bottom: 1px solid #F1F5F9;
             text-decoration: none;
             color: var(--text);
+            transition: background-color 0.2s;
+        }
+
+        .contact-item:hover {
+            background-color: #F8FAFC;
         }
 
         .contact-item:last-child {
@@ -149,6 +154,7 @@
             font-size: 0.95rem;
             font-weight: 600;
             color: var(--navy);
+            word-break: break-all;
         }
 
         .badge-container {
@@ -183,7 +189,7 @@
 
     <div class="card-container">
         <div class="card-header">
-            <!-- Icona Esagonale con S di Structured Engineering -->
+            <!-- Icona Esagonale con SE di Structured Engineering -->
             <div class="hexagon-logo">SE</div>
             <h1>Francesco Malmusi</h1>
             <div class="company">Structured Engineering S.r.l.</div>
@@ -191,11 +197,12 @@
         </div>
 
         <div class="card-body">
-            <!-- Pulsante che fa scaricare direttamente il contatto per la rubrica -->
+            <!-- Pulsante per scaricare la vCard aggiornata -->
             <a href="contatto.vcf" class="save-btn">
                 💾 Salva nei Contatti dello Smartphone
             </a>
 
+            <!-- Telefono / WhatsApp -->
             <a href="tel:+393897870017" class="contact-item">
                 <div class="icon">📞</div>
                 <div class="details">
@@ -204,6 +211,7 @@
                 </div>
             </a>
 
+            <!-- Email Ufficiale -->
             <a href="mailto:strueng2026@proton.me" class="contact-item">
                 <div class="icon">✉️</div>
                 <div class="details">
@@ -212,7 +220,8 @@
                 </div>
             </a>
 
-            <a href="https://www.structuredengineeringsrl.com" class="contact-item">
+            <!-- Sito Web -->
+            <a href="https://www.structuredengineeringsrl.com" target="_blank" class="contact-item">
                 <div class="icon">🌐</div>
                 <div class="details">
                     <label>Sito Web</label>
@@ -220,7 +229,25 @@
                 </div>
             </a>
 
-            <!-- Mappe / Coordinate Bucarest -->
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/structured-engineering-a3227043a" target="_blank" class="contact-item">
+                <div class="icon">💼</div>
+                <div class="details">
+                    <label>LinkedIn</label>
+                    <span>Structured Engineering</span>
+                </div>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://www.youtube.com/@Structured-Engineering/videos" target="_blank" class="contact-item">
+                <div class="icon">▶️</div>
+                <div class="details">
+                    <label>YouTube Channel</label>
+                    <span>@Structured-Engineering</span>
+                </div>
+            </a>
+
+            <!-- Mappe / Coordinate GPS Bucarest -->
             <a href="https://www.google.com/maps/search/?api=1&query=44.4323,26.1063" target="_blank" class="contact-item">
                 <div class="icon">📍</div>
                 <div class="details">
@@ -229,6 +256,7 @@
                 </div>
             </a>
 
+            <!-- Tag / Specializzazioni -->
             <div class="badge-container">
                 <span class="badge">IATF 16949</span>
                 <span class="badge">ISO 9001</span>
