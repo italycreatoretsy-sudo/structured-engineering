@@ -137,7 +137,7 @@
             pointer-events: none;
         }
         .hero .subtitle {
-            font-size: 1.4rem;
+            font-size: 1.55rem; /* Ingrandito di 2pt per maggiore visibilità */
             color: var(--accent-orange);
             font-weight: 600;
             margin-bottom: 20px;
@@ -194,7 +194,7 @@
             margin-bottom: 40px;
         }
         .section-title h2 {
-            font-size: 2rem;
+            font-size: 2.15rem; /* Ingrandito di 2pt per leggibilità */
             color: var(--primary-navy);
             font-weight: 700;
         }
@@ -214,7 +214,7 @@
         }
         .hero-box h3 {
             color: var(--primary-navy);
-            font-size: 1.3rem;
+            font-size: 1.45rem; /* Ingrandito di 2pt */
             margin-bottom: 12px;
         }
         .hero-box p {
@@ -233,7 +233,7 @@
         }
         .strong-quote-box h3 {
             color: var(--accent-orange);
-            font-size: 1.3rem;
+            font-size: 1.45rem; /* Ingrandito di 2pt */
             margin-bottom: 12px;
             font-weight: 700;
         }
@@ -277,7 +277,7 @@
         }
         .criticality-card h4 {
             color: var(--primary-navy);
-            font-size: 1rem;
+            font-size: 1.15rem; /* Ingrandito di 2pt */
             font-weight: 600;
         }
         /* Grid & Cards Generali */
@@ -299,7 +299,7 @@
         }
         .card h3 {
             color: var(--primary-navy);
-            font-size: 1.2rem;
+            font-size: 1.35rem; /* Ingrandito di 2pt */
             margin-bottom: 12px;
             border-bottom: 2px solid var(--border-color);
             padding-bottom: 8px;
@@ -364,7 +364,7 @@
         }
         .roadmap-step h4 {
             color: var(--primary-navy);
-            font-size: 1.05rem;
+            font-size: 1.18rem; /* Ingrandito di 2pt */
             margin-bottom: 8px;
         }
         .roadmap-step p {
@@ -382,7 +382,7 @@
         }
         .promise-banner h3 {
             color: var(--accent-orange);
-            font-size: 1.4rem;
+            font-size: 1.55rem; /* Ingrandito di 2pt */
             margin-bottom: 12px;
         }
         .promise-banner p {
@@ -469,7 +469,7 @@
         /* Header */
         .card-header h2 {
             margin: 0 0 4px 0;
-            font-size: 1.5rem;
+            font-size: 1.65rem; /* Ingrandito di 2pt */
             font-weight: 700;
             color: #0b2545;
         }
@@ -655,7 +655,7 @@
         }
         .footer-col h4 {
             color: #FFFFFF;
-            font-size: 1rem;
+            font-size: 1.15rem; /* Ingrandito di 2pt */
             margin-bottom: 12px;
         }
         .footer-col p {
@@ -710,7 +710,7 @@
             color: var(--text-muted);
         }
         @media (max-width: 768px) {
-            .hero .subtitle { font-size: 1.1rem; }
+            .hero .subtitle { font-size: 1.25rem; }
             .nav-links { display: none; }
             section { padding: 40px 0; }
             .hero-btn-container { flex-direction: column; align-items: center; }
@@ -731,6 +731,7 @@
                     <a href="#criticita" data-i18n="nav_criticita">Criticità</a>
                     <a href="#stewardship" data-i18n="nav_stewardship">Progetto Futuro</a>
                     <a href="#casi" data-i18n="nav_casi">Esempi</a>
+                    <a href="#roi" data-i18n="nav_roi">Risultati</a>
                     <a href="#internazionale" data-i18n="nav_inter">Internazionale</a>
                     <a href="#roadmap" data-i18n="nav_roadmap">Roadmap</a>
                     <a href="#aree" data-i18n="nav_areas">Aree</a>
@@ -887,8 +888,9 @@
             </div>
         </div>
     </section>
-    <!-- Risultati / ROI (Spostato qui per evidenziare subito l'impatto economico) -->
-    <section>
+
+    <!-- Risultati / ROI (SPOSTATO SUBITO DOPO I CASI PRATICI CON NOTA PRECISAZIONE) -->
+    <section id="roi">
         <div class="container">
             <div class="section-title">
                 <h2 data-i18n="roi_title">Ritorno sull'Investimento e Risultati</h2>
@@ -915,6 +917,7 @@
             </div>
         </div>
     </section>
+
     <!-- Asse Internazionale -->
     <section id="internazionale" class="international-section">
         <div class="container">
@@ -923,7 +926,7 @@
                 <p data-i18n="inter_desc">Una visione industriale estesa e radicata nei mercati chiave dell'Europa centro-orientale.</p>
             </div>
             <div class="international-box">
-                <h3 style="color: var(--primary-navy); margin-bottom: 12px; font-size: 1.3rem;" data-i18n="inter_box_title">Il network operativo tra Italia, Romania e Ungheria</h3>
+                <h3 style="color: var(--primary-navy); margin-bottom: 12px;" data-i18n="inter_box_title">Il network operativo tra Italia, Romania e Ungheria</h3>
                 <p style="color: var(--text-dark); margin-bottom: 15px; font-size: 1.05rem;" data-i18n="inter_box_desc">
                     La nostra forza distintiva risiede nella capacità di muoverci agilmente tra i distretti produttivi italiani e le piattaforme industriali in Romania e Ungheria, coordinando catene di fornitura complesse e progetti di espansione industriale sul campo.
                 </p>
@@ -1016,6 +1019,7 @@
             </div>
         </div>
     </section>
+    
     <!-- Form 1: Questionario Autonomia Aziendale (Totalmente Multilingua) -->
     <section id="questionario" class="questionnaire-section">
         <div class="container">
@@ -1215,6 +1219,7 @@
                 nav_criticita: "Criticità",
                 nav_stewardship: "Progetto Futuro",
                 nav_casi: "Esempi",
+                nav_roi: "Risultati",
                 nav_inter: "Internazionale",
                 nav_roadmap: "Roadmap",
                 nav_areas: "Aree",
@@ -1262,6 +1267,13 @@
                 case3_l1: "Coordinamento partner esteri",
                 case3_l2: "Sviluppo business transnazionale",
                 case3_l3: "Gestione strutturata stakeholder",
+                roi_title: "Ritorno sull'Investimento e Risultati",
+                roi_desc: "Metriche ed efficienza derivate dall'applicazione del nostro modello operativo.",
+                roi_disclaimer: "Esempio di indicatori di miglioramento. Baseline, obiettivi e tempi di conseguimento vengono definiti esclusivamente dopo l’assessment iniziale.",
+                stat1: "Riduzione Downtime",
+                stat2: "Aumento Produttività",
+                stat3: "Riduzione Costi Operativi",
+                stat4: "Incremento Margini",
                 inter_title: "Operatività Internazionale",
                 inter_desc: "Una visione industriale estesa e radicata nei mercati chiave dell'Europa centro-orientale.",
                 inter_box_title: "Il network operativo tra Italia, Romania e Ungheria",
@@ -1304,13 +1316,6 @@
                 cert_desc: "Esperienza diretta nei settori ad alta precisione: Automotive, Off-Highway e Meccanica Industriale.",
                 badge_cnc: "Lavorazioni CNC & Asportazione Truciolo",
                 badge_alloys: "Pezzi Sinterizzati e Leghe Leggere",
-                roi_title: "Ritorno sull'Investimento e Risultati",
-                roi_desc: "Metriche ed efficienza derivate dall'applicazione del nostro modello operativo.",
-                roi_disclaimer: "Esempio di indicatori di miglioramento. Baseline, obiettivi e tempi di conseguimento vengono definiti esclusivamente dopo l’assessment iniziale.",
-                stat1: "Riduzione Downtime",
-                stat2: "Aumento Produttività",
-                stat3: "Riduzione Costi Operativi",
-                stat4: "Incremento Margini",
                 quest_title: "Questionario di Autonomia Aziendale",
                 quest_desc: "Compila questo breve test per ricevere una valutazione preliminare sullo stato della tua continuità operativa.",
                 select_option: "Seleziona un'opzione",
@@ -1353,6 +1358,7 @@
                 nav_criticita: "Criticalities",
                 nav_stewardship: "Future Project",
                 nav_casi: "Cases",
+                nav_roi: "Results",
                 nav_inter: "International",
                 nav_roadmap: "Roadmap",
                 nav_areas: "Areas",
@@ -1400,6 +1406,13 @@
                 case3_l1: "Foreign partner coordination",
                 case3_l2: "Transnational business development",
                 case3_l3: "Structured stakeholder management",
+                roi_title: "Return on Investment & Results",
+                roi_desc: "Efficiency metrics derived from the execution of our operational framework.",
+                roi_disclaimer: "Example of improvement indicators. Baseline, objectives, and achievement timelines are defined exclusively after the initial assessment.",
+                stat1: "Downtime Reduction",
+                stat2: "Productivity Increase",
+                stat3: "Operational Cost Reduction",
+                stat4: "Margin Improvement",
                 inter_title: "International Operations",
                 inter_desc: "An extended industrial vision rooted in key Central-Eastern European markets.",
                 inter_box_title: "The operational network between Italy, Romania, and Hungary",
@@ -1442,13 +1455,6 @@
                 cert_desc: "Direct experience in high-precision sectors: Automotive, Off-Highway, and Industrial Machining.",
                 badge_cnc: "CNC Machining & Metal Cutting",
                 badge_alloys: "Sintered Parts & Light Alloys",
-                roi_title: "Return on Investment & Results",
-                roi_desc: "Efficiency metrics derived from the execution of our operational framework.",
-                roi_disclaimer: "Example of improvement indicators. Baseline, objectives, and achievement timelines are defined exclusively after the initial assessment.",
-                stat1: "Downtime Reduction",
-                stat2: "Productivity Increase",
-                stat3: "Operational Cost Reduction",
-                stat4: "Margin Improvement",
                 quest_title: "Business Autonomy Questionnaire",
                 quest_desc: "Complete this short test to receive a preliminary assessment of your operational continuity.",
                 select_option: "Select an option",
@@ -1491,6 +1497,7 @@
                 nav_criticita: "Criticități",
                 nav_stewardship: "Proiect Viitor",
                 nav_casi: "Exemple",
+                nav_roi: "Rezultate",
                 nav_inter: "Internațional",
                 nav_roadmap: "Roadmap",
                 nav_areas: "Domenii",
@@ -1538,6 +1545,13 @@
                 case3_l1: "Coordonare parteneri străini",
                 case3_l2: "Dezvoltare afaceri transnaționale",
                 case3_l3: "Management structurat al stakeholderilor",
+                roi_title: "Rendamentul Investiției și Rezultate",
+                roi_desc: "Metrici și eficiență derivate din aplicarea modelului nostru operativ.",
+                roi_disclaimer: "Exemplu de indicatori de îmbunătățire. Linia de bază, obiectivele și termenele de realizare sunt definite exclusiv după evaluarea inițială.",
+                stat1: "Reducere Timp Mort",
+                stat2: "Creștere Productivitate",
+                stat3: "Reducere Costuri Operative",
+                stat4: "Creștere Marje",
                 inter_title: "Operativitate Internațională",
                 inter_desc: "O viziune industrială extinsă, ancorată în piețele cheie din Europa Centrală și de Est.",
                 inter_box_title: "Rețeaua operativă între Italia, România și Ungaria",
@@ -1580,13 +1594,6 @@
                 cert_desc: "Experiență directă în Automotive, Off-Highway și Mecanică Industrială.",
                 badge_cnc: "Prelucrări CNC & Așchiere",
                 badge_alloys: "Piese Sinterizate și Aliaje Ușoare",
-                roi_title: "Rendamentul Investiției și Rezultate",
-                roi_desc: "Metrici și eficiență derivate din aplicarea modelului nostru operativ.",
-                roi_disclaimer: "Exemplu de indicatori de îmbunătățire. Linia de bază, obiectivele și termenele de realizare sunt definite exclusiv după evaluarea inițială.",
-                stat1: "Reducere Timp Mort",
-                stat2: "Creștere Productivitate",
-                stat3: "Reducere Costuri Operative",
-                stat4: "Creștere Marje",
                 quest_title: "Chestionar Autonomie Companie",
                 quest_desc: "Completează acest test scurt pentru a primi o evaluare preliminară.",
                 select_option: "Selectează o opțiune",
@@ -1629,6 +1636,7 @@
                 nav_criticita: "Kritikus pontok",
                 nav_stewardship: "Jövőbeli Projekt",
                 nav_casi: "Példák",
+                nav_roi: "Eredmények",
                 nav_inter: "Nemzetközi",
                 nav_roadmap: "Ütemterv",
                 nav_areas: "Területek",
@@ -1676,6 +1684,13 @@
                 case3_l1: "Külföldi partnerek koordinációja",
                 case3_l2: "Határon átnyúló üzletfejlesztés",
                 case3_l3: "Strukturált érdekelt-kezelés",
+                roi_title: "Befektetés Megtérülése és Eredmények",
+                roi_desc: "Operatív modellünk alkalmazásából származó hatékonyság.",
+                roi_disclaimer: "Példa a fejlesztési mutatókra. A kiindulási alapot, a célokat és a megvalósítási ütemtervet kizárólag az első értékelést követően határozzuk meg.",
+                stat1: "Leállási Idő Csökkenése",
+                stat2: "Termelékenység Növekedése",
+                stat3: "Működési Költség Csökkenés",
+                stat4: "Arrés Növekedés",
                 inter_title: "Nemzetközi Működés",
                 inter_desc: "Kiterjedt ipari jövőkép Közép-Kelet-Európában.",
                 inter_box_title: "Operatív hálózat Olaszország, Románia és Magyarország között",
@@ -1718,13 +1733,6 @@
                 cert_desc: "Tapasztalat az Automotive és Gépipari szektorokban.",
                 badge_cnc: "CNC Megmunkálás & Forgácsolás",
                 badge_alloys: "Szinterezett Alkatrészek & Könnyűfémek",
-                roi_title: "Befektetés Megtérülése",
-                roi_desc: "Operatív modellünk alkalmazásából származó hatékonyság.",
-                roi_disclaimer: "Példa a fejlesztési mutatókra. A kiindulási alapot, a célokat és a megvalósítási ütemtervet kizárólag az első értékelést követően határozzuk meg.",
-                stat1: "Leállási Idő Csökkenése",
-                stat2: "Termelékenység Növekedése",
-                stat3: "Működési Költség Csökkenés",
-                stat4: "Arrés Növekedés",
                 quest_title: "Vállalati Autonómia Kérdőív",
                 quest_desc: "Töltse ki a tesztet az operatív folytonosság értékeléséhez.",
                 select_option: "Válasszon opciót",
@@ -1767,6 +1775,7 @@
                 nav_criticita: "Puntos Críticos",
                 nav_stewardship: "Proyecto Futuro",
                 nav_casi: "Ejemplos",
+                nav_roi: "Resultados",
                 nav_inter: "Internacional",
                 nav_roadmap: "Hoja de Ruta",
                 nav_areas: "Áreas",
@@ -1814,6 +1823,13 @@
                 case3_l1: "Coordinación de socios extranjeros",
                 case3_l2: "Desarrollo de negocios transnacionales",
                 case3_l3: "Gestión estructurada de partes interesadas",
+                roi_title: "Retorno de Inversión y Resultados",
+                roi_desc: "Eficiencia derivada de nuestro modelo operativo.",
+                roi_disclaimer: "Ejemplo de indicadores de mejora. La línea de base, los objetivos y los plazos de logro se definen exclusivamente después de la evaluación inicial.",
+                stat1: "Reducción Inactividad",
+                stat2: "Aumento Productividad",
+                stat3: "Reducción Costes Operativos",
+                stat4: "Incremento Márgenes",
                 inter_title: "Operatividad Internacional",
                 inter_desc: "Una visión industrial extendida en Europa Central y Oriental.",
                 inter_box_title: "La red operativa entre Italia, Rumanía y Hungría",
@@ -1856,13 +1872,6 @@
                 cert_desc: "Experiencia en sectores de alta precisión: Automoción e Industria.",
                 badge_cnc: "Mecanizado CNC y Corte",
                 badge_alloys: "Piezas Sinterizadas y Aleaciones",
-                roi_title: "Retorno de Inversión",
-                roi_desc: "Eficiencia derivada de nuestro modelo operativo.",
-                roi_disclaimer: "Ejemplo de indicadores de mejora. La línea de base, los objetivos y los plazos de logro se definen exclusivamente después de la evaluación inicial.",
-                stat1: "Reducción Inactividad",
-                stat2: "Aumento Productividad",
-                stat3: "Reducción Costes Operativos",
-                stat4: "Incremento Márgenes",
                 quest_title: "Cuestionario de Autonomía",
                 quest_desc: "Complete este test para evaluar su continuidad operativa.",
                 select_option: "Seleccione una opción",
@@ -1905,6 +1914,7 @@
                 nav_criticita: "关键问题",
                 nav_stewardship: "未来项目",
                 nav_casi: "案例",
+                nav_roi: "成果",
                 nav_inter: "跨国业务",
                 nav_roadmap: "路线图",
                 nav_areas: "核心领域",
@@ -1952,6 +1962,13 @@
                 case3_l1: "协调海外合作伙伴",
                 case3_l2: "跨国业务拓展",
                 case3_l3: "利益相关者的结构化管理",
+                roi_title: "投资回报与成果",
+                roi_desc: "应用我们运营模式所带来的效率提升。",
+                roi_disclaimer: "改进指标示例。基线、目标和实现时间表仅在初始评估后确定。",
+                stat1: "停机时间减少",
+                stat2: "生产率提升",
+                stat3: "运营成本降低",
+                stat4: "利润率增长",
                 inter_title: "跨国运营能力",
                 inter_desc: "植根于中东欧核心市场的扩展工业视野。",
                 inter_box_title: "连接意大利、罗马尼亚和匈牙利的运营网络",
@@ -1994,13 +2011,6 @@
                 cert_desc: "在高精度领域的直接经验：汽车工业、非公路用车及工业机械。",
                 badge_cnc: "CNC 数控加工与金属切削",
                 badge_alloys: "粉末冶金/烧结件与轻合金",
-                roi_title: "投资回报与成果",
-                roi_desc: "应用我们运营模式所带来的效率提升。",
-                roi_disclaimer: "改进指标示例。基线、目标和实现时间表仅在初始评估后确定。",
-                stat1: "停机时间减少",
-                stat2: "生产率提升",
-                stat3: "运营成本降低",
-                stat4: "利润率增长",
                 quest_title: "企业自主运营调查问卷",
                 quest_desc: "填写此简短测试，以获取关于您业务连续性状况的初步评估。",
                 select_option: "请选择一个选项",
