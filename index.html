@@ -546,13 +546,16 @@
             color: #FFFFFF;
             border-color: var(--accent-orange);
         }
-        /* Footer */
+        /* Footer con Stile Vetro / Ghiaccio (Glassmorphism) */
         footer {
-            background: var(--primary-navy-dark);
-            color: #94A3B8;
+            background: rgba(11, 26, 46, 0.78);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            color: #CBD5E1;
             padding: 40px 20px 20px 20px;
             font-size: 0.85rem;
-            border-top: 1px solid #1E293B;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
         }
         .footer-grid {
             display: grid;
@@ -581,10 +584,10 @@
         }
         .footer-bottom {
             text-align: center;
-            border-top: 1px solid #1E293B;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
             padding-top: 15px;
             font-size: 0.8rem;
-            color: #64748B;
+            color: #94A3B8;
         }
         /* Modal Privacy Policy */
         .modal {
@@ -1031,7 +1034,7 @@
             </div>
         </div>
     </section>
-    <!-- Footer -->
+    <!-- Footer con Effetto Vetro/Ghiaccio -->
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -1057,7 +1060,7 @@
                 <div class="footer-col legal-links">
                     <h4 data-i18n="footer_privacy_title">Informativa & Compliance UE</h4>
                     <p><a onclick="openModal()" data-i18n="footer_privacy_link">Privacy & Cookie Policy (GDPR)</a></p>
-                    <p style="margin-top: 8px; font-size: 0.8rem; color: #94A3B8;" data-i18n="footer_privacy_note">Questo sito non utilizza cookie di profilazione o tracciamento utenti.</p>
+                    <p style="margin-top: 8px; font-size: 0.8rem; color: #CBD5E1;" data-i18n="footer_privacy_note">Questo sito non utilizza cookie di profilazione o tracciamento utenti.</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -1091,7 +1094,7 @@
                 nav_contacts: "Contatti",
                 hero_subtitle: "COSTRUIAMO CONTINUITÀ. PROTEGGIAMO IL TUO VALORE.",
                 hero_desc: "Operational Continuity • Temporary Stewardship • Supply Chain Resilience<br>Soluzioni integrate di affiancamento operativo e strategico per PMI meccaniche e manifatturiere.",
-                hero_cta: "Verifica quanto la tua azienda è réellement autonoma",
+                hero_cta: "Verifica quanto la tuaazienda è réellement autonoma",
                 hero_cta_info: "Richiedi Solo Informazioni",
                 mission_title: "La Nostra Missione",
                 mission_p1: "Una PMI meccanica non deve dipendere ogni giorno dal proprio titolare per continuare a produrre, decidere e creare valore.",
@@ -1590,42 +1593,42 @@
                 stat2: "Termelékenység Növekedése",
                 stat3: "Működési Költségek Csökkenése",
                 stat4: "Árrés Növekedése",
-                quest_title: "Vállalati Autonómia Kérdőív",
-                quest_desc: "Töltse ki ezt a rövid tesztet, hogy előzetes értékelést kapjon működési folytonosságának állapotáról.",
+                quest_title: "Vállalati Önállósági Kérdőív",
+                quest_desc: "Töltse ki ezt a rövid tesztet, hogy előzetes értékelést kapjon az operatív folytonosságáról.",
                 select_option: "Válasszon egy opciót",
-                q1_label: "1. Ha egy hónapra elérhetetlenné válna, a vállalat fennakadás nélkül működne tovább?",
+                q1_label: "1. Ha egy hónapig távol lenne kapcsolat nélkül, a vállalat zökkenőmentesen működne?",
                 q1_o1: "Igen, a tevékenységek rendszeresen folytatódnának",
-                q1_o2: "Részben, döntési szűk keresztmetszetek merülnének fel",
+                q1_o2: "Részben, döntési szűk keresztmetszetek alakulnának ki",
                 q1_o3: "Nem, a termelés vagy az ügyfélkapcsolatok leállnának",
-                q2_label: "2. A termelési folyamatok és a vállalati know-how formalizáltak és dokumentáltak?",
+                q2_label: "2. A gyártási folyamatok és a vállalati know-how formalizáltak és dokumentáltak?",
                 q2_o1: "Igen, naprakész kézikönyvekkel és eljárásokkal rendelkezünk",
                 q2_o2: "Csak részben, sok információ az emberek fejében van",
-                q2_o3: "Nem, teljesen az egyéni tapasztalatokra hagyatkozunk",
+                q2_o3: "Nem, teljesen az egyéni tapasztalatokra támaszkodunk",
                 q3_label: "3. Az ellátási lánc rendelkezik alternatívákkal a kritikus alkatrészekhez?",
                 q3_o1: "Igen, már tesztelt alternatívákkal rendelkezünk",
-                q3_o2: "Részben, de egyes alkatrészeknél csak egy beszállítónk van",
-                q3_o3: "Nem, több kulcsfontosságú beszállító tekintetében sebezhetőek vagyunk",
+                q3_o2: "Részben, de egyes alkatrészeknél egyetlen beszállítótól függünk",
+                q3_o3: "Nem, több kulcsfontosságú beszállítónál is sebezhetőek vagyunk",
                 q_notes_label: "További megjegyzések vagy részletek (Opcionális)",
-                quest_btn: "Válaszok elküldése értékelésre",
+                quest_btn: "Válaszok beküldése értékelésre",
                 contact_title: "Első Lépés: Előzetes Találkozó",
-                contact_desc: "Tervezzünk meg egy bizalmas beszélgetést, hogy kötelezettség nélkül elemezzük vállalata helyzetét.",
+                contact_desc: "Tervezzünk egy bizalmas beszélgetést a vállalata helyzetének kötelezettségmentes elemzésére.",
                 phone: "Telefon",
                 form_name: "Teljes Név *",
-                form_company: "Cég / Vállalat *",
+                form_company: "Vállalat / Cég *",
                 form_email: "E-mail cím *",
                 form_phone: "Telefonszám",
                 form_message: "Üzenet / Kérés *",
                 form_btn: "Működési Folytonossági Elemzés Kérése",
                 footer_legal_title: "Cégadatok",
                 footer_privacy_title: "EU Megfelelőség",
-                footer_privacy_link: "Adatvédelem és Sütik (GDPR)",
-                footer_privacy_note: "Ez az oldal nem használ profilozó vagy követő sütiket.",
+                footer_privacy_link: "Adatvédelem és Cookie-k (GDPR)",
+                footer_privacy_note: "Ez az oldal nem használ profilozó vagy követő cookie-kat.",
                 footer_rights: "© 2026 STRUCTURED ENGINEERING S.R.L. - Minden jog fenntartva.",
                 modal_title: "Adatvédelmi Tájékoztató (EU GDPR 2016/679)",
                 modal_p1: "<strong>Adatkezelő:</strong> STRUCTURED ENGINEERING S.R.L., Bd. Theodor Pallady nr. 66A, Bukarest (Románia), CUI: RO53442496.",
-                modal_p2: "<strong>Adatkezelés:</strong> Az e-mailben vagy telefonon önként megadott személyes adatokat kizárólag a megkeresések válaszolására használjuk fel.",
-                modal_p3: "<strong>Sütik:</strong> Ez a weboldal kizárólag tájékoztató jellegű, és NEM használ profilozó vagy harmadik féltől származó sütiket.",
-                modal_p4: "<strong>Felhasználói Jogok:</strong> Az EU 2016/679 rendelet 15-22. cikke értelmében joga van adataihoz hozzáférni, azokat helyesbíteni vagy törlésüket kérni a <strong>strueng2026@proton.me</strong> e-mail címen."
+                modal_p2: "<strong>Adatkezelés:</strong> Az e-mailben vagy telefonon önként megadott személyes adatokat kizárólag a megkeresések válaszolására használjuk.",
+                modal_p3: "<strong>Cookie-k:</strong> Ez a weboldal tájékoztató jellegű, és NEM használ profilozó, követő vagy harmadik féltől származó cookie-kat.",
+                modal_p4: "<strong>Felhasználói Jogok:</strong> Az EU 2016/679 rendelet 15-22. cikkei értelmében joga van adataihoz hozzáférni, azokat helyesbíteni vagy törlésüket kérni az alábbi e-mail címen: <strong>strueng2026@proton.me</strong>."
             },
             es: {
                 nav_mission: "Misión",
@@ -1637,16 +1640,16 @@
                 nav_areas: "Áreas",
                 nav_questionnaire: "Cuestionario",
                 nav_contacts: "Contacto",
-                hero_subtitle: "CONSTRUIMOS CONTINUIDAD. PROTEGEMOS TU VALOR.",
+                hero_subtitle: "CONSTRUIMOS CONTINUIDAD. PROTEGEMOS SU VALOR.",
                 hero_desc: "Operational Continuity • Temporary Stewardship • Supply Chain Resilience<br>Soluciones integradas de apoyo operativo y estratégico para PYMEs mecánicas e industriales.",
-                hero_cta: "Comprueba qué tan autónoma es realmente tu empresa",
-                hero_cta_info: "Solicitar Solo Información",
+                hero_cta: "Verifique qué tan autónoma es realmente su empresa",
+                hero_cta_info: "Solicite Solo Información",
                 mission_title: "Nuestra Misión",
-                mission_p1: "Una PYME mecánica no debe depender diariamente de su propietario para seguir produciendo, tomando decisiones y creando valor.",
-                mission_p2: "Structured Engineering construye, junto con la propiedad, un sistema operativo, organizativo y de control capaz de hacer la empresa más autónoma, proteger el know-how y preparar metódicamente la continuidad o sucesión.",
+                mission_p1: "Una PYME mecánica no debe depender diariamente de su propietario para seguir produciendo, decidiendo y creando valor.",
+                mission_p2: "Structured Engineering construye, junto con la propiedad, un sistema operativo, organizativo y de control capaz de hacer que la empresa sea más autónoma, proteger el know-how y preparar metódicamente la continuidad o la sucesión.",
                 quote_title: "El Núcleo de la Vulnerabilidad",
-                quote_text: "Cuando el dueño es indispensable todos los días, la empresa es vulnerable.<br>Structured Engineering construye sistemas, procedimientos y competencias para que la empresa siga creando valor con el tiempo.",
-                crit_title: "Problemas críticos que abordamos a diario",
+                quote_text: "Cuando el propietario es indispensable todos los días, la empresa es vulnerable.<br>Structured Engineering construye sistemas, procedimientos y competencias para que la empresa continúe creando valor con el tiempo.",
+                crit_title: "Puntos críticos que abordamos cada día",
                 crit_desc: "Reconocer los bloqueos estructurales es el primer paso para resolverlos de forma definitiva.",
                 c1: "Dependencia excesiva del propietario",
                 c2: "Falta de procedimientos operativos",
@@ -1658,13 +1661,13 @@
                 stewardship_title: "Proyecto Futuro: Temporary Stewardship",
                 stewardship_desc: "Gestión operativa temporal orientada a la continuidad, estructuración y valorización de la empresa.",
                 card1_title: "Propiedad Protegida",
-                card1_desc: "El propietario mantiene la propiedad y las decisiones estratégicas. La intervención no modifica la estructura societaria.",
+                card1_desc: "El propietario mantiene la propiedad y las decisiones estratégicas reservadas. La intervención no modifica la estructura societaria.",
                 card2_title: "Delegaciones Definidas",
-                card2_desc: "Los poderes, límites de autorización y el alcance de la intervención se formalizan claramente por contrato.",
-                card3_title: "Supervisión Operativa",
-                card3_desc: "Apoyo directo en producción, calidad, cadena de suministro y gestión de clientes mediante intervenciones continuas o fraccionadas.",
+                card2_desc: "Poderes, límites de autorización y alcance de la intervención se formalizan y acuerdan claramente por contrato.",
+                card3_title: "Presencia Operativa",
+                card3_desc: "Acompañamiento y coordinación en producción, calidad, cadena de suministro y gestión de clientes mediante intervenciones continuas o fractional.",
                 promise_title: "La Promesa Correcta",
-                promise_desc: "Sin interrupciones: transferimos know-how, organizamos responsabilidades y controles, haciendo la empresa gradualmente menos dependiente de la presencia diaria del dueño.",
+                promise_desc: "Sin alteraciones traumáticas: transferimos el know-how, organizamos responsabilidades y controles, haciendo que la empresa dependa progresivamente menos de la presencia diaria del propietario.",
                 cases_title: "Ejemplos de Intervención",
                 cases_desc: "Ámbitos de aplicación concreta de nuestro modelo de Temporary Stewardship.",
                 case1_title: "PYME Industrial",
@@ -1678,11 +1681,11 @@
                 case3_title: "Proyectos Internacionales",
                 case3_l1: "Coordinación de socios extranjeros",
                 case3_l2: "Desarrollo de negocio transnacional",
-                case3_l3: "Gestión estructurada de partes interesadas",
-                inter_title: "Operatividad Internacional",
+                case3_l3: "Gestión estructurada de stakeholders",
+                inter_title: "Operaciones Internacionales",
                 inter_desc: "Una visión industrial extendida y arraigada en los mercados clave de Europa Central y Oriental.",
                 inter_box_title: "La red operativa entre Italia, Rumanía y Hungría",
-                inter_box_desc: "Nuestra fuerza distintiva radica en la capacidad de movernos con agilidad entre los distritos industriales italianos y las plataformas industriales en Rumanía y Hungría, coordinando cadenas de suministro complejas y proyectos de expansión.",
+                inter_box_desc: "Nuestra fuerza distintiva radica en la capacidad de movernos con agilidad entre los distritos productivos italianos y las plataformas industriales en Rumanía y Hungría, coordinando cadenas de suministro complejas y proyectos de expansión sobre el terreno.",
                 b_it: "🇮🇹 Italia (Sede / Estrategia Principal)",
                 b_ro: "🇷🇴 Rumanía (Bucarest / Ingeniería y Operaciones)",
                 b_hu: "🇭🇺 Hungría (Cadena de Suministro y Alianza Industrial)",
@@ -1693,59 +1696,59 @@
                 step1_desc: "NDA, análisis documental, entrevistas internas y mapa de riesgos operativos inmediatos.",
                 step2_tag: "Fase 2 • Sem. 3–6",
                 step2_title: "Due Diligence Operativa",
-                step2_desc: "Auditoría profunda de producción, calidad, proveedores, personal y control económico.",
+                step2_desc: "Auditoría profunda de producción, calidad, proveedores, equipo y control económico.",
                 step3_tag: "Fase 3 • Mes 2",
                 step3_title: "Plan Operativo",
-                step3_desc: "Definición de matriz de delegación, presupuesto, indicadores KPI y plan de estabilización.",
+                step3_desc: "Definición de matriz de delegaciones, presupuesto, indicadores KPI y plan de estabilización.",
                 step4_tag: "Fase 4 • Meses 2–3",
                 step4_title: "Activación y Ejecución",
                 step4_desc: "Presencia sobre el terreno, activación del panel de control e inicio de acciones prioritarias.",
                 step5_tag: "Fase 5 • Fin del Mes 3",
-                step5_title: "Auditoría de Progreso",
-                step5_desc: "Comparación de resultados con la línea base y planificación compartida de la siguiente fase.",
+                step5_title: "Verificación de Avance",
+                step5_desc: "Comparación de resultados frente a la línea base y planificación conjunta de la siguiente fase.",
                 areas_title: "Áreas Operativas Gestionadas",
-                areas_desc: "Competencia y ejecución directa en los sectores clave del mecanizado CNC y la manufactura.",
+                areas_desc: "Competencia y ejecución directa en los sectores clave de fabricación y mecanizado CNC.",
                 area1_title: "Operaciones y Producción",
-                area1_desc: "Planificación de carga de máquinas, resolución de cuellos de botella, tiempos de entrega y eficiencia de producción.",
+                area1_desc: "Planificación de carga de máquinas, gestión de cuellos de botella, plazos de entrega y eficiencia productiva.",
                 area2_title: "Calidad y Procesos",
-                area2_desc: "Estandarización, gestión de no conformidades, auditorías de procesos y estabilidad conforme a normas internacionales.",
+                area2_desc: "Estandarización, gestión de no conformidades, auditorías de proceso y estabilidad conforme a estándares internacionales.",
                 area3_title: "Cadena de Suministro y Logística",
                 area3_desc: "Protección de proveedores críticos, optimización de inventarios, reducción de tiempos de entrega y resiliencia.",
-                area4_title: "Control Económico y de Costes",
-                area4_desc: "Análisis del margen por pedido, gestión de costes de no calidad y control del flujo de caja operativo.",
+                area4_title: "Control Económico y Financiero",
+                area4_desc: "Análisis de margen por pedido, gestión de costes de no calidad y monitoreo del flujo de caja operativo.",
                 area5_title: "Transferencia de Know-How",
-                area5_desc: "Codificación de conocimientos críticos y capacitación del personal interno para garantizar la estabilidad durante las transiciones.",
+                area5_desc: "Codificación de competencias críticas y formación del personal interno para garantizar la estabilidad durante las transiciones.",
                 area6_title: "Desarrollo Comercial",
-                area6_desc: "Análisis de cartera de clientes, presupuestación optimizada y saturación adecuada de la capacidad productiva.",
+                area6_desc: "Análisis de cartera de clientes, presupuestación optimizada y saturación eficiente de la capacidad productiva.",
                 cert_title: "Excelencia y Estándares Industriales",
                 cert_desc: "Experiencia directa en sectores de alta precisión: Automoción, Off-Highway y Mecánica Industrial.",
                 badge_cnc: "Mecanizado CNC y Arranque de Viruta",
                 badge_alloys: "Piezas Sinterizadas y Aleaciones Ligeras",
                 roi_title: "Retorno de la Inversión y Resultados",
                 roi_desc: "Métricas de eficiencia derivadas de la aplicación de nuestro modelo operativo.",
-                stat1: "Reducción de Tiempos Muertos",
-                stat2: "Aumento de Productividad",
+                stat1: "Reducción del Tiempo de Inactividad",
+                stat2: "Aumento de la Productividad",
                 stat3: "Reducción de Costes Operativos",
                 stat4: "Incremento de Márgenes",
                 quest_title: "Cuestionario de Autonomía Empresarial",
-                quest_desc: "Completa este breve test para recibir una evaluación preliminar del estado de tu continuidad operativa.",
-                select_option: "Selecciona una opción",
-                q1_label: "1. Si te ausentaras durante un mes sin contacto, ¿la empresa seguiría funcionando sin problemas?",
-                q1_o1: "Sí, las actividades continuarían con regularidad",
-                q1_o2: "Parcialmente, surgirían cuellos de botella en las decisiones",
+                quest_desc: "Complete esta breve prueba para recibir una evaluación preliminar del estado de su continuidad operativa.",
+                select_option: "Seleccione una opción",
+                q1_label: "1. Si se ausentara durante un mes sin contacto, ¿la empresa funcionaría sin problemas?",
+                q1_o1: "Sí, las actividades continuarían regularmente",
+                q1_o2: "Parcialmente, surgirían cuellos de botella en la toma de decisiones",
                 q1_o3: "No, la producción o los clientes se detendrían",
                 q2_label: "2. ¿Los procesos de producción y el know-how están formalizados y documentados?",
-                q2_o1: "Sí, tenemos manuales y procedimientos actualizados",
-                q2_o2: "Solo en parte, mucho reside en la cabeza de los empleados",
-                q2_o3: "No, nos basamos completamente en la experiencia individual",
+                q2_o1: "Sí, disponemos de manuales y procedimientos actualizados",
+                q2_o2: "Solo en parte, mucho reside en la mente de las personas",
+                q2_o3: "No, nos basamos enteramente en la experiencia individual",
                 q3_label: "3. ¿La cadena de suministro dispone de alternativas para los componentes críticos?",
                 q3_o1: "Sí, tenemos alternativas previamente probadas",
-                q3_o2: "En parte, pero dependemos de un solo proveedor para algunas piezas",
+                q3_o2: "En parte, pero dependemos de un solo proveedor para ciertos componentes",
                 q3_o3: "No, somos vulnerables en varios proveedores clave",
                 q_notes_label: "Notas o detalles adicionales (Opcional)",
                 quest_btn: "Enviar respuestas para evaluación",
                 contact_title: "Primer Paso: Reunión Preliminar",
-                contact_desc: "Programemos una conversación confidencial para analizar la situación de tu empresa sin compromiso.",
+                contact_desc: "Programemos una conversación confidencial para analizar la situación de su empresa sin compromiso.",
                 phone: "Teléfono",
                 form_name: "Nombre y Apellidos *",
                 form_company: "Empresa / Sociedad *",
@@ -1755,193 +1758,196 @@
                 form_btn: "Solicitar un Análisis de Continuidad Operativa",
                 footer_legal_title: "Datos de la Empresa",
                 footer_privacy_title: "Cumplimiento UE",
-                footer_privacy_link: "Privacidad y Cookies (GDPR)",
+                footer_privacy_link: "Política de Privacidad y Cookies (GDPR)",
                 footer_privacy_note: "Este sitio no utiliza cookies de perfilado ni de seguimiento.",
                 footer_rights: "© 2026 STRUCTURED ENGINEERING S.R.L. - Todos los derechos reservados.",
                 modal_title: "Política de Privacidad (GDPR UE 2016/679)",
                 modal_p1: "<strong>Responsable del Tratamiento:</strong> STRUCTURED ENGINEERING S.R.L., Bd. Theodor Pallady nr. 66A, Bucarest (Rumanía), CUI: RO53442496.",
-                modal_p2: "<strong>Tratamiento de Datos:</strong> Los datos personales facilitados voluntariamente por correo o teléfono se utilizan exclusivamente para responder a las solicitudes.",
-                modal_p3: "<strong>Cookies:</strong> Este sitio web es puramente informativo y NO utiliza cookies de perfilado o de terceros.",
-                modal_p4: "<strong>Derechos del Usuario:</strong> Según los arts. 15-22 del Reg. UE 2016/679, tiene derecho a acceder, rectificar o solicitar la eliminación de sus datos escribiendo a: <strong>strueng2026@proton.me</strong>."
+                modal_p2: "<strong>Tratamiento de Datos:</strong> Los datos personales facilitados voluntariamente por correo electrónico o teléfono se utilizan exclusivamente para responder a las solicitudes de contacto.",
+                modal_p3: "<strong>Cookies:</strong> Este sitio web es puramente informativo y NO utiliza cookies de perfilado, seguimiento ni de terceros.",
+                modal_p4: "<strong>Derechos del Usuario:</strong> Según los arts. 15-22 del Reg. UE 2016/679, el usuario tiene derecho a acceder, rectificar o solicitar la supresión de sus datos escribiendo a: <strong>strueng2026@proton.me</strong>."
             },
             zh: {
                 nav_mission: "使命",
-                nav_criticita: "核心痛点",
+                nav_criticita: "关键问题",
                 nav_stewardship: "未来项目",
                 nav_casi: "案例",
-                nav_inter: "国际业务",
+                nav_inter: "国际化",
                 nav_roadmap: "路线图",
-                nav_areas: "业务领域",
-                nav_questionnaire: "调查问卷",
-                nav_contacts: "联系我们",
-                hero_subtitle: "构建运营持续性，守护您的企业价值",
-                hero_desc: "Operational Continuity • Temporary Stewardship • Supply Chain Resilience<br>为机械与制造型中小企业提供运营与战略的综合辅导解决方案。",
-                hero_cta: "评估您的企业具备多少真正的独立运营能力",
-                hero_cta_info: "仅咨询信息",
+                nav_areas: "领域",
+                nav_questionnaire: "问卷调查",
+                nav_contacts: "联系方式",
+                hero_subtitle: "构建连续性。保护您的价值。",
+                hero_desc: "Operational Continuity • Temporary Stewardship • Supply Chain Resilience<br>为机械和制造型中小企业提供运营与战略的综合支持方案。",
+                hero_cta: "评估您的企业实际独立运营能力",
+                hero_cta_info: "仅索取信息",
                 mission_title: "我们的使命",
-                mission_p1: "一家机械制造企业不应每天都依赖其所有者才能维持生产、决策和创造价值。",
-                mission_p2: "Structured Engineering 与企业所有者共同构建一套运营、组织和控制体系，使企业获得更高的自主性，保护核心技术诀窍（Know-How），并系统性地为业务延续或交接做好准备。",
+                mission_p1: "一家机械制造中小企业不应每天都依赖其所有者来维持生产、决策和创造价值。",
+                mission_p2: "Structured Engineering 与企业所有者共同构建运营、组织和控制体系，使企业具备更高的独立性，保护核心技术，并以方法论筹备业务连续性或接班计划。",
                 quote_title: "脆弱性的核心",
-                quote_text: "当企业所有者每天都不可或缺时，企业就是脆弱的。<br>Structured Engineering 打造系统、流程和能力，确保企业随着时间的推移持续创造价值。",
-                crit_title: "我们每天应对的核心问题",
-                crit_desc: "识别结构性瓶颈是彻底解决问题的关键第一步。",
+                quote_text: "当企业所有者每天都不可或缺时，企业就是脆弱的。<br>Structured Engineering 构建系统、流程和能力，确保企业持续创造价值。",
+                crit_title: "我们每天解决的关键问题",
+                crit_desc: "识别结构性瓶颈是彻底解决问题的第一步。",
                 c1: "对企业所有者的过度依赖",
-                c2: "缺乏标准化标准作业程序（SOP）",
-                c3: "技术诀窍未形成文档记录",
-                c4: "供应链脆弱且缺乏弹性",
-                c5: "关键供应商缺乏备用方案（Plan B）",
-                c6: "企业继承与交接未经规划",
-                c7: "缺乏有效的运营控制指标",
-                stewardship_title: "未来项目：临时代管服务 (Temporary Stewardship)",
-                stewardship_desc: "旨在实现企业连续性、结构化重组和价值提升的临时运营管理。",
-                card1_title: "股权与所有权保护",
-                card1_desc: "所有者保留完整的企业所有权和重大战略决策权。我们的介入不会改变企业的股权结构。",
-                card2_title: "明确的授权界限",
-                card2_desc: "管理权限、审批额度以及干预范围均在合同中进行明确的法律规范与约定。",
-                card3_title: "现场运营管控",
-                card3_desc: "通过驻场或分时（Fractional）管理模式，在生产、质量、供应链及客户管理方面提供深度协同。",
-                promise_title: "核心承诺",
-                promise_desc: "绝不引起企业动荡：我们通过转移Know-How、梳理职责与控制体系，使企业逐步摆脱对所有者日常出勤的依赖。",
-                cases_title: "实践案例",
-                cases_desc: "我们临时代管服务（Temporary Stewardship）的具体应用领域。",
+                c2: "缺乏标准运营流程",
+                c3: "核心技术未文档化",
+                c4: "供应链脆弱",
+                c5: "关键供应商缺乏备用方案",
+                c6: "企业接班未经规划",
+                c7: "缺乏过程控制指标",
+                stewardship_title: "未来项目: Temporary Stewardship",
+                stewardship_desc: "旨在实现业务连续性、结构化和价值提升的临时运营管理服务。",
+                card1_title: "产权保护",
+                card1_desc: "企业所有者保留全部股权与战略决策权。我们的介入不会改变公司股权结构。",
+                card2_title: "明确授权",
+                card2_desc: "职权、审批权限及服务范围均在合同中清晰书面化并达成一致。",
+                card3_title: "运营监管",
+                card3_desc: "在生产、质量、供应链及客户管理方面提供驻场或兼职的全方位协助与协调。",
+                promise_title: "我们的承诺",
+                promise_desc: "拒绝剧烈阵痛：我们转移技术诀窍、梳理职责与监督机制，使企业逐步减少对所有者日常出勤的依赖。",
+                cases_title: "实施案例",
+                cases_desc: "我们 Temporary Stewardship 模式的具体应用领域。",
                 case1_title: "制造型中小企业",
-                case1_l1: "降低日常运营风险",
-                case1_l2: "重组与优化业务流程",
-                case1_l3: "关键技术诀窍的转移与归档",
+                case1_l1: "降低运营风险",
+                case1_l2: "重组运营流程",
+                case1_l3: "关键技术转移",
                 case2_title: "成长型企业",
-                case2_l1: "构建与梳理供应链体系",
-                case2_l2: "供应商开发与质量审计",
-                case2_l3: "关键绩效指标（KPI）持续监测",
+                case2_l1: "供应链结构化",
+                case2_l2: "供应商开发与审核",
+                case2_l3: "KPI 持续监测",
                 case3_title: "国际化项目",
-                case3_l1: "海外合作伙伴深度协调",
-                case3_l2: "跨国业务拓展与落地",
-                case3_l3: "利益相关者的结构化管理",
+                case3_l1: "海外合作伙伴协调",
+                case3_l2: "跨国业务拓展",
+                case3_l3: "利益相关者结构化管理",
                 inter_title: "国际化运营",
-                inter_desc: "立足于中东欧核心市场的扩展性工业视角。",
+                inter_desc: "深植于中东欧核心市场的广阔工业视野。",
                 inter_box_title: "连接意大利、罗马尼亚与匈牙利的运营网络",
-                inter_box_desc: "我们的独特优势在于能够敏捷地穿梭于意大利制造产区与罗马尼亚、匈牙利的工业平台之间，协调复杂的供应链并实地推进工业扩张项目。",
+                inter_box_desc: "我们的独特优势在于能够在意大利生产集群与罗马尼亚、匈牙利的工业平台之间敏捷联动，协调复杂的供应链和现场工业拓展项目。",
                 b_it: "🇮🇹 意大利 (总部 / 核心战略)",
                 b_ro: "🇷🇴 罗马尼亚 (布加勒斯特 / 工程与运营)",
                 b_hu: "🇭🇺 匈牙利 (供应链与工业合作)",
-                roadmap_title: "前90天实施路线图",
-                roadmap_desc: "采用方法论与循序渐进的步骤，确保介入项目的成功落地。",
-                step1_tag: "第一阶段 • 第1-2周",
-                step1_title: "初始状况评估",
-                step1_desc: "签署保密协议（NDA）、文档分析、团队访谈及即时运营风险梳理。",
-                step2_tag: "第二阶段 • 第3-6周",
+                roadmap_title: "前 90 天路线图",
+                roadmap_desc: "确保项目成功实施的阶段性与方法论路径。",
+                step1_tag: "第 1 阶段 • 第 1–2 周",
+                step1_title: "初步评估",
+                step1_desc: "保密协议签署、文档分析、团队访谈及即时运营风险梳理。",
+                step2_tag: "第 2 阶段 • 第 3–6 周",
                 step2_title: "运营尽职调查",
-                step2_desc: "深入审计生产、质量、供应链、人力资源及财务控制状况。",
-                step3_tag: "第三阶段 • 第2个月",
+                step2_desc: "对生产、质量、供应链、人员及财务控制进行深入审计。",
+                step3_tag: "第 3 阶段 • 第 2 个月",
                 step3_title: "运营方案制定",
-                step3_desc: "明确授权矩阵、预算规划、KPI指标及企业稳定计划。",
-                step4_tag: "第四阶段 • 第2-3个月",
-                step4_title: "全面激活与执行",
-                step4_desc: "现场管控、上线监测看板并启动优先改进措施。",
-                step5_tag: "第五阶段 • 第3个月末",
-                step5_title: "阶段性进展评估",
-                step5_desc: "基准数据与实际成果对比，共同规划下一阶段战略。",
-                areas_title: "覆盖的业务领域",
-                areas_desc: "在制造业及精密CNC加工领域具备丰富的直接执行经验。",
-                area1_title: "运营与生产管理",
-                area1_desc: "设备负荷规划、产能瓶颈消除、交付周期缩短及车间生产效率提升。",
-                area2_title: "质量与流程控制",
-                area2_desc: "业务标准化、不良品管理、过程审计及符合国际标准的生产稳定性。",
+                step3_desc: "明确授权矩阵、预算规划、KPI 监控指标及稳定化方案。",
+                step4_tag: "第 4 阶段 • 第 2–3 个月",
+                step4_title: "启动与现场监管",
+                step4_desc: "驻场实施、激活监控看板并启动优先改进措施。",
+                step5_tag: "第 5 阶段 • 第 3 个月末",
+                step5_title: "进度复盘与评估",
+                step5_desc: "对比基线与成果，共同规划下一阶段目标。",
+                areas_title: "核心管控领域",
+                areas_desc: "在制造业及 CNC 切削加工领域的直接执行经验与专业能力。",
+                area1_title: "运营与生产",
+                area1_desc: "设备负荷规划、瓶颈消除、交货期管理及生产流效率提升。",
+                area2_title: "质量与流程",
+                area2_desc: "标准化建设、不良品管理、过程审计及符合国际标准的过程稳定性。",
                 area3_title: "供应链与物流",
-                area3_desc: "关键供应商安全保障、库存优化、交货期缩短及供应链韧性提升。",
-                area4_title: "经济与成本控制",
-                area4_desc: "订单边际利润分析、非质量成本控制及运营现金流实时监测。",
-                area5_title: "Know-How 知识转移",
-                area5_desc: "关键技能沉淀与归档，培训内部团队，确保组织过渡期间的稳定性。",
-                area6_title: "商业与市场拓展",
-                area6_desc: "客户组合分析、精准报价测算及生产能力的最佳饱和度管理。",
-                cert_title: "卓越品质与工业标准",
-                cert_desc: "在精密制造领域拥有丰富经验：汽车工业、非公路车辆及工业机械。",
-                badge_cnc: "精密CNC加工与切削工艺",
-                badge_alloys: "粉末冶金（烧结件）与轻合金",
-                roi_title: "投资回报与实施成果",
-                roi_desc: "应用我们运营体系后取得的显著效率提升指标。",
+                area3_desc: "关键供应商安全保障、库存优化、缩短交期与供应链韧性建设。",
+                area4_title: "成本与财务控制",
+                area4_desc: "订单边际利润分析、非质量成本控制及运营现金流监测。",
+                area5_title: "技术与经验转移",
+                area5_desc: "核心能力编码化，培训内部人员以确保过渡期的稳定性。",
+                area6_title: "市场与商务拓展",
+                area6_desc: "客户结构分析、精准报价及产能的最佳利用。",
+                cert_title: "卓越与工业标准",
+                cert_desc: "高精度领域的直接经验：汽车工业、非道路机械及工业机械。",
+                badge_cnc: "CNC 加工与金属切削",
+                badge_alloys: "粉末冶金件与轻合金",
+                roi_title: "投资回报与成果",
+                roi_desc: "应用我们运营模式所获得的具体效率提升指标。",
                 stat1: "停机时间减少",
-                stat2: "生产效率提升",
+                stat2: "生产率提升",
                 stat3: "运营成本降低",
-                stat4: "利润率增长",
-                quest_title: "企业自主运营能力调查问卷",
-                quest_desc: "请填写以下简短测试，以获取关于您企业运营连续性状况的初步评估。",
+                stat4: "边际利润增加",
+                quest_title: "企业自主运营能力问卷",
+                quest_desc: "填写此简短测试，获取关于您企业业务连续性状况的初步评估。",
                 select_option: "请选择一个选项",
-                q1_label: "1. 如果您离开企业一个月且不进行任何联系，企业能否顺畅运转？",
-                q1_o1: "能，各项业务和生产将正常进行",
-                q1_o2: "部分可以，但会出现决策瓶颈与停滞",
-                q1_o3: "不能，生产或客户服务将会陷入瘫痪",
-                q2_label: "2. 企业的生产流程和核心技术诀窍（Know-How）是否已标准化并形成文档？",
-                q2_o1: "是的，我们拥有完善且最新更新的手册与SOP",
-                q2_o2: "仅部分形成文档，大部分仍储存在员工个人脑海中",
-                q3_label: "3. 您的供应链在关键零部件方面是否拥有备用替代方案？",
-                q3_o1: "是的，我们拥有经过验证的备选供应商",
-                q3_o2: "部分具备，但某些关键零部件仍高度依赖单一供应商",
-                q3_o3: "不具备，我们在多个核心供应商环节十分脆弱",
-                q_notes_label: "补充说明或详细信息（选填）",
-                quest_btn: "提交问卷以获取评估报告",
-                contact_title: "第一步：初步交流",
-                contact_desc: "预约一次保密会谈，无任何约束地分析您企业的现状与需求。",
+                q1_label: "1. 如果您离开公司一个月且不进行任何联系，公司能否顺畅运行？",
+                q1_o1: "能，各项业务将正常进行",
+                q1_o2: "部分可以，但会出现决策卡顿",
+                q1_o3: "不能，生产或客户服务将中断",
+                q2_label: "2. 生产流程与企业核心技术是否已标准化和文档化？",
+                q2_o1: "是的，我们有最新的手册和标准流程",
+                q2_o2: "仅部分做到，大部分经验存在于员工脑海中",
+                q2_o3: "否，完全依赖员工个人经验",
+                q3_label: "3. 供应链对关键零部件是否有备用替代方案？",
+                q3_o1: "是的，我们有已验证的备选方案",
+                q3_o2: "部分有，但某些关键部件仅有单一供应商",
+                q3_o3: "否，我们在多个核心供应商上存在脆弱性",
+                q_notes_label: "补充说明或详细信息（可选）",
+                quest_btn: "提交评估",
+                contact_title: "第一步：初步沟通",
+                contact_desc: "预约一次保密的初步交流，无约束地分析您企业的现状。",
                 phone: "电话",
                 form_name: "姓名 *",
-                form_company: "公司 / 企业名称 *",
+                form_company: "公司名称 *",
                 form_email: "电子邮箱 *",
                 form_phone: "联系电话",
-                form_message: "留言 / 需求说明 *",
-                form_btn: "申请企业运营连续性分析",
+                form_message: "留言 / 需求 *",
+                form_btn: "申请业务连续性分析",
                 footer_legal_title: "公司信息",
-                footer_privacy_title: "欧盟合规与法律声明",
+                footer_privacy_title: "欧盟合规说明",
                 footer_privacy_link: "隐私与 Cookie 政策 (GDPR)",
-                footer_privacy_note: "本网站不使用任何用于用户画像或追踪的 Cookie。",
+                footer_privacy_note: "本网站不使用任何画像或追踪类 Cookie。",
                 footer_rights: "© 2026 STRUCTURED ENGINEERING S.R.L. - 保留所有权利。",
-                modal_title: "隐私政策 (EU GDPR 2016/679)",
-                modal_p1: "<strong>数据控制方：</strong> STRUCTURED ENGINEERING S.R.L., Bd. Theodor Pallady nr. 66A, Bucharest (Romania), 税号/CUI: RO53442496。",
-                modal_p2: "<strong>数据处理：</strong> 通过电子邮件或电话自愿提供的个人信息仅用于处理咨询和联系请求。",
-                modal_p3: "<strong>Cookie：</strong> 本网站仅供信息展示，不使用用户画像、追踪或第三方广告 Cookie。",
-                modal_p4: "<strong>用户权利：</strong> 根据欧盟 2016/679 法规第 15-22 条，您有权访问、更正或要求删除您的个人数据，请发送邮件至：<strong>strueng2026@proton.me</strong>。"
+                modal_title: "隐私政策 (欧盟 GDPR 2016/679)",
+                modal_p1: "<strong>数据控制方:</strong> STRUCTURED ENGINEERING S.R.L., Bd. Theodor Pallady nr. 66A, 布加勒斯特 (罗马尼亚), CUI: RO53442496。",
+                modal_p2: "<strong>数据处理:</strong> 用户通过邮件或电话自愿提供的数据仅用于回复咨询与联系。",
+                modal_p3: "<strong>Cookie 说明:</strong> 本网站为纯信息展示性质，不使用任何画像、追踪或第三方广告 Cookie。",
+                modal_p4: "<strong>用户权利:</strong> 根据欧盟第 2016/679 号法规第 15-22 条，您有权查阅、更正或要求删除您的数据，请联系：<strong>strueng2026@proton.me</strong>。"
             }
         };
 
         function setLanguage(lang) {
-            if (!translations[lang]) return;
-
-            // Aggiorna gli attributi lang nei form
-            document.getElementById('quest_form_lang').value = lang;
-            document.getElementById('contact_form_lang').value = lang;
-
-            // Aggiorna i pulsanti del selettore
+            // 1. Aggiorna stato attivo dei bottoni
             document.querySelectorAll('.lang-btn').forEach(btn => {
                 btn.classList.remove('active');
             });
-            event.target.classList.add('active');
+            const activeBtn = Array.from(document.querySelectorAll('.lang-btn')).find(b => b.textContent.toLowerCase() === lang.toLowerCase());
+            if (activeBtn) activeBtn.classList.add('active');
 
-            // Traduzione dinamica dei testi
-            const elements = document.querySelectorAll('[data-i18n]');
-            elements.forEach(el => {
-                const key = el.getAttribute('data-i18n');
-                if (translations[lang][key]) {
-                    el.innerHTML = translations[lang][key];
+            // 2. Aggiorna i campi hidden dei form
+            const questLangInput = document.getElementById('quest_form_lang');
+            const contactLangInput = document.getElementById('contact_form_lang');
+            if (questLangInput) questLangInput.value = lang;
+            if (contactLangInput) contactLangInput.value = lang;
+
+            // 3. Traduzione elementi del DOM
+            const langData = translations[lang] || translations['it'];
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (langData[key]) {
+                    element.innerHTML = langData[key];
                 }
             });
+
+            // 4. Imposta attributo lang dell'HTML
+            document.documentElement.lang = lang;
         }
 
-        // Gestione Modal Privacy
+        // Funzioni per Modal Privacy
         function openModal() {
             document.getElementById('privacyModal').style.display = 'flex';
         }
-
         function closeModal() {
             document.getElementById('privacyModal').style.display = 'none';
         }
-
         window.onclick = function(event) {
             const modal = document.getElementById('privacyModal');
             if (event.target === modal) {
-                closeModal();
+                modal.style.display = 'none';
             }
         };
 
-        // RESET AUTOMATICO DEI FORM ALL'APERTURA / RITORNO SULLA PAGINA
+        // Reset Automatico dei Form all'invio per evitare la schermata del browser piena
         window.addEventListener('pageshow', function(event) {
             const forms = document.querySelectorAll('form');
             forms.forEach(form => form.reset());
