@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============================================================
+     SEO PRIMARY
+============================================================ -->
 <title>Structured Engineering S.r.l. | Operational Continuity & Temporary Stewardship per PMI Meccaniche</title>
 <meta name="description" content="Structured Engineering affianca PMI meccaniche e manifatturiere (2-20 dipendenti) con Temporary Stewardship, Industrial Networks e Supply Chain Resilience. Costruiamo continuità operativa e proteggiamo il valore dell'impresa.">
 <meta name="keywords" content="Temporary Stewardship, Operational Continuity, Supply Chain Resilience, PMI meccaniche, CNC, IATF 16949, frazionario, Italia Romania Ungheria">
@@ -11,6 +15,9 @@
 <meta name="theme-color" content="#17365D">
 <link rel="canonical" href="https://structuredengineeringsrl.com/">
 
+<!-- ============================================================
+     OPEN GRAPH / TWITTER
+============================================================ -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://structuredengineeringsrl.com/">
 <meta property="og:title" content="Structured Engineering S.r.l. | Operational Continuity & Temporary Stewardship">
@@ -26,13 +33,21 @@
 <meta name="twitter:description" content="Temporary Stewardship, Industrial Networks e Supply Chain Resilience per PMI meccaniche.">
 <meta name="twitter:image" content="https://structuredengineeringsrl.com/og-image.jpg">
 
-<!-- FAVICON SVG INLINE - CORRETTA -->
+<!-- ============================================================
+     FAVICON SVG INLINE (corretta: < e > codificati)
+============================================================ -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 5 L90 27.5 L90 72.5 L50 95 L10 72.5 L10 27.5 Z' fill='none' stroke='%2317365D' stroke-width='10'/%3E%3Cpath d='M30 35 L70 35 L30 65 L70 65' fill='none' stroke='%23E67E21' stroke-width='10' stroke-linecap='round'/%3E%3C/svg%3E">
 
+<!-- ============================================================
+     FONTS
+============================================================ -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+<!-- ============================================================
+     JSON-LD STRUCTURED DATA
+============================================================ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -63,6 +78,9 @@
 </script>
 
 <style>
+/* ============================================================
+   ROOT VARIABLES
+============================================================ */
 :root {
   --primary-navy: #17365D;
   --primary-navy-dark: #0b1a2e;
@@ -79,6 +97,8 @@
   --success-text: #155724;
   --error-bg: #F8D7DA;
   --error-text: #721C24;
+  --warning-bg: #FFF3CD;
+  --warning-text: #856404;
   --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
   --shadow-md: 0 4px 20px rgba(0,0,0,0.05);
   --shadow-lg: 0 8px 32px rgba(0,0,0,0.2);
@@ -89,9 +109,11 @@
   --transition-base: 0.3s ease;
 }
 
+/* ============================================================
+   RESET
+============================================================ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   color: var(--text-dark);
@@ -100,11 +122,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 img, svg { max-width: 100%; display: block; }
 
+/* ============================================================
+   UTILITIES
+============================================================ */
 .container { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
-
 .skip-link {
   position: absolute;
   top: -100px; left: 0;
@@ -119,6 +142,9 @@ img, svg { max-width: 100%; display: block; }
 }
 .skip-link:focus { top: 0; }
 
+/* ============================================================
+   NAVIGATION
+============================================================ */
 nav {
   background: rgba(11, 26, 46, 0.85);
   backdrop-filter: blur(14px);
@@ -130,21 +156,22 @@ nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: var(--shadow-lg);
 }
-
 .nav-content { display: flex; justify-content: space-between; align-items: center; }
 .logo-brand { display: flex; align-items: center; text-decoration: none; }
 .logo-brand img { height: 60px; width: auto; filter: brightness(0) invert(1); transition: transform var(--transition-base); }
 .logo-brand img:hover { transform: scale(1.03); }
 .nav-right { display: flex; align-items: center; gap: 15px; }
 .nav-links { display: flex; flex-wrap: wrap; gap: 12px; }
-.nav-links a { color: #E2E8F0; text-decoration: none; font-size: 0.82rem; font-weight: 500; transition: color var(--transition-fast); }
+.nav-links a { color: #E2E8F0; text-decoration: none; font-size: 0.8rem; font-weight: 500; transition: color var(--transition-fast); }
 .nav-links a:hover { color: var(--accent-orange); }
-
 .lang-switch { display: flex; background: rgba(255, 255, 255, 0.1); border-radius: var(--radius-sm); padding: 2px; border: 1px solid rgba(255, 255, 255, 0.2); gap: 2px; }
 .lang-btn { background: transparent; border: none; color: #CBD5E1; padding: 4px 6px; font-size: 0.72rem; font-weight: 700; cursor: pointer; border-radius: 4px; transition: all var(--transition-fast); font-family: inherit; }
 .lang-btn:hover { color: #FFFFFF; }
 .lang-btn.active { background-color: var(--accent-orange); color: #FFFFFF; }
 
+/* ============================================================
+   HERO
+============================================================ */
 header.hero {
   background: radial-gradient(circle at 80% 20%, #1e4575 0%, var(--primary-navy-dark) 70%);
   color: #FFFFFF;
@@ -154,7 +181,6 @@ header.hero {
   position: relative;
   overflow: hidden;
 }
-
 header.hero::before {
   content: '';
   position: absolute;
@@ -163,7 +189,6 @@ header.hero::before {
   background: radial-gradient(circle at 30% 50%, rgba(230, 126, 33, 0.08) 0%, transparent 50%);
   pointer-events: none;
 }
-
 .hero-logo-wrap { margin-bottom: 25px; }
 .hero-logo-wrap img { max-width: 340px; width: 75%; height: auto; filter: brightness(0) invert(1); margin: 0 auto; }
 .hero h1.subtitle { font-size: 1.5rem; color: var(--accent-orange); font-weight: 700; margin-bottom: 15px; letter-spacing: 0.5px; }
@@ -197,12 +222,18 @@ header.hero::before {
 }
 .cta-btn-secondary:hover { background-color: rgba(255, 255, 255, 0.1); transform: translateY(-2px); }
 
+/* ============================================================
+   SECTIONS
+============================================================ */
 section { padding: 60px 0; scroll-margin-top: 90px; }
 .section-title { text-align: center; margin-bottom: 40px; }
 .section-title h2 { font-size: 2rem; color: var(--primary-navy); font-weight: 700; }
 .section-title p { color: var(--text-muted); font-size: 1rem; margin-top: 8px; }
 .section-title p.disclaimer { font-size: 0.88rem; font-style: italic; margin-top: 6px; }
 
+/* ============================================================
+   HERO BOX & QUOTE
+============================================================ */
 .hero-box {
   background: #FFFFFF;
   border-left: 6px solid var(--accent-orange);
@@ -211,15 +242,8 @@ section { padding: 60px 0; scroll-margin-top: 90px; }
   box-shadow: var(--shadow-md);
   margin-bottom: 25px;
 }
-
-.hero-box h2 {
-  color: var(--primary-navy);
-  font-size: 1.45rem;
-  margin-bottom: 12px;
-}
-
+.hero-box h2 { color: var(--primary-navy); font-size: 1.45rem; margin-bottom: 12px; }
 .hero-box p { font-size: 1.05rem; color: var(--text-dark); margin-bottom: 10px; }
-
 .slogan-highlight {
   font-style: italic;
   font-weight: 700;
@@ -231,7 +255,6 @@ section { padding: 60px 0; scroll-margin-top: 90px; }
   margin-bottom: 15px;
   display: block;
 }
-
 .strong-quote-box {
   background: linear-gradient(135deg, var(--primary-navy) 0%, #1f477a 100%);
   color: white;
@@ -244,8 +267,15 @@ section { padding: 60px 0; scroll-margin-top: 90px; }
 .strong-quote-box h3 { color: var(--accent-orange); font-size: 1.45rem; margin-bottom: 12px; font-weight: 700; }
 .strong-quote-box p { font-size: 1.1rem; font-weight: 300; line-height: 1.7; max-width: 850px; margin: 0 auto; }
 
-.grid-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-top: 20px; }
+/* ============================================================
+   CARD TITLE (sostituisce h4 nelle card)
+============================================================ */
+.card-title { color: var(--primary-navy); font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
 
+/* ============================================================
+   CRITICALITY GRID
+============================================================ */
+.grid-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-top: 20px; }
 .criticality-card {
   background: #FFFFFF;
   border: 1px solid var(--border-color);
@@ -257,7 +287,6 @@ section { padding: 60px 0; scroll-margin-top: 90px; }
   align-items: center;
   gap: 15px;
 }
-
 .criticality-card .icon-alert {
   background: #FDF2F2;
   color: #D9534F;
@@ -270,12 +299,14 @@ section { padding: 60px 0; scroll-margin-top: 90px; }
   flex-shrink: 0;
   font-size: 0.9rem;
 }
-
-.criticality-card .card-title { color: var(--primary-navy); font-size: 1.05rem; font-weight: 600; margin-bottom: 0; }
+.criticality-card .card-title { font-size: 1.05rem; font-weight: 600; margin-bottom: 0; }
 .criticality-card.full-width { grid-column: 1 / -1; max-width: 500px; margin: 0 auto; }
 
+/* ============================================================
+   CARDS GRID
+============================================================ */
 .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-
+.grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
 .card {
   background: var(--card-bg);
   padding: 25px;
@@ -291,34 +322,191 @@ section { padding: 60px 0; scroll-margin-top: 90px; }
 .card ul li { position: relative; padding-left: 18px; margin-bottom: 8px; color: var(--text-muted); font-size: 0.95rem; }
 .card ul li::before { content: "•"; color: var(--accent-orange); font-weight: bold; font-size: 1.2rem; position: absolute; left: 0; top: -2px; }
 
-.card-title { color: var(--primary-navy); font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
-
+/* ============================================================
+   INTERNATIONAL SECTION
+============================================================ */
 .international-section { background-color: var(--international-bg); border-top: 1px solid #CBD5E1; border-bottom: 1px solid #CBD5E1; }
 .international-box { background: #FFFFFF; border-left: 6px solid var(--accent-blue); padding: 35px; border-radius: var(--radius-md); box-shadow: 0 4px 15px rgba(0,0,0,0.04); }
 .international-box h3 { color: var(--primary-navy); margin-bottom: 12px; }
 .international-box p { color: var(--text-dark); margin-bottom: 15px; font-size: 1.05rem; }
 
+/* ============================================================
+   ROADMAP
+============================================================ */
 .roadmap-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 30px; }
 .roadmap-step { background: #FFFFFF; padding: 20px; border-radius: var(--radius-md); border-top: 4px solid var(--primary-navy); box-shadow: var(--shadow-sm); }
 .roadmap-step .step-num { color: var(--accent-orange); font-weight: 800; font-size: 0.85rem; margin-bottom: 5px; text-transform: uppercase; }
 .roadmap-step .card-title { font-size: 1.1rem; margin-bottom: 8px; }
 .roadmap-step p { color: var(--text-muted); font-size: 0.88rem; }
 
+/* ============================================================
+   DIMENSIONS (5 dimensioni)
+============================================================ */
+.dimensions-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px; }
+.dimension-card {
+  background: #FFFFFF;
+  padding: 25px 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  position: relative;
+  transition: transform var(--transition-fast);
+}
+.dimension-card:hover { transform: translateY(-3px); }
+.dimension-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: var(--accent-orange);
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+.dimension-card:nth-child(2) .dimension-num { background: #2E86C1; }
+.dimension-card:nth-child(3) .dimension-num { background: #3498DB; }
+.dimension-card:nth-child(4) .dimension-num { background: #5DADE2; }
+.dimension-card:nth-child(5) .dimension-num { background: var(--primary-navy); }
+.dimension-card .card-title { font-size: 1rem; margin-bottom: 8px; }
+.dimension-card p { color: var(--text-muted); font-size: 0.85rem; }
+
+/* ============================================================
+   ECONOMIC MODEL
+============================================================ */
+.economic-section { background: #FFFFFF; }
+.economic-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 30px; }
+.economic-card { background: var(--bg-light); border: 1px solid var(--border-color); border-left: 5px solid var(--accent-orange); padding: 22px; border-radius: var(--radius-md); }
+.economic-card .card-title { font-size: 1.1rem; margin-bottom: 8px; }
+.economic-card p { color: var(--text-muted); font-size: 0.92rem; }
+.economic-footer { margin-top: 30px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.economic-footer .info-box { background: linear-gradient(135deg, var(--primary-navy) 0%, #1f477a 100%); color: #FFFFFF; padding: 25px; border-radius: var(--radius-md); }
+.economic-footer .info-box .card-title { color: var(--accent-orange); font-size: 1.05rem; margin-bottom: 10px; }
+.economic-footer .info-box p { color: #E2E8F0; font-size: 0.92rem; }
+
+/* ============================================================
+   MANDATES
+============================================================ */
+.mandates-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 30px; }
+.mandate-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  text-align: center;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+.mandate-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.mandate-dot {
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  margin: 0 auto 18px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+.mandate-card:nth-child(1) .mandate-dot { background: var(--accent-orange); }
+.mandate-card:nth-child(2) .mandate-dot { background: #2E86C1; }
+.mandate-card:nth-child(3) .mandate-dot { background: var(--primary-navy); }
+.mandate-card .card-title { font-size: 1.15rem; margin-bottom: 10px; }
+.mandate-card p { color: var(--text-muted); font-size: 0.92rem; }
+
+/* ============================================================
+   SUITE
+============================================================ */
+.suite-section { background: #FFFFFF; }
+.suite-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; margin-top: 30px; }
+.suite-card { background: #FFFFFF; border: 1px solid var(--border-color); border-top: 4px solid var(--accent-blue); padding: 22px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); }
+.suite-card:nth-child(2n) { border-top-color: var(--accent-orange); }
+.suite-card:nth-child(3n) { border-top-color: var(--primary-navy); }
+.suite-card .card-title { font-size: 1rem; margin-bottom: 8px; }
+.suite-card p { color: var(--text-muted); font-size: 0.88rem; }
+
+/* ============================================================
+   TRANSPARENCY
+============================================================ */
+.transparency-section { background: linear-gradient(180deg, #F4F7FA 0%, #FFFFFF 100%); }
+.transparency-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 30px; }
+.transparency-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  padding: 24px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+.transparency-card .icon-warn {
+  flex-shrink: 0;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--warning-bg);
+  color: var(--warning-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1rem;
+}
+.transparency-card .card-title { font-size: 1rem; margin-bottom: 6px; }
+.transparency-card p { color: var(--text-muted); font-size: 0.9rem; }
+.transparency-card.positive .icon-warn { background: var(--success-bg); color: var(--success-text); }
+
+/* ============================================================
+   FOUNDER
+============================================================ */
+.founder-section { background: #FFFFFF; }
+.founder-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 30px; }
+.founder-card {
+  background: var(--bg-light);
+  padding: 22px;
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--accent-orange);
+  transition: transform var(--transition-fast);
+}
+.founder-card:hover { transform: translateY(-3px); }
+.founder-card .card-title { font-size: 1rem; margin-bottom: 8px; }
+.founder-card p { color: var(--text-muted); font-size: 0.9rem; }
+.founder-quote {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, var(--primary-navy) 0%, #1f477a 100%);
+  color: #FFFFFF;
+  padding: 35px;
+  border-radius: var(--radius-md);
+  text-align: center;
+  margin-top: 15px;
+}
+.founder-quote p { font-size: 1.15rem; font-style: italic; color: #FFFFFF; max-width: 800px; margin: 0 auto; }
+
+/* ============================================================
+   PROMISE BANNER
+============================================================ */
 .promise-banner { background-color: var(--primary-navy); color: white; padding: 35px; border-radius: 10px; text-align: center; margin-top: 35px; }
 .promise-banner h3 { color: var(--accent-orange); font-size: 1.5rem; margin-bottom: 12px; }
 .promise-banner p { font-size: 1.05rem; max-width: 900px; margin: 0 auto; color: #E2E8F0; }
 
+/* ============================================================
+   BADGES & STATS
+============================================================ */
 .badges-container { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 25px; }
 .badge { background: #EBF3FA; color: var(--primary-navy); padding: 8px 16px; border-radius: 20px; font-weight: 700; font-size: 0.85rem; border: 1px solid #CBD5E1; }
-
 .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; margin-top: 25px; text-align: center; }
 .stat-card { background: #FFFFFF; padding: 20px; border-radius: var(--radius-md); border-top: 4px solid var(--accent-orange); box-shadow: var(--shadow-sm); }
 .stat-card .number { font-size: 1.8rem; font-weight: 800; color: var(--primary-navy); }
 .stat-card .label { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; }
 
+/* ============================================================
+   CONTACT
+============================================================ */
 .contact-section { background: #FFFFFF; border-top: 1px solid var(--border-color); }
 .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-top: 20px; align-items: stretch; }
-
 .contact-card {
   width: 100%;
   padding: 28px;
@@ -332,7 +520,6 @@ section { padding: 60px 0; scroll-margin-top: 90px; }
   flex-direction: column;
   justify-content: space-between;
 }
-
 .card-header h2 { margin: 0 0 4px 0; font-size: 1.6rem; font-weight: 700; color: var(--primary-navy-dark); }
 .card-header .role { margin: 0 0 20px 0; font-size: 0.95rem; font-weight: 600; color: #d97706; }
 .card-body { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
@@ -341,7 +528,6 @@ section { padding: 60px 0; scroll-margin-top: 90px; }
 .contact-item a { color: inherit; text-decoration: none; transition: color var(--transition-fast); }
 .contact-item a:hover { color: var(--accent-orange); }
 .card-socials { display: flex; gap: 10px; flex-wrap: wrap; }
-
 .social-btn-card {
   display: inline-flex;
   align-items: center;
@@ -362,7 +548,6 @@ section { padding: 60px 0; scroll-margin-top: 90px; }
 .social-btn-card.linkedin:hover { background-color: #084e96; transform: translateY(-2px); }
 .social-btn-card.website { background-color: #2563EB; }
 .social-btn-card.website:hover { background-color: #1d4ed8; transform: translateY(-2px); }
-
 .contact-form { background: var(--bg-light); border: 1px solid var(--border-color); padding: 35px; border-radius: 10px; }
 .form-group { margin-bottom: 15px; }
 .form-group label { display: block; font-size: 0.88rem; font-weight: 600; color: var(--primary-navy); margin-bottom: 5px; }
@@ -381,22 +566,12 @@ section { padding: 60px 0; scroll-margin-top: 90px; }
   border-color: var(--accent-orange);
   box-shadow: 0 0 0 3px rgba(230, 126, 33, 0.15);
 }
-
-.hp-field {
-  position: absolute !important;
-  left: -9999px !important;
-  opacity: 0 !important;
-  height: 0 !important;
-  width: 0 !important;
-  overflow: hidden !important;
-}
-
+.hp-field { position: absolute !important; left: -9999px !important; opacity: 0 !important; height: 0 !important; width: 0 !important; overflow: hidden !important; }
 .consent-group { display: flex; align-items: flex-start; gap: 10px; margin: 15px 0; font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; }
 .consent-group input[type="checkbox"] { width: 18px; height: 18px; margin-top: 2px; flex-shrink: 0; accent-color: var(--accent-orange); cursor: pointer; }
 .consent-group label { margin: 0; font-weight: 400; color: var(--text-muted); cursor: pointer; }
 .consent-group a { color: var(--accent-orange); font-weight: 600; text-decoration: none; }
 .consent-group a:hover { text-decoration: underline; }
-
 .submit-btn {
   width: 100%;
   background-color: var(--primary-navy);
@@ -412,7 +587,6 @@ section { padding: 60px 0; scroll-margin-top: 90px; }
 }
 .submit-btn:hover { background-color: var(--primary-navy-dark); }
 .submit-btn:disabled { opacity: 0.6; cursor: not-allowed; }
-
 .form-alert {
   display: none;
   padding: 12px 15px;
@@ -425,9 +599,15 @@ section { padding: 60px 0; scroll-margin-top: 90px; }
 .form-alert.success { background-color: var(--success-bg); color: var(--success-text); border: 1px solid #C3E6CB; }
 .form-alert.error { background-color: var(--error-bg); color: var(--error-text); border: 1px solid #F5C6CB; }
 
+/* ============================================================
+   QUESTIONNAIRE
+============================================================ */
 .questionnaire-section { background: #FFFFFF; border-top: 1px solid var(--border-color); }
 .questionnaire-card { background: var(--bg-light); border: 1px solid var(--border-color); padding: 35px; border-radius: 10px; max-width: 800px; margin: 0 auto; }
 
+/* ============================================================
+   FOOTER
+============================================================ */
 footer {
   background: rgba(11, 26, 46, 0.95);
   backdrop-filter: blur(14px);
@@ -437,11 +617,9 @@ footer {
   font-size: 0.85rem;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
-
 .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-bottom: 30px; text-align: left; }
 .footer-col .card-title { color: #FFFFFF; font-size: 1.1rem; margin-bottom: 12px; }
 .footer-col p { line-height: 1.5; margin-bottom: 6px; }
-
 .social-links { margin-top: 15px; display: flex; gap: 12px; flex-wrap: wrap; }
 .social-btn {
   display: inline-flex;
@@ -458,18 +636,27 @@ footer {
   transition: all var(--transition-fast);
 }
 .social-btn:hover { background: var(--accent-orange); color: #FFFFFF; border-color: var(--accent-orange); }
-
 .legal-links a { color: var(--accent-orange); text-decoration: none; font-weight: 600; cursor: pointer; }
 .legal-links a:hover { text-decoration: underline; }
-
 .footer-bottom { text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 15px; font-size: 0.8rem; color: #94A3B8; }
 
+/* ============================================================
+   MODAL
+============================================================ */
 .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); z-index: 2000; justify-content: center; align-items: center; padding: 20px; }
 .modal.active { display: flex; }
-.modal-content { background: #FFFFFF; padding: 30px; border-radius: var(--radius-md); max-width: 700px; max-height: 80vh; overflow-y: auto; color: var(--text-dark); position: relative; }
+.modal-content {
+  background: #FFFFFF;
+  padding: 30px;
+  border-radius: var(--radius-md);
+  max-width: 700px;
+  max-height: 80vh;
+  overflow-y: auto;
+  color: var(--text-dark);
+  position: relative;
+}
 .modal-content h2 { color: var(--primary-navy); margin-bottom: 15px; }
 .modal-content p { margin-bottom: 12px; }
-
 .modal-close {
   position: absolute;
   top: 15px; right: 20px;
@@ -484,15 +671,18 @@ footer {
 }
 .modal-close:hover { color: var(--accent-orange); }
 
+/* ============================================================
+   FOCUS VISIBLE
+============================================================ */
 a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
   outline: 2px solid var(--accent-orange);
   outline-offset: 2px;
 }
 
-@media (max-width: 1024px) {
-  .nav-links a { font-size: 0.78rem; }
-}
-
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+@media (max-width: 1024px) { .nav-links a { font-size: 0.75rem; } }
 @media (max-width: 768px) {
   .hero h1.subtitle { font-size: 1.25rem; }
   .hero .tagline-secondary { font-size: 0.85rem; }
@@ -507,7 +697,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .international-box { padding: 25px 20px; }
   .contact-card { padding: 22px; }
 }
-
 @media (max-width: 480px) {
   .container { padding: 0 15px; }
   header.hero { padding: 50px 0 40px 0; }
@@ -519,7 +708,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .stat-card .number { font-size: 1.5rem; }
   .modal-content { padding: 22px 18px; }
 }
-
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -528,7 +716,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     scroll-behavior: auto !important;
   }
 }
-
 @media print {
   nav, footer, .hero-btn-container, .card-socials, .lang-switch { display: none; }
   body { background: #fff; color: #000; }
@@ -540,6 +727,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 <a href="#mission" class="skip-link" data-i18n="skip_link">Vai al contenuto principale</a>
 
+<!-- ============================================================
+     NAVBAR
+============================================================ -->
 <nav aria-label="Navigazione principale">
   <div class="container nav-content">
     <a href="#" class="logo-brand" aria-label="Structured Engineering - Home">
@@ -551,11 +741,17 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
         <a href="#criticita" data-i18n="nav_criticita">Criticità</a>
         <a href="#stewardship" data-i18n="nav_stewardship">Progetto Futuro</a>
         <a href="#networks" data-i18n="nav_networks">Networks</a>
+        <a href="#dimensioni" data-i18n="nav_dimensioni">Dimensioni</a>
+        <a href="#mandati" data-i18n="nav_mandati">Mandati</a>
+        <a href="#economico" data-i18n="nav_economico">Modello</a>
+        <a href="#suite" data-i18n="nav_suite">Suite</a>
         <a href="#casi" data-i18n="nav_casi">Esempi</a>
         <a href="#roi" data-i18n="nav_roi">Risultati</a>
         <a href="#internazionale" data-i18n="nav_inter">Internazionale</a>
         <a href="#roadmap" data-i18n="nav_roadmap">Roadmap</a>
         <a href="#aree" data-i18n="nav_areas">Aree</a>
+        <a href="#founder" data-i18n="nav_founder">Founder</a>
+        <a href="#trasparenza" data-i18n="nav_trasparenza">Trasparenza</a>
         <a href="#questionario" data-i18n="nav_questionnaire">Questionario</a>
         <a href="#contatti" data-i18n="nav_contacts">Contatti</a>
       </div>
@@ -573,6 +769,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 <main>
 
+<!-- ============================================================
+     HERO
+============================================================ -->
 <header class="hero">
   <div class="container">
     <div class="hero-logo-wrap">
@@ -591,6 +790,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   </div>
 </header>
 
+<!-- ============================================================
+     MISSIONE
+============================================================ -->
 <section id="mission">
   <div class="container">
     <div class="hero-box">
@@ -608,6 +810,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   </div>
 </section>
 
+<!-- ============================================================
+     CRITICITÀ
+============================================================ -->
 <section id="criticita" style="background-color: #FFFFFF;">
   <div class="container">
     <div class="section-title">
@@ -626,6 +831,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   </div>
 </section>
 
+<!-- ============================================================
+     TEMPORARY STEWARDSHIP
+============================================================ -->
 <section id="stewardship">
   <div class="container">
     <div class="section-title">
@@ -644,6 +852,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   </div>
 </section>
 
+<!-- ============================================================
+     INDUSTRIAL NETWORKS
+============================================================ -->
 <section id="networks" style="background-color: #FFFFFF;">
   <div class="container">
     <div class="section-title">
@@ -658,6 +869,141 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   </div>
 </section>
 
+<!-- ============================================================
+     5 DIMENSIONI MISURATE
+============================================================ -->
+<section id="dimensioni">
+  <div class="container">
+    <div class="section-title">
+      <h2 data-i18n="dims_title">Le 5 Dimensioni che Misuriamo</h2>
+      <p data-i18n="dims_desc">Costruite sui dati dell'azienda. Gli indicatori non si scelgono a priori: emergono dalla diagnosi e sono legati alle leve economiche più rilevanti.</p>
+    </div>
+    <div class="dimensions-grid">
+      <div class="dimension-card">
+        <div class="dimension-num">1</div>
+        <p class="card-title" data-i18n="dim1_title">Risparmi</p>
+        <p data-i18n="dim1_desc">Costi di non qualità, acquisti, scorte, sprechi, inefficienze e ore improduttive.</p>
+      </div>
+      <div class="dimension-card">
+        <div class="dimension-num">2</div>
+        <p class="card-title" data-i18n="dim2_title">Performance</p>
+        <p data-i18n="dim2_desc">Consegne puntuali, tempi ciclo, saturazione, lead time e chiusura non conformità.</p>
+      </div>
+      <div class="dimension-card">
+        <div class="dimension-num">3</div>
+        <p class="card-title" data-i18n="dim3_title">Margini</p>
+        <p data-i18n="dim3_desc">Margine per commessa, assorbimento costi, redditività cliente e conversione cassa.</p>
+      </div>
+      <div class="dimension-card">
+        <div class="dimension-num">4</div>
+        <p class="card-title" data-i18n="dim4_title">Continuità</p>
+        <p data-i18n="dim4_desc">Dipendenza dal titolare, copertura ruoli, know-how documentato e ridondanza fornitori.</p>
+      </div>
+      <div class="dimension-card">
+        <div class="dimension-num">5</div>
+        <p class="card-title" data-i18n="dim5_title">Governance</p>
+        <p data-i18n="dim5_desc">KPI disponibili, frequenza report, responsabilità e tempi decisionali.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     MANDATI
+============================================================ -->
+<section id="mandati" style="background-color: #FFFFFF;">
+  <div class="container">
+    <div class="section-title">
+      <h2 data-i18n="mandates_title">Un Metodo, Tre Perimetri</h2>
+      <p data-i18n="mandates_desc">Quale mandato è giusto per te: gli altri mandati sono tailor-made, in termini di obiettivo e perimetro.</p>
+    </div>
+    <div class="mandates-grid">
+      <div class="mandate-card">
+        <div class="mandate-dot">PF</div>
+        <p class="card-title" data-i18n="mandate1_title">Progetto Futuro</p>
+        <p data-i18n="mandate1_desc">Presidio continuo in azienda: primo ciclo di 90 giorni, 1-2 giorni a settimana, deleghe e KPI.</p>
+      </div>
+      <div class="mandate-card">
+        <div class="mandate-dot">SN</div>
+        <p class="card-title" data-i18n="mandate2_title">Sales Network</p>
+        <p data-i18n="mandate2_desc">Costruzione o riorganizzazione di canali e rete vendita: durata e presidio calibrati su mercato e obiettivi.</p>
+      </div>
+      <div class="mandate-card">
+        <div class="mandate-dot">SU</div>
+        <p class="card-title" data-i18n="mandate3_title">Supplier Network</p>
+        <p data-i18n="mandate3_desc">Nuove fonti o backup della catena di fornitura: tempi legati a criticità, qualifiche e volumi.</p>
+      </div>
+    </div>
+    <div class="promise-banner" style="margin-top: 35px;">
+      <h3 data-i18n="mandates_footer_title">Customizzato, non a pacchetto</h3>
+      <p data-i18n="mandates_footer_desc">Perimetro, durata e presidio vengono definiti dopo la due diligence. Una volta definito il mandato, il costo segue il perimetro.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     MODELLO ECONOMICO
+============================================================ -->
+<section id="economico" class="economic-section">
+  <div class="container">
+    <div class="section-title">
+      <h2 data-i18n="econ_title">Modello Economico</h2>
+      <p data-i18n="econ_desc">Il costo si definisce sul perimetro, mai a catalogo. Quattro voci di spesa, come si dimensionano e chi è responsabile di cosa.</p>
+    </div>
+    <div class="economic-grid">
+      <div class="economic-card">
+        <p class="card-title" data-i18n="econ1_title">Assessment Fee</p>
+        <p data-i18n="econ1_desc">Copre la fase iniziale di analisi, raccolta dati e costruzione del piano operativo.</p>
+      </div>
+      <div class="economic-card">
+        <p class="card-title" data-i18n="econ2_title">Componente Fissa</p>
+        <p data-i18n="econ2_desc">Remunera il presidio concordato, il coordinamento operativo e il reporting periodico.</p>
+      </div>
+      <div class="economic-card">
+        <p class="card-title" data-i18n="econ3_title">Componente Variabile</p>
+        <p data-i18n="econ3_desc">Può essere legata a KPI concordati, misurabili e verificabili, senza trasformarli in garanzie preventive.</p>
+      </div>
+      <div class="economic-card">
+        <p class="card-title" data-i18n="econ4_title">Costi Specialistici</p>
+        <p data-i18n="econ4_desc">Consulenze legali, fiscali, tecniche o finanziarie autorizzate separatamente dal titolare.</p>
+      </div>
+    </div>
+    <div class="economic-footer">
+      <div class="info-box">
+        <p class="card-title" data-i18n="econ_size_title">Come si dimensiona</p>
+        <p data-i18n="econ_size_desc">Sul perimetro concordato, obiettivi e impegno: il rapporto di conoscenza precede il prezzo e lo rende verificabile.</p>
+      </div>
+      <div class="info-box">
+        <p class="card-title" data-i18n="econ_resp_title">Chi è responsabile di cosa</p>
+        <p data-i18n="econ_resp_desc">Amministrazione e finanza restano in mano alla proprietà. Noi ci prendiamo carico di produzione, clienti, fornitori e gestione del personale.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STRUCTURED ENGINEERING SUITE
+============================================================ -->
+<section id="suite" class="suite-section">
+  <div class="container">
+    <div class="section-title">
+      <h2 data-i18n="suite_title">Structured Engineering Suite</h2>
+      <p data-i18n="suite_desc">La qualità diventa sistema, dato e disciplina operativa. Un sistema digitale proprietario e già operativo per gestire Control Plan, PPAP, FMEA e MSA secondo lo standard IATF 16949.</p>
+    </div>
+    <div class="suite-grid">
+      <div class="suite-card"><p class="card-title" data-i18n="suite1_title">APQP / PPAP</p><p data-i18n="suite1_desc">Pianificazione avanzata della qualità e dossier di approvazione.</p></div>
+      <div class="suite-card"><p class="card-title" data-i18n="suite2_title">Non Conformità</p><p data-i18n="suite2_desc">Segnalazione, contenimento, cause, azioni e verifica di efficacia.</p></div>
+      <div class="suite-card"><p class="card-title" data-i18n="suite3_title">Audit & Supplier Quality</p><p data-i18n="suite3_desc">Piani di audit, survey, scorecard e sviluppo fornitori.</p></div>
+      <div class="suite-card"><p class="card-title" data-i18n="suite4_title">Control Plan & FAI</p><p data-i18n="suite4_desc">Piani di controllo, campionature, tracciabilità e validazione.</p></div>
+      <div class="suite-card"><p class="card-title" data-i18n="suite5_title">KPI & Reporting</p><p data-i18n="suite5_desc">Qualità, costi di non qualità, tempi di chiusura e trend.</p></div>
+      <div class="suite-card"><p class="card-title" data-i18n="suite6_title">Document Control</p><p data-i18n="suite6_desc">Revisioni, responsabilità, evidenze e disponibilità controllata.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ESEMPI DI INTERVENTO
+============================================================ -->
 <section id="casi">
   <div class="container">
     <div class="section-title">
@@ -690,6 +1036,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   </div>
 </section>
 
+<!-- ============================================================
+     ROI
+============================================================ -->
 <section id="roi" style="background-color: #FFFFFF;">
   <div class="container">
     <div class="section-title">
@@ -706,6 +1055,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   </div>
 </section>
 
+<!-- ============================================================
+     INTERNAZIONALE
+============================================================ -->
 <section id="internazionale" class="international-section">
   <div class="container">
     <div class="section-title" style="margin-bottom: 25px;">
@@ -724,6 +1076,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   </div>
 </section>
 
+<!-- ============================================================
+     ROADMAP
+============================================================ -->
 <section id="roadmap">
   <div class="container">
     <div class="section-title">
@@ -760,6 +1115,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   </div>
 </section>
 
+<!-- ============================================================
+     AREE OPERATIVE
+============================================================ -->
 <section id="aree" style="background-color: #FFFFFF;">
   <div class="container">
     <div class="section-title">
@@ -787,6 +1145,106 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   </div>
 </section>
 
+<!-- ============================================================
+     FOUNDER
+============================================================ -->
+<section id="founder" class="founder-section">
+  <div class="container">
+    <div class="section-title">
+      <h2 data-i18n="founder_title">Francesco Malmusi</h2>
+      <p data-i18n="founder_subtitle">Founder & Executive Consultant — oltre 30 anni tra officina, produzione e direzione tecnica.</p>
+    </div>
+    <div class="founder-grid">
+      <div class="founder-card">
+        <p class="card-title" data-i18n="founder1_title">30+ Anni di Mestiere</p>
+        <p data-i18n="founder1_desc">Dal 1991: CNC, metrologia, qualità di processo, industrializzazione e direzione tecnica.</p>
+      </div>
+      <div class="founder-card">
+        <p class="card-title" data-i18n="founder2_title">Qualità Certificata</p>
+        <p data-i18n="founder2_desc">Master in gestione sistemi qualità (Camera di Commercio di Bologna), controllo statistico di processo, ISO 9001:2015 e approccio IATF 16949.</p>
+      </div>
+      <div class="founder-card">
+        <p class="card-title" data-i18n="founder3_title">Imprenditore e Manager</p>
+        <p data-i18n="founder3_desc">Imprenditore e responsabile sviluppo industriale dal 2001 al 2014, poi plant manager nella fase di cessione aziendale.</p>
+      </div>
+      <div class="founder-card">
+        <p class="card-title" data-i18n="founder4_title">Sinterizzati e Alta Precisione</p>
+        <p data-i18n="founder4_desc">Know-how sulla metallurgia delle polveri dal 1992, componenti complessi e brevetti depositati a livello mondiale.</p>
+      </div>
+      <div class="founder-card">
+        <p class="card-title" data-i18n="founder5_title">Grandi Volumi Automotive</p>
+        <p data-i18n="founder5_desc">Commesse automotive industrializzate oltre 6,5 milioni di pezzi l'anno, con attrezzature e pick-up progettati internamente.</p>
+      </div>
+      <div class="founder-card">
+        <p class="card-title" data-i18n="founder6_title">Capitale Relazionale</p>
+        <p data-i18n="founder6_desc">Ruoli di vertice in Confartigianato Bologna, Camera di Commercio, consorzi e delegazioni istituzionali internazionali.</p>
+      </div>
+    </div>
+    <div class="founder-quote">
+      <p data-i18n="founder_quote">"Entro in azienda con un perimetro definito e mi prendo responsabilità operativa, non solo consulenza."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TRASPARENZA
+============================================================ -->
+<section id="trasparenza" class="transparency-section">
+  <div class="container">
+    <div class="section-title">
+      <h2 data-i18n="transp_title">Trasparenza: quando NON siamo la risposta giusta</h2>
+      <p data-i18n="transp_desc">Cosa ti resta e quando è meglio non partire. È il nostro standard, non un'eccezione.</p>
+    </div>
+    <div class="transparency-grid">
+      <div class="transparency-card positive">
+        <div class="icon-warn" aria-hidden="true">✓</div>
+        <div>
+          <p class="card-title" data-i18n="transp1_title">Know-how documentato</p>
+          <p data-i18n="transp1_desc">Procedure, ruoli, deleghe e dati restano in azienda, non nella testa del consulente.</p>
+        </div>
+      </div>
+      <div class="transparency-card positive">
+        <div class="icon-warn" aria-hidden="true">✓</div>
+        <div>
+          <p class="card-title" data-i18n="transp2_title">KPI e strumenti attivi</p>
+          <p data-i18n="transp2_desc">Dashboard, reporting e routine di controllo continuano a funzionare anche dopo la fine del mandato.</p>
+        </div>
+      </div>
+      <div class="transparency-card">
+        <div class="icon-warn" aria-hidden="true">!</div>
+        <div>
+          <p class="card-title" data-i18n="transp3_title">Se ti serve solo un preventivo</p>
+          <p data-i18n="transp3_desc">Se la richiesta è un fornitore a catalogo o un'ora di consulenza, non siamo lo strumento giusto.</p>
+        </div>
+      </div>
+      <div class="transparency-card">
+        <div class="icon-warn" aria-hidden="true">!</div>
+        <div>
+          <p class="card-title" data-i18n="transp4_title">Senza un mandato chiaro</p>
+          <p data-i18n="transp4_desc">Senza delega e accesso ai dati, il presidio non produce risultati: è meglio non partire.</p>
+        </div>
+      </div>
+      <div class="transparency-card positive">
+        <div class="icon-warn" aria-hidden="true">🔒</div>
+        <div>
+          <p class="card-title" data-i18n="transp5_title">La riservatezza è il metodo</p>
+          <p data-i18n="transp5_desc">Nulla di un cliente viene raccontato a un altro: la riservatezza di oggi ti protegge domani. Casi solo di persona, sotto NDA.</p>
+        </div>
+      </div>
+      <div class="transparency-card positive">
+        <div class="icon-warn" aria-hidden="true">✓</div>
+        <div>
+          <p class="card-title" data-i18n="transp6_title">Se non siamo in grado</p>
+          <p data-i18n="transp6_desc">Te lo diciamo prima di partire, entro il primo o secondo incontro.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     QUESTIONARIO
+============================================================ -->
 <section id="questionario" class="questionnaire-section">
   <div class="container">
     <div class="section-title">
@@ -857,6 +1315,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   </div>
 </section>
 
+<!-- ============================================================
+     CONTATTI
+============================================================ -->
 <section id="contatti" class="contact-section">
   <div class="container">
     <div class="section-title">
@@ -951,6 +1412,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 </main>
 
+<!-- ============================================================
+     FOOTER
+============================================================ -->
 <footer>
   <div class="container">
     <div class="footer-grid">
@@ -981,6 +1445,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   </div>
 </footer>
 
+<!-- ============================================================
+     MODAL PRIVACY
+============================================================ -->
 <div id="privacyModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="privacyModalTitle">
   <div class="modal-content">
     <button class="modal-close" onclick="closeModal()" aria-label="Chiudi">&times;</button>
@@ -992,6 +1459,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   </div>
 </div>
 
+<!-- ============================================================
+     SCRIPT — TRANSLATIONS + LOGIC
+============================================================ -->
 <script>
 'use strict';
 
@@ -1002,8 +1472,10 @@ const translations = {
   it: {
     skip_link: "Vai al contenuto principale",
     nav_mission: "Missione", nav_criticita: "Criticità", nav_stewardship: "Progetto Futuro",
-    nav_networks: "Networks", nav_casi: "Esempi", nav_roi: "Risultati", nav_inter: "Internazionale",
-    nav_roadmap: "Roadmap", nav_areas: "Aree", nav_questionnaire: "Questionario", nav_contacts: "Contatti",
+    nav_networks: "Networks", nav_dimensioni: "Dimensioni", nav_mandati: "Mandati",
+    nav_economico: "Modello", nav_suite: "Suite", nav_casi: "Esempi", nav_roi: "Risultati",
+    nav_inter: "Internazionale", nav_roadmap: "Roadmap", nav_areas: "Aree", nav_founder: "Founder",
+    nav_trasparenza: "Trasparenza", nav_questionnaire: "Questionario", nav_contacts: "Contatti",
     hero_subtitle: "COSTRUIAMO CONTINUITÀ. PROTEGGIAMO IL TUO VALORE.",
     hero_tagline: "Creiamo network dove non esistono.",
     hero_desc: "Operational Continuity • Temporary Stewardship • Supply Chain Resilience<br>Soluzioni integrate di affiancamento operativo e strategico per PMI meccaniche e manifatturiere (2-20 dipendenti).",
@@ -1032,6 +1504,36 @@ const translations = {
     net_card1_title: "Supply Chain Resilience", net_card1_desc: "Ricerca mirata di fornitori alternativi tra Italia, Romania, Ungheria e partner network. Audit, campionature, qualifica e avvio fornitura.",
     net_card2_title: "Ecosistema Partner", net_card2_desc: "Legale, finanziario, tecnico, commerciale e istituzionale attorno allo stesso tavolo. Non vendiamo contatti: costruiamo configurazioni operative.",
     net_card3_title: "Project Integration", net_card3_desc: "Industria, energia, acqua, finanza, real estate e stakeholder coordinati. Opportunità → Discovery → Network → Pre-fattibilità → Roadmap.",
+    dims_title: "Le 5 Dimensioni che Misuriamo",
+    dims_desc: "Costruite sui dati dell'azienda. Gli indicatori non si scelgono a priori: emergono dalla diagnosi e sono legati alle leve economiche più rilevanti.",
+    dim1_title: "Risparmi", dim1_desc: "Costi di non qualità, acquisti, scorte, sprechi, inefficienze e ore improduttive.",
+    dim2_title: "Performance", dim2_desc: "Consegne puntuali, tempi ciclo, saturazione, lead time e chiusura non conformità.",
+    dim3_title: "Margini", dim3_desc: "Margine per commessa, assorbimento costi, redditività cliente e conversione cassa.",
+    dim4_title: "Continuità", dim4_desc: "Dipendenza dal titolare, copertura ruoli, know-how documentato e ridondanza fornitori.",
+    dim5_title: "Governance", dim5_desc: "KPI disponibili, frequenza report, responsabilità e tempi decisionali.",
+    mandates_title: "Un Metodo, Tre Perimetri",
+    mandates_desc: "Quale mandato è giusto per te: gli altri mandati sono tailor-made, in termini di obiettivo e perimetro.",
+    mandate1_title: "Progetto Futuro", mandate1_desc: "Presidio continuo in azienda: primo ciclo di 90 giorni, 1-2 giorni a settimana, deleghe e KPI.",
+    mandate2_title: "Sales Network", mandate2_desc: "Costruzione o riorganizzazione di canali e rete vendita: durata e presidio calibrati su mercato e obiettivi.",
+    mandate3_title: "Supplier Network", mandate3_desc: "Nuove fonti o backup della catena di fornitura: tempi legati a criticità, qualifiche e volumi.",
+    mandates_footer_title: "Customizzato, non a pacchetto",
+    mandates_footer_desc: "Perimetro, durata e presidio vengono definiti dopo la due diligence. Una volta definito il mandato, il costo segue il perimetro.",
+    econ_title: "Modello Economico",
+    econ_desc: "Il costo si definisce sul perimetro, mai a catalogo. Quattro voci di spesa, come si dimensionano e chi è responsabile di cosa.",
+    econ1_title: "Assessment Fee", econ1_desc: "Copre la fase iniziale di analisi, raccolta dati e costruzione del piano operativo.",
+    econ2_title: "Componente Fissa", econ2_desc: "Remunera il presidio concordato, il coordinamento operativo e il reporting periodico.",
+    econ3_title: "Componente Variabile", econ3_desc: "Può essere legata a KPI concordati, misurabili e verificabili, senza trasformarli in garanzie preventive.",
+    econ4_title: "Costi Specialistici", econ4_desc: "Consulenze legali, fiscali, tecniche o finanziarie autorizzate separatamente dal titolare.",
+    econ_size_title: "Come si dimensiona", econ_size_desc: "Sul perimetro concordato, obiettivi e impegno: il rapporto di conoscenza precede il prezzo e lo rende verificabile.",
+    econ_resp_title: "Chi è responsabile di cosa", econ_resp_desc: "Amministrazione e finanza restano in mano alla proprietà. Noi ci prendiamo carico di produzione, clienti, fornitori e gestione del personale.",
+    suite_title: "Structured Engineering Suite",
+    suite_desc: "La qualità diventa sistema, dato e disciplina operativa. Un sistema digitale proprietario e già operativo per gestire Control Plan, PPAP, FMEA e MSA secondo lo standard IATF 16949.",
+    suite1_title: "APQP / PPAP", suite1_desc: "Pianificazione avanzata della qualità e dossier di approvazione.",
+    suite2_title: "Non Conformità", suite2_desc: "Segnalazione, contenimento, cause, azioni e verifica di efficacia.",
+    suite3_title: "Audit & Supplier Quality", suite3_desc: "Piani di audit, survey, scorecard e sviluppo fornitori.",
+    suite4_title: "Control Plan & FAI", suite4_desc: "Piani di controllo, campionature, tracciabilità e validazione.",
+    suite5_title: "KPI & Reporting", suite5_desc: "Qualità, costi di non qualità, tempi di chiusura e trend.",
+    suite6_title: "Document Control", suite6_desc: "Revisioni, responsabilità, evidenze e disponibilità controllata.",
     cases_title: "Esempi di Intervento", cases_desc: "Ambiti di applicazione concreta del nostro modello di Temporary Stewardship.",
     case1_title: "PMI Manifatturiera", case1_l1: "Riduzione dei rischi operativi", case1_l2: "Riorganizzazione procedure", case1_l3: "Trasferimento know-how critico",
     case2_title: "Azienda in Crescita", case2_l1: "Strutturazione supply chain", case2_l2: "Sviluppo e audit fornitori", case2_l3: "Monitoraggio continuo dei KPI",
@@ -1044,9 +1546,7 @@ const translations = {
     inter_desc: "Una visione industriale estesa e radicata nei mercati chiave dell'Europa centro-orientale.",
     inter_box_title: "Il network operativo tra Italia, Romania e Ungheria",
     inter_box_desc: "La nostra forza distintiva risiede nella capacità di muoverci agilmente tra i distretti produttivi italiani e le piattaforme industriali in Romania e Ungheria, coordinando catene di fornitura complesse e progetti di espansione industriale sul campo.",
-    b_it: "🇮🇹 Italia (Headquarters / Core Strategy)",
-    b_ro: "🇷🇴 Romania (Bucarest / Engineering & Operations)",
-    b_hu: "🇭🇺 Ungheria (Supply Chain & Industrial Partnership)",
+    b_it: "🇮🇹 Italia (Headquarters / Core Strategy)", b_ro: "🇷🇴 Romania (Bucarest / Engineering & Operations)", b_hu: "🇭🇺 Ungheria (Supply Chain & Industrial Partnership)",
     roadmap_title: "Roadmap dei Primi 90 Giorni",
     roadmap_desc: "Un approccio metodologico e graduale per garantire il successo dell'intervento.",
     step1_tag: "Fase 1 • Sett. 1-2", step1_title: "Fotografia Iniziale", step1_desc: "NDA, analisi documentale, interviste aziendali e mappa dei rischi operativi immediati.",
@@ -1065,6 +1565,23 @@ const translations = {
     cert_title: "Eccellenza e Standard Industriali",
     cert_desc: "Esperienza diretta nei settori ad alta precisione: Automotive, Off-Highway e Meccanica Industriale.",
     badge_cnc: "Lavorazioni CNC & Asportazione Truciolo", badge_alloys: "Pezzi Sinterizzati e Leghe Leggere",
+    founder_title: "Francesco Malmusi",
+    founder_subtitle: "Founder & Executive Consultant — oltre 30 anni tra officina, produzione e direzione tecnica.",
+    founder1_title: "30+ Anni di Mestiere", founder1_desc: "Dal 1991: CNC, metrologia, qualità di processo, industrializzazione e direzione tecnica.",
+    founder2_title: "Qualità Certificata", founder2_desc: "Master in gestione sistemi qualità (Camera di Commercio di Bologna), controllo statistico di processo, ISO 9001:2015 e approccio IATF 16949.",
+    founder3_title: "Imprenditore e Manager", founder3_desc: "Imprenditore e responsabile sviluppo industriale dal 2001 al 2014, poi plant manager nella fase di cessione aziendale.",
+    founder4_title: "Sinterizzati e Alta Precisione", founder4_desc: "Know-how sulla metallurgia delle polveri dal 1992, componenti complessi e brevetti depositati a livello mondiale.",
+    founder5_title: "Grandi Volumi Automotive", founder5_desc: "Commesse automotive industrializzate oltre 6,5 milioni di pezzi l'anno, con attrezzature e pick-up progettati internamente.",
+    founder6_title: "Capitale Relazionale", founder6_desc: "Ruoli di vertice in Confartigianato Bologna, Camera di Commercio, consorzi e delegazioni istituzionali internazionali.",
+    founder_quote: '"Entro in azienda con un perimetro definito e mi prendo responsabilità operativa, non solo consulenza."',
+    transp_title: "Trasparenza: quando NON siamo la risposta giusta",
+    transp_desc: "Cosa ti resta e quando è meglio non partire. È il nostro standard, non un'eccezione.",
+    transp1_title: "Know-how documentato", transp1_desc: "Procedure, ruoli, deleghe e dati restano in azienda, non nella testa del consulente.",
+    transp2_title: "KPI e strumenti attivi", transp2_desc: "Dashboard, reporting e routine di controllo continuano a funzionare anche dopo la fine del mandato.",
+    transp3_title: "Se ti serve solo un preventivo", transp3_desc: "Se la richiesta è un fornitore a catalogo o un'ora di consulenza, non siamo lo strumento giusto.",
+    transp4_title: "Senza un mandato chiaro", transp4_desc: "Senza delega e accesso ai dati, il presidio non produce risultati: è meglio non partire.",
+    transp5_title: "La riservatezza è il metodo", transp5_desc: "Nulla di un cliente viene raccontato a un altro: la riservatezza di oggi ti protegge domani. Casi solo di persona, sotto NDA.",
+    transp6_title: "Se non siamo in grado", transp6_desc: "Te lo diciamo prima di partire, entro il primo o secondo incontro.",
     quest_title: "Questionario di Autonomia Aziendale",
     quest_desc: "Compila questo breve test per ricevere una valutazione preliminare sullo stato della tua continuità operativa.",
     select_option: "Seleziona un'opzione",
@@ -1096,8 +1613,10 @@ const translations = {
   en: {
     skip_link: "Skip to main content",
     nav_mission: "Mission", nav_criticita: "Criticalities", nav_stewardship: "Future Project",
-    nav_networks: "Networks", nav_casi: "Examples", nav_roi: "Results", nav_inter: "International",
-    nav_roadmap: "Roadmap", nav_areas: "Areas", nav_questionnaire: "Questionnaire", nav_contacts: "Contacts",
+    nav_networks: "Networks", nav_dimensioni: "Dimensions", nav_mandati: "Mandates",
+    nav_economico: "Model", nav_suite: "Suite", nav_casi: "Examples", nav_roi: "Results",
+    nav_inter: "International", nav_roadmap: "Roadmap", nav_areas: "Areas", nav_founder: "Founder",
+    nav_trasparenza: "Transparency", nav_questionnaire: "Questionnaire", nav_contacts: "Contacts",
     hero_subtitle: "BUILDING CONTINUITY. PROTECTING YOUR VALUE.",
     hero_tagline: "We create networks where they do not exist.",
     hero_desc: "Operational Continuity • Temporary Stewardship • Supply Chain Resilience<br>Integrated operational and strategic support for mechanical and manufacturing SMEs (2-20 employees).",
@@ -1126,6 +1645,36 @@ const translations = {
     net_card1_title: "Supply Chain Resilience", net_card1_desc: "Targeted search for alternative suppliers across Italy, Romania, Hungary and partner network. Audit, sampling, qualification and supply start-up.",
     net_card2_title: "Partner Ecosystem", net_card2_desc: "Legal, financial, technical, commercial and institutional around the same table. We do not sell contacts: we build operational configurations.",
     net_card3_title: "Project Integration", net_card3_desc: "Industry, energy, water, finance, real estate and stakeholders coordinated. Opportunity → Discovery → Network → Pre-feasibility → Roadmap.",
+    dims_title: "The 5 Dimensions We Measure",
+    dims_desc: "Built on company data. Indicators are not chosen a priori: they emerge from the diagnosis and are linked to the most relevant economic levers.",
+    dim1_title: "Savings", dim1_desc: "Non-quality costs, purchases, inventory, waste, inefficiencies and unproductive hours.",
+    dim2_title: "Performance", dim2_desc: "On-time delivery, cycle times, saturation, lead time and non-conformity closure.",
+    dim3_title: "Margins", dim3_desc: "Margin per order, cost absorption, customer profitability and cash conversion.",
+    dim4_title: "Continuity", dim4_desc: "Owner dependency, role coverage, documented know-how and supplier redundancy.",
+    dim5_title: "Governance", dim5_desc: "Available KPIs, reporting frequency, accountability and decision-making time.",
+    mandates_title: "One Method, Three Perimeters",
+    mandates_desc: "Which mandate is right for you: other mandates are tailor-made in terms of objective and perimeter.",
+    mandate1_title: "Progetto Futuro", mandate1_desc: "Continuous supervision in the company: first 90-day cycle, 1-2 days per week, delegations and KPIs.",
+    mandate2_title: "Sales Network", mandate2_desc: "Building or reorganizing sales channels and network: duration and supervision calibrated to market and objectives.",
+    mandate3_title: "Supplier Network", mandate3_desc: "New sources or backups of the current supply chain: times tied to criticalities, qualifications and volumes.",
+    mandates_footer_title: "Customized, not a package",
+    mandates_footer_desc: "Perimeter, duration and supervision are defined after due diligence. Once the mandate is defined, the cost follows the perimeter.",
+    econ_title: "Economic Model",
+    econ_desc: "The cost is defined on the perimeter, never in a catalogue. Four expense items, how they are sized, and who is responsible for what.",
+    econ1_title: "Assessment Fee", econ1_desc: "Covers the initial phase of analysis, data collection and construction of the operational plan.",
+    econ2_title: "Fixed Component", econ2_desc: "Remunerates the agreed supervision, operational coordination and periodic reporting.",
+    econ3_title: "Variable Component", econ3_desc: "Can be linked to agreed, measurable and verifiable KPIs, without turning them into preventive guarantees.",
+    econ4_title: "Specialist Costs", econ4_desc: "Legal, tax, technical or financial advice authorized separately by the owner.",
+    econ_size_title: "How it is sized", econ_size_desc: "On the agreed perimeter, objectives and commitment: the fact-finding relationship precedes the price and makes it verifiable.",
+    econ_resp_title: "Who is responsible for what", econ_resp_desc: "Administration and finance remain in the hands of the owners. We take on production, customers, suppliers and personnel management.",
+    suite_title: "Structured Engineering Suite",
+    suite_desc: "Quality becomes system, data and operational discipline. A proprietary and already operational digital system to manage Control Plan, PPAP, FMEA and MSA according to the IATF 16949 standard.",
+    suite1_title: "APQP / PPAP", suite1_desc: "Advanced quality planning and approval dossiers.",
+    suite2_title: "Non-Compliance", suite2_desc: "Reporting, containment, causes, actions and verification of effectiveness.",
+    suite3_title: "Audit & Supplier Quality", suite3_desc: "Audit plans, surveys, scorecards and supplier development.",
+    suite4_title: "Control Plan & FAI", suite4_desc: "Control plans, sampling, traceability and validation.",
+    suite5_title: "KPIs & Reporting", suite5_desc: "Quality, non-quality costs, closing times and trends.",
+    suite6_title: "Document Control", suite6_desc: "Reviews, responsibilities, evidence, and controlled availability.",
     cases_title: "Intervention Examples", cases_desc: "Concrete application areas of our Temporary Stewardship model.",
     case1_title: "Manufacturing SME", case1_l1: "Operational risk reduction", case1_l2: "Procedure reorganization", case1_l3: "Critical know-how transfer",
     case2_title: "Growing Company", case2_l1: "Supply chain structuring", case2_l2: "Supplier development and audits", case2_l3: "Continuous KPI monitoring",
@@ -1138,9 +1687,7 @@ const translations = {
     inter_desc: "An extended industrial vision rooted in key Central-Eastern European markets.",
     inter_box_title: "The operational network between Italy, Romania, and Hungary",
     inter_box_desc: "Our distinctive strength lies in our ability to move agilely between Italian manufacturing districts and industrial platforms in Romania and Hungary, coordinating complex supply chains and field industrial expansion projects.",
-    b_it: "🇮🇹 Italy (Headquarters / Core Strategy)",
-    b_ro: "🇷🇴 Romania (Bucharest / Engineering & Operations)",
-    b_hu: "🇭🇺 Hungary (Supply Chain & Industrial Partnership)",
+    b_it: "🇮🇹 Italy (Headquarters / Core Strategy)", b_ro: "🇷🇴 Romania (Bucharest / Engineering & Operations)", b_hu: "🇭🇺 Hungary (Supply Chain & Industrial Partnership)",
     roadmap_title: "First 90 Days Roadmap",
     roadmap_desc: "A methodological and step-by-step approach to ensure intervention success.",
     step1_tag: "Phase 1 • Wk 1-2", step1_title: "Initial Assessment", step1_desc: "NDA, document review, team interviews, and immediate risk mapping.",
@@ -1159,6 +1706,23 @@ const translations = {
     cert_title: "Excellence & Industrial Standards",
     cert_desc: "Direct experience in high-precision sectors: Automotive, Off-Highway, and Industrial Machining.",
     badge_cnc: "CNC Machining & Metal Cutting", badge_alloys: "Sintered Parts & Light Alloys",
+    founder_title: "Francesco Malmusi",
+    founder_subtitle: "Founder & Executive Consultant — over 30 years between workshop, production and technical management.",
+    founder1_title: "30+ Years of Craft", founder1_desc: "Since 1991: CNC, metrology, process quality, industrialization and technical management.",
+    founder2_title: "Certified Quality", founder2_desc: "Master in quality systems management (Bologna Chamber of Commerce), statistical process control, ISO 9001:2015 and IATF 16949 approach.",
+    founder3_title: "Entrepreneur and Manager", founder3_desc: "Entrepreneur and industrial development manager from 2001 to 2014, then plant manager during the corporate sale phase.",
+    founder4_title: "Sintered and High Precision", founder4_desc: "Powder metallurgy know-how since 1992, complex components and patents filed worldwide.",
+    founder5_title: "Large Automotive Volumes", founder5_desc: "Industrialized automotive orders over 6.5 million pieces per year, with in-house designed equipment and workpiece pick-ups.",
+    founder6_title: "Relational Capital", founder6_desc: "Top roles in Confartigianato Bologna, Chamber of Commerce, consortia and international institutional delegations.",
+    founder_quote: '"I join the company with a defined perimeter and I take operational responsibility, not just consultancy."',
+    transp_title: "Transparency: when we are NOT the right answer",
+    transp_desc: "What you are left with and when it is better not to start. It is our standard, not an exception.",
+    transp1_title: "Documented know-how", transp1_desc: "Procedures, roles, proxies and data remain in the company, not in the consultant's head.",
+    transp2_title: "Active KPIs and tools", transp2_desc: "Dashboard, reporting and control routines continue to work even after the end of the mandate.",
+    transp3_title: "If you only need a quote", transp3_desc: "If the request is a catalogue supplier or an hour of consultation, we are not the right tool.",
+    transp4_title: "Without a clear mandate", transp4_desc: "Without delegation and access to data, the presidium does not produce results: it is better not to start.",
+    transp5_title: "Confidentiality is the method", transp5_desc: "Nothing about one customer is told to another: today's confidentiality protects you tomorrow. Cases only in person, under NDA.",
+    transp6_title: "If we are unable", transp6_desc: "We tell you before leaving, within the first or second meeting.",
     quest_title: "Business Autonomy Questionnaire",
     quest_desc: "Complete this short test to receive a preliminary assessment of your operational continuity.",
     select_option: "Select an option",
@@ -1190,8 +1754,10 @@ const translations = {
   ro: {
     skip_link: "Sari la conținutul principal",
     nav_mission: "Misiune", nav_criticita: "Criticități", nav_stewardship: "Proiect Viitor",
-    nav_networks: "Rețele", nav_casi: "Exemple", nav_roi: "Rezultate", nav_inter: "Internațional",
-    nav_roadmap: "Roadmap", nav_areas: "Domenii", nav_questionnaire: "Chestionar", nav_contacts: "Contact",
+    nav_networks: "Rețele", nav_dimensioni: "Dimensiuni", nav_mandati: "Mandate",
+    nav_economico: "Model", nav_suite: "Suite", nav_casi: "Exemple", nav_roi: "Rezultate",
+    nav_inter: "Internațional", nav_roadmap: "Roadmap", nav_areas: "Domenii", nav_founder: "Fondator",
+    nav_trasparenza: "Transparență", nav_questionnaire: "Chestionar", nav_contacts: "Contact",
     hero_subtitle: "CONSTRUIM CONTINUITATE. PROTEJĂM VALOAREA TA.",
     hero_tagline: "Creăm rețele acolo unde nu există.",
     hero_desc: "Operational Continuity • Temporary Stewardship • Supply Chain Resilience<br>Soluții integrate de asistență operativă și strategică pentru IMM-uri mecanice și de producție (2-20 angajați).",
@@ -1220,6 +1786,36 @@ const translations = {
     net_card1_title: "Reziliența Lanțului de Aprovizionare", net_card1_desc: "Căutare țintită de furnizori alternativi în Italia, România, Ungaria și rețeaua de parteneri. Audit, eșantionare, calificare și demarare.",
     net_card2_title: "Ecosistem de Parteneri", net_card2_desc: "Legal, financiar, tehnic, comercial și instituțional la aceeași masă. Nu vindem contacte: construim configurații operaționale.",
     net_card3_title: "Integrarea Proiectelor", net_card3_desc: "Industrie, energie, apă, finanțe, imobiliare și părți interesate coordonate. Oportunitate → Discovery → Rețea → Pre-fezabilitate → Roadmap.",
+    dims_title: "Cele 5 Dimensiuni pe care le Măsurăm",
+    dims_desc: "Construite pe datele companiei. Indicatorii nu se aleg a priori: apar din diagnoză și sunt legați de pârghiile economice relevante.",
+    dim1_title: "Economii", dim1_desc: "Costuri de non-calitate, achiziții, stocuri, risipe, ineficiențe și ore neproductive.",
+    dim2_title: "Performanță", dim2_desc: "Livrări la timp, timpi de ciclu, saturație, lead time și închiderea neconformităților.",
+    dim3_title: "Marje", dim3_desc: "Marjă pe comandă, absorbția costurilor, profitabilitatea clientului și conversia în numerar.",
+    dim4_title: "Continuitate", dim4_desc: "Dependența de proprietar, acoperirea rolurilor, know-how documentat și redundanța furnizorilor.",
+    dim5_title: "Guvernanță", dim5_desc: "KPI disponibili, frecvența raportării, responsabilitate și timp de decizie.",
+    mandates_title: "O Metodă, Trei Perimetre",
+    mandates_desc: "Ce mandat ți se potrivește: celelalte mandate sunt tailor-made, ca obiectiv și perimetru.",
+    mandate1_title: "Progetto Futuro", mandate1_desc: "Prezență continuă în companie: primul ciclu de 90 de zile, 1-2 zile pe săptămână, delegări și KPI.",
+    mandate2_title: "Sales Network", mandate2_desc: "Construirea sau reorganizarea canalelor și rețelei de vânzări: durata și prezența calibrate la piață și obiective.",
+    mandate3_title: "Supplier Network", mandate3_desc: "Noi surse sau backup ale lanțului de aprovizionare: timpi legați de criticități, calificări și volume.",
+    mandates_footer_title: "Personalizat, nu la pachet",
+    mandates_footer_desc: "Perimetrul, durata și prezența sunt definite după due diligence. Odată definit mandatul, costul urmează perimetrul.",
+    econ_title: "Model Economic",
+    econ_desc: "Costul se definește pe perimetru, niciodată la catalog. Patru voci de cheltuieli, cum se dimensionează și cine este responsabil pentru ce.",
+    econ1_title: "Assessment Fee", econ1_desc: "Acoperă faza inițială de analiză, colectare date și construirea planului operativ.",
+    econ2_title: "Componentă Fixă", econ2_desc: "Remunerează prezența convenită, coordonarea operativă și raportarea periodică.",
+    econ3_title: "Componentă Variabilă", econ3_desc: "Poate fi legată de KPI conveniți, măsurabili și verificabili, fără a-i transforma în garanții preventive.",
+    econ4_title: "Costuri Specializate", econ4_desc: "Consultanță legală, fiscală, tehnică sau financiară autorizată separat de proprietar.",
+    econ_size_title: "Cum se dimensionează", econ_size_desc: "Pe perimetrul convenit, obiective și angajament: relația de cunoaștere precede prețul și îl face verificabil.",
+    econ_resp_title: "Cine este responsabil pentru ce", econ_resp_desc: "Administrația și finanțele rămân în mâinile proprietarilor. Noi preluăm producția, clienții, furnizorii și managementul personalului.",
+    suite_title: "Structured Engineering Suite",
+    suite_desc: "Calitatea devine sistem, date și disciplină operativă. Un sistem digital proprietar și deja operațional pentru a gestiona Control Plan, PPAP, FMEA și MSA conform standardului IATF 16949.",
+    suite1_title: "APQP / PPAP", suite1_desc: "Planificare avansată a calității și dosare de aprobare.",
+    suite2_title: "Neconformitate", suite2_desc: "Raportare, izolare, cauze, acțiuni și verificarea eficacității.",
+    suite3_title: "Audit & Supplier Quality", suite3_desc: "Planuri de audit, sondaje, scorecard și dezvoltarea furnizorilor.",
+    suite4_title: "Control Plan & FAI", suite4_desc: "Planuri de control, eșantionare, trasabilitate și validare.",
+    suite5_title: "KPI & Reporting", suite5_desc: "Calitate, costuri de non-calitate, timpi de închidere și tendințe.",
+    suite6_title: "Document Control", suite6_desc: "Revizuiri, responsabilități, dovezi și disponibilitate controlată.",
     cases_title: "Exemple de Intervenție", cases_desc: "Domenii concrete de aplicare a modelului nostru de Temporary Stewardship.",
     case1_title: "IMM de Producție", case1_l1: "Reducerea riscurilor operative", case1_l2: "Reorganizarea procedurilor", case1_l3: "Transferul know-how-ului critic",
     case2_title: "Companie în Creștere", case2_l1: "Structurarea lanțului de aprovizionare", case2_l2: "Dezvoltarea și auditul furnizorilor", case2_l3: "Monitorizarea continuă a KPI",
@@ -1232,9 +1828,7 @@ const translations = {
     inter_desc: "O viziune industrială extinsă și ancorată în piețele cheie din Europa Centrală și de Est.",
     inter_box_title: "Rețeaua operativă între Italia, România și Ungaria",
     inter_box_desc: "Forța noastră constă în capacitatea de a ne mișca agil între districtele de producție italiene și platformele industriale din România și Ungaria.",
-    b_it: "🇮🇹 Italia (Headquarters / Core Strategy)",
-    b_ro: "🇷🇴 România (București / Engineering & Operations)",
-    b_hu: "🇭🇺 Ungaria (Supply Chain & Industrial Partnership)",
+    b_it: "🇮🇹 Italia (Headquarters / Core Strategy)", b_ro: "🇷🇴 România (București / Engineering & Operations)", b_hu: "🇭🇺 Ungaria (Supply Chain & Industrial Partnership)",
     roadmap_title: "Roadmap Primesc 90 de Zile",
     roadmap_desc: "O abordare metodologică și treptată pentru a garanta succesul intervenției.",
     step1_tag: "Faza 1 • Săpt. 1-2", step1_title: "Evaluare Inițială", step1_desc: "NDA, analiza documentelor, interviuri și harta riscurilor imediate.",
@@ -1253,6 +1847,23 @@ const translations = {
     cert_title: "Excelență și Standarde Industriale",
     cert_desc: "Experiență directă în sectoare de înaltă precizie: Automotive, Off-Highway și Mecanică Industrială.",
     badge_cnc: "Prelucrări CNC & Așchiere", badge_alloys: "Piese Sinterizate și Aliaje Ușoare",
+    founder_title: "Francesco Malmusi",
+    founder_subtitle: "Founder & Executive Consultant — peste 30 de ani între atelier, producție și direcție tehnică.",
+    founder1_title: "30+ Ani de Meserie", founder1_desc: "Din 1991: CNC, metrologie, calitate de proces, industrializare și direcție tehnică.",
+    founder2_title: "Calitate Certificată", founder2_desc: "Master în managementul sistemelor de calitate (Camera de Comerț Bologna), control statistic al procesului, ISO 9001:2015 și abordare IATF 16949.",
+    founder3_title: "Antreprenor și Manager", founder3_desc: "Antreprenor și manager de dezvoltare industrială din 2001 până în 2014, apoi plant manager în faza de vânzare a companiei.",
+    founder4_title: "Sinterizate și Înaltă Precizie", founder4_desc: "Know-how în metalurgia pulberilor din 1992, componente complexe și brevete depuse la nivel mondial.",
+    founder5_title: "Volume Mari Automotive", founder5_desc: "Comenzi automotive industrializate peste 6,5 milioane de piese pe an, cu echipamente și pick-up proiectate intern.",
+    founder6_title: "Capital Relațional", founder6_desc: "Roluri de top în Confartigianato Bologna, Camera de Comerț, consorții și delegații instituționale internaționale.",
+    founder_quote: '"Intru în companie cu un perimetru definit și îmi asum responsabilitatea operativă, nu doar consultanță."',
+    transp_title: "Transparență: când NU suntem răspunsul potrivit",
+    transp_desc: "Ce îți rămâne și când este mai bine să nu începi. Este standardul nostru, nu o excepție.",
+    transp1_title: "Know-how documentat", transp1_desc: "Proceduri, roluri, delegări și date rămân în companie, nu în capul consultantului.",
+    transp2_title: "KPI și instrumente active", transp2_desc: "Dashboard, raportare și rutine de control continuă să funcționeze și după încheierea mandatului.",
+    transp3_title: "Dacă ai nevoie doar de o ofertă", transp3_desc: "Dacă cererea este un furnizor la catalog sau o oră de consultanță, nu suntem instrumentul potrivit.",
+    transp4_title: "Fără un mandat clar", transp4_desc: "Fără delegare și acces la date, prezența nu produce rezultate: este mai bine să nu începi.",
+    transp5_title: "Confidențialitatea este metoda", transp5_desc: "Nimic despre un client nu se spune altuia: confidențialitatea de astăzi te protejează mâine. Cazuri doar în persoană, sub NDA.",
+    transp6_title: "Dacă nu suntem în măsură", transp6_desc: "Îți spunem înainte de a începe, în prima sau a doua întâlnire.",
     quest_title: "Chestionar de Autonomie a Companiei",
     quest_desc: "Completează acest scurt test pentru o evaluare preliminară a continuității operative.",
     select_option: "Selectează o opțiune",
@@ -1284,8 +1895,10 @@ const translations = {
   hu: {
     skip_link: "Ugrás a fő tartalomra",
     nav_mission: "Küldetés", nav_criticita: "Kritikus pontok", nav_stewardship: "Jövőbeli Projekt",
-    nav_networks: "Hálózatok", nav_casi: "Példák", nav_roi: "Eredmények", nav_inter: "Nemzetközi",
-    nav_roadmap: "Útiterv", nav_areas: "Területek", nav_questionnaire: "Kérdőív", nav_contacts: "Kapcsolat",
+    nav_networks: "Hálózatok", nav_dimensioni: "Dimenziók", nav_mandati: "Mandátumok",
+    nav_economico: "Modell", nav_suite: "Suite", nav_casi: "Példák", nav_roi: "Eredmények",
+    nav_inter: "Nemzetközi", nav_roadmap: "Útiterv", nav_areas: "Területek", nav_founder: "Alapító",
+    nav_trasparenza: "Átláthatóság", nav_questionnaire: "Kérdőív", nav_contacts: "Kapcsolat",
     hero_subtitle: "FOLYTONOSSÁGOT ÉPÍTÜNK. VÉDJÜK AZ ÉRTÉKÉT.",
     hero_tagline: "Hálózatokat építünk ott, ahol még nincsenek.",
     hero_desc: "Operational Continuity • Temporary Stewardship • Supply Chain Resilience<br>Integrált operatív és stratégiai támogatás gépipari és gyártó kkv-k számára (2-20 alkalmazott).",
@@ -1314,6 +1927,36 @@ const translations = {
     net_card1_title: "Ellátási Lánc Reziliencia", net_card1_desc: "Célzott alternatív beszállítók keresése Olaszországban, Romániában, Magyarországon és a partnerhálózatban. Audit, mintavétel, minősítés és szállítás indítása.",
     net_card2_title: "Partner Ökoszisztéma", net_card2_desc: "Jogi, pénzügyi, technikai, kereskedelmi és intézményi szereplők egy asztalnál. Nem elérhetőségeket adunk el: operatív konfigurációkat építünk.",
     net_card3_title: "Projekt Integráció", net_card3_desc: "Ipar, energia, víz, pénzügy, ingatlan és érintettek koordinálva. Lehetőség → Discovery → Hálózat → Elő-megvalósíthatóság → Útiterv.",
+    dims_title: "Az 5 Dimenzió, Amit Mérünk",
+    dims_desc: "A vállalat adataira épül. A mutatókat nem előre választjuk: a diagnózisból emelkednek ki és a legfontosabb gazdasági karokhoz kapcsolódnak.",
+    dim1_title: "Megtakarítások", dim1_desc: "Nem-megfelelőségi költségek, beszerzések, készletek, pazarlás, ineficienciák és nem produktív órák.",
+    dim2_title: "Teljesítmény", dim2_desc: "Pontos szállítások, ciklusidők, telítettség, lead time és nem-megfelelőségek lezárása.",
+    dim3_title: "Árrések", dim3_desc: "Megrendelésenkénti árrés, költségabszorpció, ügyfél jövedelmezősége és készpénzkonverzió.",
+    dim4_title: "Folytonosság", dim4_desc: "Tulajdonostól való függés, szerepkörök lefedettsége, dokumentált know-how és beszállítói redundancia.",
+    dim5_title: "Irányítás", dim5_desc: "Elérhető KPI-ok, jelentési gyakoriság, elszámoltathatóság és döntési idő.",
+    mandates_title: "Egy Módszer, Három Periméter",
+    mandates_desc: "Melyik mandátum a megfelelő: a többi mandátum egyedi, cél és periméter szerint.",
+    mandate1_title: "Progetto Futuro", mandate1_desc: "Folyamatos jelenlét a cégnél: első 90 napos ciklus, heti 1-2 nap, felhatalmazások és KPI-ok.",
+    mandate2_title: "Sales Network", mandate2_desc: "Értékesítési csatornák és hálózat építése vagy újjászervezése: időtartam és jelenlét a piac és a célok szerint kalibrálva.",
+    mandate3_title: "Supplier Network", mandate3_desc: "Új források vagy az ellátási lánc backupja: időzítés a kritikusságokhoz, minősítésekhez és volumenekhez igazítva.",
+    mandates_footer_title: "Testreszabott, nem csomag",
+    mandates_footer_desc: "Periméter, időtartam és jelenlét a due diligence után kerül meghatározásra. A mandátum meghatározása után a költség követi a perimétert.",
+    econ_title: "Gazdasági Modell",
+    econ_desc: "A költség a periméteren alapul, soha nem katalógusból. Négy költségtétel, hogyan méretezik és ki felelős miért.",
+    econ1_title: "Assessment Fee", econ1_desc: "Lefedi az elemzés, adatgyűjtés és az operatív terv felépítésének kezdeti szakaszát.",
+    econ2_title: "Fix Komponens", econ2_desc: "A megbeszélt jelenlétet, operatív koordinációt és rendszeres jelentést díjazza.",
+    econ3_title: "Változó Komponens", econ3_desc: "Összekapcsolható megállapodott, mérhető és ellenőrizhető KPI-okkal, anélkül hogy preventív garanciákká alakulnának.",
+    econ4_title: "Szakértői Költségek", econ4_desc: "Jogi, adózási, technikai vagy pénzügyi tanácsadás, amelyet a tulajdonos külön engedélyez.",
+    econ_size_title: "Hogyan méretezik", econ_size_desc: "A megbeszélt periméteren, célokon és elkötelezettségen: a megismerési kapcsolat megelőzi az árat és ellenőrizhetővé teszi.",
+    econ_resp_title: "Ki felelős miért", econ_resp_desc: "Az adminisztráció és a pénzügy a tulajdonosok kezében marad. Mi átvesszük a termelést, az ügyfeleket, a beszállítókat és a személyzeti menedzsmentet.",
+    suite_title: "Structured Engineering Suite",
+    suite_desc: "A minőség rendszerré, adattá és operatív fegyelemmé válik. Saját és már működő digitális rendszer a Control Plan, PPAP, FMEA és MSA kezelésére az IATF 16949 szabvány szerint.",
+    suite1_title: "APQP / PPAP", suite1_desc: "Fejlett minőségtervezés és jóváhagyási dossziék.",
+    suite2_title: "Nem-megfelelőség", suite2_desc: "Jelentés, izolálás, okok, intézkedések és hatékonyság ellenőrzése.",
+    suite3_title: "Audit & Supplier Quality", suite3_desc: "Audit tervek, felmérések, scorecard és beszállítófejlesztés.",
+    suite4_title: "Control Plan & FAI", suite4_desc: "Ellenőrzési tervek, mintavétel, nyomonkövethetőség és validálás.",
+    suite5_title: "KPI & Reporting", suite5_desc: "Minőség, nem-megfelelőségi költségek, lezárási idők és trendek.",
+    suite6_title: "Document Control", suite6_desc: "Felülvizsgálatok, felelősségek, bizonyítékok és ellenőrzött elérhetőség.",
     cases_title: "Beavatkozási Példák", cases_desc: "A Temporary Stewardship modellünk konkrét alkalmazási területei.",
     case1_title: "Gyártó KKV", case1_l1: "Működési kockázatok csökkentése", case1_l2: "Eljárások újraszervezése", case1_l3: "Kritikus know-how átadása",
     case2_title: "Növekvő Vállalat", case2_l1: "Ellátási lánc strukturálása", case2_l2: "Beszállítói fejlesztés és audit", case2_l3: "Folyamatos KPI-követés",
@@ -1326,9 +1969,7 @@ const translations = {
     inter_desc: "Kiterjedt ipari vízió a közép-kelet-európai piacokon.",
     inter_box_title: "Az Olaszország, Románia és Magyarország közötti hálózat",
     inter_box_desc: "Erősségünk abban rejlik, hogy agilisan mozgunk az olasz termelési körzetek és a romániai, valamint magyarországi ipari platformok között.",
-    b_it: "🇮🇹 Olaszország (Központ / Stratégia)",
-    b_ro: "🇷🇴 Románia (Bukarest / Mérnökség & Műveletek)",
-    b_hu: "🇭🇺 Magyarország (Ellátási Lánc & Partnerkapcsolat)",
+    b_it: "🇮🇹 Olaszország (Központ / Stratégia)", b_ro: "🇷🇴 Románia (Bukarest / Mérnökség & Műveletek)", b_hu: "🇭🇺 Magyarország (Ellátási Lánc & Partnerkapcsolat)",
     roadmap_title: "Az Első 90 Nap Útiterve",
     roadmap_desc: "Módszertani és fokozatos megközelítés a siker garantálása érdekében.",
     step1_tag: "1. Fázis • 1-2. Hét", step1_title: "Kezdeti Helyzetkép", step1_desc: "Titoktartási megállapodás (NDA), dokumentumok elemzése és azonnali kockázatok felmérése.",
@@ -1347,6 +1988,23 @@ const translations = {
     cert_title: "Kiválóság és Ipari Szabványok",
     cert_desc: "Közvetlen tapasztalat nagy pontosságú szektorokban: Automotive, Off-Highway és Gépipar.",
     badge_cnc: "CNC Megmunkálás & Forgácsolás", badge_alloys: "Szinterezett Alkatrészek és Könnyűfémek",
+    founder_title: "Francesco Malmusi",
+    founder_subtitle: "Founder & Executive Consultant — több mint 30 év műhely, termelés és műszaki vezetés között.",
+    founder1_title: "30+ Év Szakma", founder1_desc: "1991 óta: CNC, metrológia, folyamatminőség, iparosítás és műszaki vezetés.",
+    founder2_title: "Tanúsított Minőség", founder2_desc: "Master minőségirányítási rendszerekben (Bologna Kereskedelmi Kamara), statisztikai folyamatszabályozás, ISO 9001:2015 és IATF 16949 megközelítés.",
+    founder3_title: "Vállalkozó és Menedzser", founder3_desc: "Vállalkozó és ipari fejlesztési menedzser 2001 és 2014 között, majd plant manager a vállalat értékesítési szakaszában.",
+    founder4_title: "Szinterezett és Nagy Precizitás", founder4_desc: "Porkohászati know-how 1992 óta, komplex alkatrészek és világszerte bejegyzett szabadalmak.",
+    founder5_title: "Nagy Automotive Volumenek", founder5_desc: "Iparosított automotive megrendelések évi 6,5 millió darab felett, házon belül tervezett szerszámokkal és munkadarab-felvevőkkel.",
+    founder6_title: "Kapcsolati Tőke", founder6_desc: "Vezető pozíciók a Confartigianato Bolognában, a Kereskedelmi Kamarában, konzorciumokban és nemzetközi intézményi delegációkban.",
+    founder_quote: '"Meghatározott periméterrel lépek be a cégbe és operatív felelősséget vállalok, nem csak tanácsadást."',
+    transp_title: "Átláthatóság: amikor NEM mi vagyunk a megfelelő válasz",
+    transp_desc: "Mi marad veled és mikor jobb nem elkezdeni. Ez a mi standardunk, nem kivétel.",
+    transp1_title: "Dokumentált know-how", transp1_desc: "Eljárások, szerepek, felhatalmazások és adatok a cégnél maradnak, nem a tanácsadó fejében.",
+    transp2_title: "Aktív KPI-ok és eszközök", transp2_desc: "A dashboard, a jelentés és az ellenőrzési rutinok a mandátum vége után is működnek.",
+    transp3_title: "Ha csak ajánlatra van szükséged", transp3_desc: "Ha a kérés katalógusbeszállító vagy egy óra konzultáció, nem mi vagyunk a megfelelő eszköz.",
+    transp4_title: "Világos mandátum nélkül", transp4_desc: "Felhatalmazás és adathozzáférés nélkül a jelenlét nem hoz eredményt: jobb nem elkezdeni.",
+    transp5_title: "A bizalmas kezelés a módszer", transp5_desc: "Egy ügyfélről semmit nem mondunk a másiknak: a mai bizalmasság holnap véd téged. Esetek csak személyesen, NDA alatt.",
+    transp6_title: "Ha nem vagyunk képesek", transp6_desc: "Az indulás előtt megmondjuk, az első vagy második találkozón.",
     quest_title: "Vállalati Önállósági Kérdőív",
     quest_desc: "Töltse ki ezt a rövid tesztet, hogy előzetes értékelést kapjon vállalkozása működési folytonosságáról.",
     select_option: "Válasszon opciót",
@@ -1378,8 +2036,10 @@ const translations = {
   es: {
     skip_link: "Saltar al contenido principal",
     nav_mission: "Misión", nav_criticita: "Puntos Críticos", nav_stewardship: "Proyecto Futuro",
-    nav_networks: "Redes", nav_casi: "Ejemplos", nav_roi: "Resultados", nav_inter: "Internacional",
-    nav_roadmap: "Hoja de Ruta", nav_areas: "Áreas", nav_questionnaire: "Cuestionario", nav_contacts: "Contacto",
+    nav_networks: "Redes", nav_dimensioni: "Dimensiones", nav_mandati: "Mandatos",
+    nav_economico: "Modelo", nav_suite: "Suite", nav_casi: "Ejemplos", nav_roi: "Resultados",
+    nav_inter: "Internacional", nav_roadmap: "Hoja de Ruta", nav_areas: "Áreas", nav_founder: "Fundador",
+    nav_trasparenza: "Transparencia", nav_questionnaire: "Cuestionario", nav_contacts: "Contacto",
     hero_subtitle: "CONSTRUIMOS CONTINUIDAD. PROTEGEMOS SU VALOR.",
     hero_tagline: "Creamos redes donde no existen.",
     hero_desc: "Operational Continuity • Temporary Stewardship • Supply Chain Resilience<br>Soluciones integradas de apoyo operativo y estratégico para PYMEs mecánicas y manufactureras (2-20 empleados).",
@@ -1408,6 +2068,36 @@ const translations = {
     net_card1_title: "Resiliencia de la Cadena de Suministro", net_card1_desc: "Búsqueda específica de proveedores alternativos en Italia, Rumanía, Hungría y red de socios. Auditoría, muestreo, calificación e inicio de suministro.",
     net_card2_title: "Ecosistema de Socios", net_card2_desc: "Legal, financiero, técnico, comercial e institucional en la misma mesa. No vendemos contactos: construimos configuraciones operativas.",
     net_card3_title: "Integración de Proyectos", net_card3_desc: "Industria, energía, agua, finanzas, inmobiliario y partes interesadas coordinadas. Oportunidad → Discovery → Red → Pre-viabilidad → Hoja de ruta.",
+    dims_title: "Las 5 Dimensiones que Medimos",
+    dims_desc: "Construidas sobre los datos de la empresa. Los indicadores no se eligen a priori: emergen del diagnóstico y se vinculan a las palancas económicas más relevantes.",
+    dim1_title: "Ahorros", dim1_desc: "Costes de no calidad, compras, inventario, desperdicios, ineficiencias y horas improductivas.",
+    dim2_title: "Rendimiento", dim2_desc: "Entregas puntuales, tiempos de ciclo, saturación, lead time y cierre de no conformidades.",
+    dim3_title: "Márgenes", dim3_desc: "Margen por pedido, absorción de costes, rentabilidad del cliente y conversión de efectivo.",
+    dim4_title: "Continuidad", dim4_desc: "Dependencia del propietario, cobertura de roles, know-how documentado y redundancia de proveedores.",
+    dim5_title: "Gobernanza", dim5_desc: "KPI disponibles, frecuencia de informes, responsabilidad y tiempo de decisión.",
+    mandates_title: "Un Método, Tres Perímetros",
+    mandates_desc: "Qué mandato es el adecuado: los otros mandatos son a medida, en objetivo y perímetro.",
+    mandate1_title: "Progetto Futuro", mandate1_desc: "Supervisión continua en la empresa: primer ciclo de 90 días, 1-2 días por semana, delegaciones y KPI.",
+    mandate2_title: "Sales Network", mandate2_desc: "Construcción o reorganización de canales y red de ventas: duración y supervisión calibradas al mercado y objetivos.",
+    mandate3_title: "Supplier Network", mandate3_desc: "Nuevas fuentes o respaldos de la cadena de suministro: tiempos ligados a criticidades, calificaciones y volúmenes.",
+    mandates_footer_title: "Personalizado, no paquete",
+    mandates_footer_desc: "Perímetro, duración y supervisión se definen tras la due diligence. Una vez definido el mandato, el coste sigue el perímetro.",
+    econ_title: "Modelo Económico",
+    econ_desc: "El coste se define sobre el perímetro, nunca en catálogo. Cuatro partidas de gasto, cómo se dimensionan y quién es responsable de qué.",
+    econ1_title: "Assessment Fee", econ1_desc: "Cubre la fase inicial de análisis, recogida de datos y construcción del plan operativo.",
+    econ2_title: "Componente Fija", econ2_desc: "Remunera la supervisión acordada, la coordinación operativa y el reporting periódico.",
+    econ3_title: "Componente Variable", econ3_desc: "Puede vincularse a KPI acordados, medibles y verificables, sin convertirlos en garantías preventivas.",
+    econ4_title: "Costes Especializados", econ4_desc: "Asesoramiento legal, fiscal, técnico o financiero autorizado por separado por el propietario.",
+    econ_size_title: "Cómo se dimensiona", econ_size_desc: "Sobre el perímetro acordado, objetivos y compromiso: la relación de conocimiento precede al precio y lo hace verificable.",
+    econ_resp_title: "Quién es responsable de qué", econ_resp_desc: "Administración y finanzas permanecen en manos de los propietarios. Nosotros asumimos producción, clientes, proveedores y gestión de personal.",
+    suite_title: "Structured Engineering Suite",
+    suite_desc: "La calidad se convierte en sistema, datos y disciplina operativa. Un sistema digital propietario y ya operativo para gestionar Control Plan, PPAP, FMEA y MSA según el estándar IATF 16949.",
+    suite1_title: "APQP / PPAP", suite1_desc: "Planificación avanzada de la calidad y dossieres de aprobación.",
+    suite2_title: "No Conformidad", suite2_desc: "Notificación, contención, causas, acciones y verificación de eficacia.",
+    suite3_title: "Audit & Supplier Quality", suite3_desc: "Planes de auditoría, encuestas, scorecards y desarrollo de proveedores.",
+    suite4_title: "Control Plan & FAI", suite4_desc: "Planes de control, muestreo, trazabilidad y validación.",
+    suite5_title: "KPIs & Reporting", suite5_desc: "Calidad, costes de no calidad, tiempos de cierre y tendencias.",
+    suite6_title: "Document Control", suite6_desc: "Revisiones, responsabilidades, evidencias y disponibilidad controlada.",
     cases_title: "Ejemplos de Intervención", cases_desc: "Ámbitos de aplicación concreta de nuestro modelo de Temporary Stewardship.",
     case1_title: "PYME Manufacturera", case1_l1: "Reducción de riesgos operativos", case1_l2: "Reorganización de procedimientos", case1_l3: "Transferencia de know-how crítico",
     case2_title: "Empresa en Crecimiento", case2_l1: "Estructuración de la cadena de suministro", case2_l2: "Desarrollo y auditoría de proveedores", case2_l3: "Monitoreo continuo de KPI",
@@ -1420,9 +2110,7 @@ const translations = {
     inter_desc: "Una visión industrial extendida en los mercados clave de Europa Central y Oriental.",
     inter_box_title: "La red operativa entre Italia, Rumanía y Hungría",
     inter_box_desc: "Nuestra fuerza radica en la capacidad de movernos ágilmente entre distritos industriales.",
-    b_it: "🇮🇹 Italia (Sede / Estrategia Central)",
-    b_ro: "🇷🇴 Rumanía (Bucarest / Ingeniería y Operaciones)",
-    b_hu: "🇭🇺 Hungría (Cadena de Suministro y Alianzas)",
+    b_it: "🇮🇹 Italia (Sede / Estrategia Central)", b_ro: "🇷🇴 Rumanía (Bucarest / Ingeniería y Operaciones)", b_hu: "🇭🇺 Hungría (Cadena de Suministro y Alianzas)",
     roadmap_title: "Hoja de Ruta de los Primeros 90 Días",
     roadmap_desc: "Un enfoque metodológico y gradual para garantizar el éxito.",
     step1_tag: "Fase 1 • Sem. 1-2", step1_title: "Evaluación Inicial", step1_desc: "Acuerdo de confidencialidad (NDA), análisis documental y mapa de riesgos inmediatos.",
@@ -1441,6 +2129,23 @@ const translations = {
     cert_title: "Excelencia y Estándares Industriales",
     cert_desc: "Experiencia directa en sectores de alta precisión: Automoción, Off-Highway y Mecánica.",
     badge_cnc: "Mecanizado CNC y Mecanizado de Metales", badge_alloys: "Piezas Sinterizadas y Aleaciones Ligeras",
+    founder_title: "Francesco Malmusi",
+    founder_subtitle: "Founder & Executive Consultant — más de 30 años entre taller, producción y dirección técnica.",
+    founder1_title: "30+ Años de Oficio", founder1_desc: "Desde 1991: CNC, metrología, calidad de proceso, industrialización y dirección técnica.",
+    founder2_title: "Calidad Certificada", founder2_desc: "Máster en gestión de sistemas de calidad (Cámara de Comercio de Bolonia), control estadístico de procesos, ISO 9001:2015 y enfoque IATF 16949.",
+    founder3_title: "Empresario y Gerente", founder3_desc: "Empresario y gerente de desarrollo industrial de 2001 a 2014, luego plant manager en la fase de venta de la empresa.",
+    founder4_title: "Sinterizados y Alta Precisión", founder4_desc: "Know-how en metalurgia de polvos desde 1992, componentes complejos y patentes registradas a nivel mundial.",
+    founder5_title: "Grandes Volúmenes Automotive", founder5_desc: "Pedidos automotive industrializados por encima de 6,5 millones de piezas al año, con equipos y pick-up diseñados internamente.",
+    founder6_title: "Capital Relacional", founder6_desc: "Roles de liderazgo en Confartigianato Bolonia, Cámara de Comercio, consorcios y delegaciones institucionales internacionales.",
+    founder_quote: '"Entro en la empresa con un perímetro definido y asumo responsabilidad operativa, no solo consultoría."',
+    transp_title: "Transparencia: cuando NO somos la respuesta correcta",
+    transp_desc: "Qué te queda y cuándo es mejor no empezar. Es nuestro estándar, no una excepción.",
+    transp1_title: "Know-how documentado", transp1_desc: "Procedimientos, roles, delegaciones y datos permanecen en la empresa, no en la cabeza del consultor.",
+    transp2_title: "KPI y herramientas activos", transp2_desc: "Dashboard, reporting y rutinas de control siguen funcionando incluso después del final del mandato.",
+    transp3_title: "Si solo necesitas un presupuesto", transp3_desc: "Si la solicitud es un proveedor de catálogo o una hora de consultoría, no somos la herramienta adecuada.",
+    transp4_title: "Sin un mandato claro", transp4_desc: "Sin delegación y acceso a datos, la presencia no produce resultados: es mejor no empezar.",
+    transp5_title: "La confidencialidad es el método", transp5_desc: "Nada de un cliente se cuenta a otro: la confidencialidad de hoy te protege mañana. Casos solo en persona, bajo NDA.",
+    transp6_title: "Si no somos capaces", transp6_desc: "Te lo decimos antes de empezar, en la primera o segunda reunión.",
     quest_title: "Cuestionario de Autonomía Empresarial",
     quest_desc: "Complete este breve test para recibir una evaluación preliminar.",
     select_option: "Seleccione una opción",
@@ -1472,8 +2177,10 @@ const translations = {
   zh: {
     skip_link: "跳到主要内容",
     nav_mission: "使命", nav_criticita: "关键问题", nav_stewardship: "未来项目",
-    nav_networks: "网络", nav_casi: "案例", nav_roi: "成果", nav_inter: "国际业务",
-    nav_roadmap: "路线图", nav_areas: "业务领域", nav_questionnaire: "调查问卷", nav_contacts: "联系方式",
+    nav_networks: "网络", nav_dimensioni: "维度", nav_mandati: "授权",
+    nav_economico: "模式", nav_suite: "套件", nav_casi: "案例", nav_roi: "成果",
+    nav_inter: "国际业务", nav_roadmap: "路线图", nav_areas: "业务领域", nav_founder: "创始人",
+    nav_trasparenza: "透明度", nav_questionnaire: "调查问卷", nav_contacts: "联系方式",
     hero_subtitle: "构建持续性。保护您的价值。",
     hero_tagline: "我们在不存在的地方创建网络。",
     hero_desc: "Operational Continuity • Temporary Stewardship • Supply Chain Resilience<br>为机械制造中小企业（2-20 名员工）提供运营与战略支持的一体化解决方案。",
@@ -1502,6 +2209,36 @@ const translations = {
     net_card1_title: "供应链韧性", net_card1_desc: "在意大利、罗马尼亚、匈牙利和合作伙伴网络中定向寻找替代供应商。审计、抽样、资格认证和供应启动。",
     net_card2_title: "合作伙伴生态系统", net_card2_desc: "法律、金融、技术、商业和机构在同一张桌子上。我们不卖联系方式：我们构建运营配置。",
     net_card3_title: "项目整合", net_card3_desc: "工业、能源、水、金融、房地产和利益相关者协调。机会 → 发现 → 网络 → 预可行性 → 路线图。",
+    dims_title: "我们测量的 5 个维度",
+    dims_desc: "基于企业数据。指标不是先验选择的：它们从诊断中产生，并与最相关的经济杠杆相关联。",
+    dim1_title: "节约", dim1_desc: "非质量成本、采购、库存、浪费、低效和非生产性时间。",
+    dim2_title: "绩效", dim2_desc: "准时交付、周期时间、饱和度、交货期和不符合项关闭。",
+    dim3_title: "利润率", dim3_desc: "每订单利润、成本吸收、客户盈利能力和现金转换。",
+    dim4_title: "连续性", dim4_desc: "对业主的依赖、角色覆盖、文档化技术诀窍和供应商冗余。",
+    dim5_title: "治理", dim5_desc: "可用 KPI、报告频率、责任和决策时间。",
+    mandates_title: "一种方法，三种范围",
+    mandates_desc: "哪种授权适合您：其他授权在目标和范围方面都是量身定制的。",
+    mandate1_title: "Progetto Futuro", mandate1_desc: "公司持续监督：首个 90 天周期，每周 1-2 天，授权和 KPI。",
+    mandate2_title: "Sales Network", mandate2_desc: "销售渠道和网络的建设或重组：持续时间和监督根据市场和目标校准。",
+    mandate3_title: "Supplier Network", mandate3_desc: "供应链的新来源或备份：时间与关键性、资格和数量相关。",
+    mandates_footer_title: "定制，非套餐",
+    mandates_footer_desc: "范围、持续时间和监督在尽职调查后确定。一旦确定授权，成本跟随范围。",
+    econ_title: "经济模式",
+    econ_desc: "成本基于范围定义，而非目录。四项支出项目，如何确定规模以及谁负责什么。",
+    econ1_title: "评估费", econ1_desc: "涵盖分析、数据收集和运营计划构建的初始阶段。",
+    econ2_title: "固定部分", econ2_desc: "为约定的监督、运营协调和定期报告提供报酬。",
+    econ3_title: "可变部分", econ3_desc: "可以链接到约定、可衡量和可验证的 KPI，而不会将其转变为预防性保证。",
+    econ4_title: "专业成本", econ4_desc: "由业主单独授权的法律、税务、技术或财务咨询。",
+    econ_size_title: "如何确定规模", econ_size_desc: "基于约定的范围、目标和承诺：了解关系先于价格并使其可验证。",
+    econ_resp_title: "谁负责什么", econ_resp_desc: "行政和财务仍由业主掌握。我们承担生产、客户、供应商和人员管理。",
+    suite_title: "Structured Engineering 套件",
+    suite_desc: "质量成为系统、数据和运营纪律。一个专有且已运营的数字系统，根据 IATF 16949 标准管理 Control Plan、PPAP、FMEA 和 MSA。",
+    suite1_title: "APQP / PPAP", suite1_desc: "高级质量规划和批准档案。",
+    suite2_title: "不符合项", suite2_desc: "报告、遏制、原因、措施和有效性验证。",
+    suite3_title: "审核与供应商质量", suite3_desc: "审核计划、调查、记分卡和供应商开发。",
+    suite4_title: "Control Plan & FAI", suite4_desc: "控制计划、抽样、可追溯性和验证。",
+    suite5_title: "KPI 与报告", suite5_desc: "质量、非质量成本、关闭时间和趋势。",
+    suite6_title: "文档控制", suite6_desc: "修订、责任、证据和受控可用性。",
     cases_title: "干预案例", cases_desc: "Temporary Stewardship 模型的具体应用领域。",
     case1_title: "制造型中小企业", case1_l1: "降低运营风险", case1_l2: "重组流程", case1_l3: "转移关键技术诀窍",
     case2_title: "成长型企业", case2_l1: "构建供应链体系", case2_l2: "供应商开发与审计", case2_l3: "持续 KPI 监控",
@@ -1514,9 +2251,7 @@ const translations = {
     inter_desc: "植根于中东欧核心市场的扩展工业视野。",
     inter_box_title: "意大利、罗马尼亚和匈牙利之间的运营网络",
     inter_box_desc: "我们的独特优势在于能够在意大利生产集群与罗马尼亚和匈牙利的工业平台之间灵活协调。",
-    b_it: "🇮🇹 意大利 (总部 / 核心战略)",
-    b_ro: "🇷🇴 罗马尼亚 (布加勒斯特 / 工程与运营)",
-    b_hu: "🇭🇺 匈牙利 (供应链与工业伙伴)",
+    b_it: "🇮🇹 意大利 (总部 / 核心战略)", b_ro: "🇷🇴 罗马尼亚 (布加勒斯特 / 工程与运营)", b_hu: "🇭🇺 匈牙利 (供应链与工业伙伴)",
     roadmap_title: "前 90 天路线图",
     roadmap_desc: "保证干预成功的渐进式方法论。",
     step1_tag: "第 1 阶段 • 第 1-2 周", step1_title: "初始评估", step1_desc: "保密协议 (NDA)、文档分析、团队访谈与即时风险梳理。",
@@ -1535,6 +2270,23 @@ const translations = {
     cert_title: "卓越与工业标准",
     cert_desc: "高精度领域的直接经验：汽车、非公路机械与工业机械。",
     badge_cnc: "CNC 机加工与金属切削", badge_alloys: "粉末冶金件与轻合金",
+    founder_title: "Francesco Malmusi",
+    founder_subtitle: "创始人兼执行顾问 — 30 多年车间、生产和技术管理经验。",
+    founder1_title: "30+ 年工艺", founder1_desc: "自 1991 年起：CNC、计量、过程质量、工业化和技术管理。",
+    founder2_title: "认证质量", founder2_desc: "质量管理体系硕士（博洛尼亚商会）、统计过程控制、ISO 9001:2015 和 IATF 16949 方法。",
+    founder3_title: "企业家和管理者", founder3_desc: "2001 年至 2014 年担任企业家和工业发展经理，然后在公司出售阶段担任工厂经理。",
+    founder4_title: "粉末冶金和高精度", founder4_desc: "自 1992 年起掌握粉末冶金技术诀窍，复杂部件和全球注册专利。",
+    founder5_title: "大批量汽车业务", founder5_desc: "工业化的汽车订单每年超过 650 万件，拥有内部设计的设备和工件拾取装置。",
+    founder6_title: "关系资本", founder6_desc: "在 Confartigianato 博洛尼亚、商会、财团和国际机构代表团中担任高级职务。",
+    founder_quote: '"我带着明确的范围进入公司，承担运营责任，而不仅仅是咨询。"',
+    transp_title: "透明度：当我们不是正确答案时",
+    transp_desc: "您留下什么以及何时最好不要开始。这是我们的标准，不是例外。",
+    transp1_title: "文档化的技术诀窍", transp1_desc: "流程、角色、授权和数据留在公司，而不是顾问的脑海中。",
+    transp2_title: "活跃的 KPI 和工具", transp2_desc: "仪表盘、报告和控制例程在授权结束后继续运行。",
+    transp3_title: "如果您只需要报价", transp3_desc: "如果请求是目录供应商或一小时咨询，我们不是合适的工具。",
+    transp4_title: "没有明确的授权", transp4_desc: "没有授权和数据访问，监督不会产生结果：最好不要开始。",
+    transp5_title: "保密是方法", transp5_desc: "一个客户的事情不会告诉另一个：今天的保密保护您的明天。案例只在 NDA 下当面进行。",
+    transp6_title: "如果我们无能为力", transp6_desc: "我们在开始前告诉您，在第一次或第二次会议上。",
     quest_title: "企业自主性调查问卷",
     quest_desc: "填写此简短测试，获取您企业运营连续性的初步评估。",
     select_option: "请选择一个选项",
@@ -1581,7 +2333,6 @@ function setLanguage(lang) {
   const activeBtn = Array.from(document.querySelectorAll('.lang-btn'))
     .find(b => b.textContent.trim().toLowerCase() === lang.toLowerCase());
   if (activeBtn) activeBtn.classList.add('active');
-
   const t = translations[lang] || translations['it'];
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
@@ -1593,7 +2344,6 @@ function setLanguage(lang) {
       }
     }
   });
-
   const qLang = document.getElementById('quest_form_lang');
   const cLang = document.getElementById('contact_form_lang');
   if (qLang) qLang.value = lang;
@@ -1604,18 +2354,14 @@ function setupFormAjax(formId, alertId) {
   const form = document.getElementById(formId);
   const alertBox = document.getElementById(alertId);
   if (!form || !alertBox) return;
-
   form.addEventListener('submit', function(e) {
     e.preventDefault();
     alertBox.style.display = 'none';
     alertBox.className = 'form-alert';
-
     const submitBtn = form.querySelector('button[type="submit"]');
     if (submitBtn) submitBtn.disabled = true;
-
     const formData = new FormData(form);
     const msgs = formMessages[currentLang] || formMessages['it'];
-
     fetch(form.action, {
       method: 'POST',
       body: formData,
@@ -1679,13 +2425,10 @@ document.addEventListener('keydown', function(e) {
   const modal = document.getElementById('privacyModal');
   if (!modal || !modal.classList.contains('active')) return;
   if (e.key !== 'Tab') return;
-
   const focusable = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
   if (focusable.length === 0) return;
-
   const first = focusable[0];
   const last = focusable[focusable.length - 1];
-
   if (e.shiftKey && document.activeElement === first) {
     e.preventDefault();
     last.focus();
