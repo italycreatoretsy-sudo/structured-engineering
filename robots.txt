@@ -1,0 +1,14 @@
+# ============================================================
+#  robots.txt - Structured Engineering S.r.l.
+# ============================================================
+
+# Permetti a tutti i crawler di indicizzare il sito
+User-agent: *
+Allow: /
+
+# Blocca file che non devono essere indicizzati
+Disallow: /card.html
+Disallow: /contatto.vcf
+
+# Sitemap ufficiale
+Sitemap: https://structuredengineeringsrl.com/sitemap.xml
