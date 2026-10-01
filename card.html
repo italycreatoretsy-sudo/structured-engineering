@@ -21,12 +21,12 @@
 <meta property="og:url" content="https://structuredengineeringsrl.com/card.html">
 <meta property="og:title" content="Francesco Malmusi | Structured Engineering S.r.l.">
 <meta property="og:description" content="Founder & Executive Consultant - Contatto digitale">
-<meta property="og:image" content="https://structuredengineeringsrl.com/og-image.jpg">
+<meta property="og:image" content="https://structuredengineeringsrl.com/foto-profilo.jpg">
 
 <!-- ============================================================
      FAVICON
 ============================================================ -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Cpath%20d='M50%205%20L90%2027.5%20L90%2072.5%20L50%2095%20L10%2072.5%20L10%2027.5%20Z'%20fill='none'%20stroke='%2317365D'%20stroke-width='10'/%3E%3Cpath%20d='M30%2035%20L70%2035%20L30%2065%20L70%2065'%20fill='none'%20stroke='%23E67E21'%20stroke-width='10'%20stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="/logo.svg">
 
 <!-- ============================================================
      FONTS
@@ -84,19 +84,16 @@ body {
   border-bottom: 4px solid var(--orange);
 }
 
-.hexagon-logo {
-  width: 70px;
-  height: 70px;
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--orange);
   margin: 0 auto 15px auto;
-  background: var(--orange);
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  font-size: 1.4rem;
-  color: white;
-  box-shadow: 0 4px 10px rgba(230, 126, 33, 0.4);
+  display: block;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+  background: #fff;
 }
 
 .card-header h1 {
@@ -221,6 +218,25 @@ body {
 }
 
 /* ============================================================
+   LOGO FOOTER
+============================================================ */
+.logo-footer {
+  text-align: center;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid #F1F5F9;
+}
+
+.logo-footer img {
+  max-width: 130px;
+  height: auto;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.logo-footer img:hover { opacity: 1; }
+
+/* ============================================================
    BACK LINK
 ============================================================ */
 .back-link {
@@ -264,10 +280,11 @@ body {
   .card-header h1 { font-size: 1.35rem; }
   .card-body { padding: 20px; }
   .save-btn { padding: 14px; font-size: 1rem; }
+  .profile-photo { width: 88px; height: 88px; }
 }
 
 /* ============================================================
-   PRINT (nasconde tutto se si stampa)
+   PRINT
 ============================================================ */
 @media print {
   body { background: white; }
@@ -279,14 +296,17 @@ body {
 
 <div class="card-container">
   <div class="card-header">
-    <div class="hexagon-logo">SE</div>
+    <img src="/foto-profilo.jpg"
+         alt="Francesco Malmusi"
+         class="profile-photo"
+         onerror="this.style.display='none'">
     <h1>Francesco Malmusi</h1>
     <div class="company">Structured Engineering S.r.l.</div>
     <div class="role">Founder &amp; Executive Consultant</div>
   </div>
 
   <div class="card-body">
-    <!-- Pulsante salva contatto - URL assoluto, download, type vcard -->
+    <!-- Pulsante salva contatto -->
     <a href="/contatto.vcf"
        download="Francesco_Malmusi_Structured_Engineering.vcf"
        type="text/vcard"
@@ -321,6 +341,16 @@ body {
       </div>
     </a>
 
+    <!-- Sede Legale -->
+    <a href="https://www.google.com/maps/search/?api=1&query=Bd.+Theodor+Pallady+66A+Bucarest"
+       target="_blank" rel="noopener noreferrer" class="contact-item">
+      <div class="icon">🏢</div>
+      <div class="details">
+        <label>Sede Legale</label>
+        <span>Bd. Theodor Pallady 66A, Bl. 10, et. 7, apt. 92, Sector 3 — Bucarest</span>
+      </div>
+    </a>
+
     <!-- LinkedIn -->
     <a href="https://www.linkedin.com/in/structured-engineering-a3227043a" target="_blank" rel="noopener noreferrer" class="contact-item">
       <div class="icon">💼</div>
@@ -339,15 +369,6 @@ body {
       </div>
     </a>
 
-    <!-- Google Maps -->
-    <a href="https://www.google.com/maps/search/?api=1&query=44.4323,26.1063" target="_blank" rel="noopener noreferrer" class="contact-item">
-      <div class="icon">📍</div>
-      <div class="details">
-        <label>Ufficio Bucarest (GPS)</label>
-        <span>44.4323, 26.1063 — Apri in Mappe</span>
-      </div>
-    </a>
-
     <!-- Badge / Specializzazioni -->
     <div class="badge-container">
       <span class="badge">IATF 16949</span>
@@ -355,12 +376,17 @@ body {
       <span class="badge">Temporary Stewardship</span>
     </div>
 
+    <!-- Logo aziendale SVG -->
+    <div class="logo-footer">
+      <img src="/logo.svg" alt="Structured Engineering S.r.l.">
+    </div>
+
     <!-- Torna al sito -->
     <a href="/" class="back-link">← Torna al sito principale</a>
   </div>
 
   <div class="footer-text">
-    © 2026 Structured Engineering S.r.l. — <a href="/" >structuredengineeringsrl.com</a>
+    © 2026 Structured Engineering S.r.l. — <a href="/">structuredengineeringsrl.com</a>
   </div>
 </div>
 
