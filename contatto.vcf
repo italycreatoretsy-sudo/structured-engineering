@@ -6,10 +6,14 @@ ORG:Structured Engineering S.r.l.
 TITLE:Founder & Executive Consultant
 TEL;TYPE=CELL,VOICE:+393897870017
 EMAIL;TYPE=INTERNET:strueng2026@proton.me
-URL:https://www.structuredengineeringsrl.com
-URL:https://www.linkedin.com/in/structured-engineering-a3227043a
-URL:https://www.youtube.com/@Structured-Engineering/videos
-URL:https://www.google.com/maps/search/?api=1&query=44.4323%2C26.1063
+item1.URL:https://www.structuredengineeringsrl.com
+item1.X-ABLabel:_$!<HomePage>!$_
+item2.URL:https://www.linkedin.com/in/structured-engineering-a3227043a
+item2.X-ABLabel:LinkedIn
+item3.URL:https://www.youtube.com/@Structured-Engineering/videos
+item3.X-ABLabel:YouTube
+item4.URL:https://www.google.com/maps/search/?api=1&query=44.4323%2C26.1063
+item4.X-ABLabel:Mappa
 ADR;TYPE=WORK:;;Bd. Theodor Pallady nr. 66A\, Bl. 10\, et. 7\, apt. 92\, Se
  ctor 3;Bucarest;;;Romania
 GEO:44.4323;26.1063
